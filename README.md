@@ -3,19 +3,20 @@
 
 [![Build Status](https://travis-ci.org/D1ang/Soccersystems.svg?branch=main)](https://travis-ci.org/D1ang/Soccersystems)
 
-For a silkscreen-press company a need for an order system has been requested.
-The main goal of the system is to make the job of our studio employees easier and more efficient.
+For Amsterdams biggest soccerteam (Ajax) a need for an order system has been requested.
+The main goal of the system is to make the job of shop employees easier and more efficient.
 For the customer we would like to provide an easy to understand and easy to use system so,
-they will be able to make their service requests easier.
+they will be able to make their production requests easier.
 
 In short:
- - A system for employees to be more efficient.
- - An easy to understand system for B2B customers to remove some workload from the studio employees.
+ - A system for Ajax shop employees to be more efficient.
+ - An easy to understand system on B2B basis to remove some workload from the employees on both sides.
+ - A way to see the holding stocks of the producer and shops.
 
 ## Demo
-A live demo version can be found **[here](https://silkscreenservice.herokuapp.com/)**
+A live demo version can be found **[here](https://soccersystems.herokuapp.com/)**
 
-![Design](https://github.com/D1ang/Silkscreenservice/blob/master/mockups/presentation.png)
+![Design](https://github.com/D1ang/Soccersystems/blob/master/mockups/presentation.png)
 
 ## Table of Contents
   * [UX](#ux)
@@ -53,15 +54,12 @@ The navigation bar, buttons, cart system and dashboard have been built and have 
 With years of field experience, we have built a well-known form and work ethic in creating designs.
 We asked our customers from day to day what they would like to see in a sample and came up with the following points:
 
- - As a user, I want to easily fill in the forms for a service request (services)
- - As a user, I want to upload my artwork fast and easy in the same system (checkout form)
+ - As a user, I want to easily fill in the forms for a order request (services)
  - As a user, I want a secured overview of my order history (dashboard)
  - As a user, I want the system to remember my cart, for if I want to make changes later (cart)
  - As a user, I do not want to fill in my details every time, but do want to change them if needed (profile)
- - As an employee, I want to know which service are required per order (order)
+ - As an employee, I want to know which items are required per order (order)
  - As an employee, I want to change the status of an order (admin list actions)
- - As an employee, I would like to download the artwork (order details)
- - As an employee, I would like to upload and overwrite the artwork (order details)
  - As an employee, I want to search and filter the orders (search & filter)
 
 ### Strategy
@@ -69,10 +67,10 @@ The goal of the system is to make it as easy as possible to access, short and in
 while striving for a minimalist and user-friendly design.
 
 ### Scope
-For customers, we wanted to provide them with an easy to understand (first-view-use) system.
-This way, they would be able to request services: faster, easier and on their own, 
-so our studio employees have more free time for other job-related tasks and be able to do
-their service tasks more efficient.
+For Ajax, we wanted to provide them with an easy to understand (first-view-use) system.
+This way, they would be able to request orders: faster, easier and on their own, 
+so our employees have more free time for other job-related tasks and be able to do
+their other tasks more efficient.
 
 ### Structure
 The system is structured to get the right information as quickly as possible.
@@ -83,20 +81,14 @@ The navbar is available when needed and a footer is provided with contact-inform
 ### Skeleton
 By using Figma and LucidChart the following wireframes were created:
 
-[Silkscreenservice wireframe](https://github.com/D1ang/Silkscreenservice/blob/master/mockups/wireframe.pdf)
+[Silkscreenservice wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/wireframe.pdf)
 
-[Responsive phone wireframe](https://github.com/D1ang/Silkscreenservice/blob/master/mockups/wireframe-sm.pdf)
+[Responsive phone wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/wireframe-sm.pdf)
 
-[ERD wireframe](https://github.com/D1ang/Silkscreenservice/blob/master/mockups/model_diagram.png)
+[ERD wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/model_diagram.png)
 
 ### Surface
-The colours chosen are yellow, red, black, and blue.
-Blue is the most used colour most associated with harmony, faithfulness, confidence, and imagination.
-A very clean, abstract and an almost childish design has been chosen to force the attention to the systems functionality.
-Users will not be afraid to use the system by this easy to understand design.
-The font Poppins had been chosen because of its look that fits perfectly to the buttons and graphics on the homepage.
-As for the dashboard a lighter version of Poppins has been used as it looks very clean and is easy to read.
-The buttons are styled in 2 versions; full black or black outlined, to fit the overall design.
+The colours chosen are ...
 
 ## Technologies
  - Figma - *To create a wireframe*
@@ -109,21 +101,16 @@ The buttons are styled in 2 versions; full black or black outlined, to fit the o
  - Django - *Web framework in python*
  - Bootstrap - *To make the design responsive*
  - Font Awesome - *Easy icon access for the icons*
- - Font Awesome animations - *Additional animations for the Font Awesome icons*
- - GitHub Wiki TOC generator - *Generates a MarkDown TOC online*
 
 ### JavaScript Libraries
  - jQuery - *To improve input field feedback*
  - flatpickr - *lightweight, powerful JavaScript datetimepicker with no dependencies*
  - DataTables - *Adds advanced interaction controls to HTML tables*
- - Stripe - *For credit card transactions*
 
 ### Python & Django Libraries
  - pillow - *Python Imaging Library*
- - Stripe - *Credit card payments and transaction security*
  - boto3 - *To connect to AWS*
  - django-allauth - *Authentication, registration & account management*
- - django-countries - *Provides country choices for use with forms*
  - django-phonenumber-field - *A Django library which interfaces with python-phonenumbers to validate*
  - django-crispy-forms - *Controls the rendering behaviour of Django forms*
  - django-filter - *Easy searching and filtering query sets*
