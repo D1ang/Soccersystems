@@ -129,6 +129,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Allauth Authentication
 
@@ -150,3 +154,8 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/'
 ACCOUNT_FORMS = {'signup': 'accounts.forms.MyCustomSignupForm'}
+
+
+# Messages
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
