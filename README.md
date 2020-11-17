@@ -1,7 +1,7 @@
 # Soccersystems
 **sports ordersystem**
 
-[![Build Status](https://travis-ci.org/D1ang/Silkscreenservice.svg?branch=master)](https://travis-ci.org/D1ang/Silkscreenservice)
+[![Build Status](https://travis-ci.org/D1ang/Soccersystems.svg?branch=main)](https://travis-ci.org/D1ang/Soccersystems)
 
 For a silkscreen-press company a need for an order system has been requested.
 The main goal of the system is to make the job of our studio employees easier and more efficient.
