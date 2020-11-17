@@ -2,8 +2,10 @@
 *.sqlite3
 *.pyc
 __pycache__
+soccersystems/__pycache__/urls.cpython-38.pyc
 
 # Exclude VScode created def folders
 .vscode
 env.py
 env
+
