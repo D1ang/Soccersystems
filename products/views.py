@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from .models import ProductItem
 
 
-def products(request):
+class ItemListView(ListView):
     """
-    Products index page
+    Shows all the available products items
+    on 1 page.
     """
-
-    return render(request, 'products/index.html')
+    model = ProductItem
+    template_name = 'products/items.html'
