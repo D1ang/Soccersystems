@@ -27,7 +27,7 @@ class ItemGroup(models.Model):
 class ProductItem(models.Model):
     """
     A model for the product items.
-    Urls are slug based.
+    Urls are slug based on the serial field.
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
     item_group = models.ForeignKey(ItemGroup, null=True,

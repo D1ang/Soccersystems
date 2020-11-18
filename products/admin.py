@@ -19,6 +19,7 @@ class ProductItemAdmin(admin.ModelAdmin):
     list_display = (
         'serial',
         'name',
+        'item_group',
         'price'
     )
 
