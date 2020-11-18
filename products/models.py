@@ -33,7 +33,8 @@ class ProductItem(models.Model):
     Urls are slug based.
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
-    group = models.ForeignKey(ItemGroup, null=True, blank=True, on_delete=models.SET_NULL)
+    group = models.ForeignKey(ItemGroup, null=True,
+                              blank=True, on_delete=models.SET_NULL)
     serial = models.SlugField()
     description = models.CharField(max_length=25)
     size = models.IntegerField()
@@ -41,8 +42,10 @@ class ProductItem(models.Model):
     image = models.ImageField(upload_to='images', null=True, blank=True)
 
     def _get_name(self):
-        "Returns the person's full name."
-        return '%s / %s / %s cm' % (self.product_group, self.description, self.size)
+        # Returns the articles full description.
+        return '%s / %s / %s cm' % (self.product_group,
+                                    self.description,
+                                    self.size)
     name = property(_get_name)
 
     class Meta:
