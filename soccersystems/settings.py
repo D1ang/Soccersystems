@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'crispy_forms',
+    'django_excel_fixture',
 ]
 
 MIDDLEWARE = [
