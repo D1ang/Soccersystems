@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Product, ProductItem
+from .models import ProductGroup, ProductItem, ItemGroup
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductGroupAdmin(admin.ModelAdmin):
     list_display = (
         'productcode',
         'productname',
@@ -12,13 +12,20 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
 
+class ItemGroupAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+    )
+
+
 class ProductItemAdmin(admin.ModelAdmin):
     list_display = (
-        'slug',
+        'serial',
         'name',
         'price'
     )
 
 
-admin.site.register(Product, ProductAdmin)
+admin.site.register(ProductGroup, ProductGroupAdmin)
 admin.site.register(ProductItem, ProductItemAdmin)
+admin.site.register(ItemGroup, ItemGroupAdmin)
