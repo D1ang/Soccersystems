@@ -8,10 +8,7 @@ class ProductGroup(models.Model):
     """
     productcode = models.CharField(max_length=5)
     productname = models.CharField(max_length=30)
-    product_type = models.CharField(max_length=25)
-    group = models.CharField(max_length=25)
-    price_basis = models.CharField(max_length=15)
-    logo = models.ImageField(blank=True, null=True)
+    image = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.productname
@@ -33,8 +30,8 @@ class ProductItem(models.Model):
     Urls are slug based.
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
-    group = models.ForeignKey(ItemGroup, null=True,
-                              blank=True, on_delete=models.SET_NULL)
+    item_group = models.ForeignKey(ItemGroup, null=True,
+                                   blank=True, on_delete=models.SET_NULL)
     serial = models.SlugField()
     description = models.CharField(max_length=25)
     size = models.IntegerField()

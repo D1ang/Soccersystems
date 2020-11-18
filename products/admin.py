@@ -5,10 +5,7 @@ from .models import ProductGroup, ProductItem, ItemGroup
 class ProductGroupAdmin(admin.ModelAdmin):
     list_display = (
         'productcode',
-        'productname',
-        'product_type',
-        'group',
-        'price_basis'
+        'productname'
     )
 
 
