@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     'allauth',
     'allauth.account',
+    'django_filters',
     'crispy_forms',
     'django_excel_fixture',
 ]
