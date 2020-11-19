@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'accounts',
     'home',
     'products',
 
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'django_filters',
     'crispy_forms',
     'django_excel_fixture',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
