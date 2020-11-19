@@ -1,11 +1,22 @@
-from django.views.generic import ListView
+from django.shortcuts import render
 from .models import ProductItem
+from .filters import ItemFilter
 
 
-class ItemListView(ListView):
+def product_items_list(request):
     """
     Shows all the available products items
     on 1 page.
     """
-    model = ProductItem
-    template_name = 'products/items.html'
+
+    item_list = ProductItem.objects.all()
+
+    itemFilter = ItemFilter(request.GET, queryset=item_list)
+    item_list = itemFilter.qs
+
+    context = {
+       'item_list': item_list,
+       'itemFilter': itemFilter,
+    }
+
+    return render(request, 'products/items.html', context)
