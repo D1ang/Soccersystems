@@ -11,10 +11,9 @@ class Shop(models.Model):
     """
     company_name = models.CharField(max_length=50)
     street_address = models.CharField(max_length=50)
-    address_line_2 = models.CharField(max_length=50, blank=True, null=True)
     city = models.CharField(max_length=50)
-    region = models.CharField(max_length=50, blank=True, null=True)
     postal = models.CharField(max_length=6)
+    region = models.CharField(max_length=50, blank=True, null=True)
 
     def __str__(self):
         return self.company_name
