@@ -1,0 +1,60 @@
+<!--Navbar-->
+<nav id="custom-navbar" class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand custom-navbarLogo" href="{% url 'home:index' %}">Silkscreenservice.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav ml-auto text-uppercase">
+      <li class="nav-item"><a class="nav-link" href="{% url 'home:index' %}">home</a></li>
+      <li class="nav-item"><a class="nav-link" href="">services</a></li>
+
+      {% if request.user.is_authenticated %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown">Account</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Dashboard</a>
+            <a class="dropdown-item" href="">Profile</a>
+
+            <form method="POST" action="">
+              {% csrf_token %}
+              {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+              {% endif %}
+              <a class="dropdown-item" href="#" onclick="this.parentNode.submit();">Sign out</a>
+            </form>
+
+          </div>
+        </li>
+      {% else %}
+        <li class="nav-item"><a class="nav-link" href="">sign up</a></li>
+      {% endif %}
+
+      {% if request.user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="badge badge-pill badge-light">
+              
+            </span>
+          </a>
+        </li>
+      {% endif %}
+
+    </ul>
+  </div>
+</nav>
+<!--Navbar end-->
+
+<!--Messages bar-->
+  {% if messages %}
+    {% for message in messages %}
+      <div id="alerts" class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    {% endfor %}
+  {% endif %}
+<!--Messages bar end-->
