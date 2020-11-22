@@ -1,0 +1,40 @@
+<!--Footer-->
+<footer>
+  <div class="container-fluid footer-container text-white mt-3 px-5">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <ul class="list-unstyled quick-links">
+          <li>
+            <div class="list-unstyled list-inline xs-text-center mb-3">
+              <h2>soccersystems.nl</h2>
+              <a target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x px-1"></i></a>
+              <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x px-1"></i></a>
+              <a target="_blank" href="https://wa.me/5551337"><i class="fab fa-whatsapp-square fa-2x px-1"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <ul class="list-unstyled quick-links text-center">
+          <li>Groot Mijdrechtstraat 24</li>
+          <li>3641RW Mijdrecht</li>
+          <li>+31 (0) 297 - 286884</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <ul class="list-unstyled quick-links text-right">
+          <li><a class="footer-container" href="{% url 'home:index' %}">Home</a></li>
+          <li><a href="">Services</a></li>
+
+          {% if request.user.is_authenticated %}
+            <li><a href="#">To top</a></li>
+          {% else %}
+            <li><a href="">Sign up</a></li>
+          {% endif %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Footer end-->
