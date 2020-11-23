@@ -8,7 +8,7 @@ class ItemFilter(filters.FilterSet):
     This will search through the ProductItem model
     and filter out the request provided by the user.
     """
-    description = filters.CharFilter(lookup_expr='iexact')
+    description = filters.CharFilter(lookup_expr='icontains')
 
     class Meta:
         model = ProductItem
