@@ -1,13 +1,13 @@
 <!--Navbar-->
 <nav id="custom-navbar" class="navbar navbar-expand-md navbar-dark">
-  <a class="navbar-brand custom-navbarLogo" href="{% url 'home:index' %}">Silkscreenservice.com</a>
+  <a class="navbar-brand custom-navbarLogo" href="{% url 'home:index' %}">Soccersystems</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav ml-auto text-uppercase">
-      <li class="nav-item"><a class="nav-link" href="{% url 'home:index' %}">home</a></li>
-      <li class="nav-item"><a class="nav-link" href="">services</a></li>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="{% url 'home:index' %}">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
 
       {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
