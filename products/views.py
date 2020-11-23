@@ -22,7 +22,7 @@ def products_list(request):
         'itemFilter': itemFilter,
     }
 
-    return render(request, 'products/items.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def product_items(request, pk_product):
