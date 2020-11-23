@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Orderdetails-->
+          <div class="custom-card mt-3">
+            <table id="dataTable" class="nowrap table table-sm height-fix">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in product_item_list %}
+                  <tr>
+                    <td>
+                      {% if order.id_code %}
+                        {{ order.id_code }}
+                      {% else %}
+                        In cart
+                      {% endif %}
+                    </td>
+                    <td>{{ item.description }}</td>
+                    <td>
+                      <span class="badge badge-pill badge-{{ item.price }}">{{ order.status }}</span>
+                    </td>
+                    <td>
+                      <a class="subtext" href="">
+                        <i class="far fa-eye"></i>
+                      </a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <!--Orderdetails end-->
+
+
+{% endblock content %}
