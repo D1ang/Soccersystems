@@ -1,7 +1,7 @@
 from allauth.account.forms import SignupForm
 from django.contrib.auth.models import Group
 from django import forms
-from .models import Customer
+from .models import Employee
 
 
 class MyCustomSignupForm(SignupForm):
@@ -11,21 +11,21 @@ class MyCustomSignupForm(SignupForm):
     """
     def __init__(self, *args, **kwargs):
         super(MyCustomSignupForm, self).__init__(*args, **kwargs)
-        self.fields['company_name'] = forms.CharField(widget=forms.TextInput(
-            attrs={'placeholder': 'Company name'}), required=True)
+        self.fields['shop'] = forms.CharField(widget=forms.TextInput(
+            attrs={'placeholder': 'Shop'}), required=True)
 
     def save(self, request):
-        company_name = self.cleaned_data.pop('company_name')
+        shop = self.cleaned_data.pop('shop')
         user = super(MyCustomSignupForm, self).save(request)
 
-        group = Group.objects.get(name='customer')
+        group = Group.objects.get(name='employee')
         user.groups.add(group)
 
         if request.method == 'POST':
-            # connect the customer to an user @ creation.
-            Customer.objects.create(
+            # connect the employee to an user @ creation.
+            Employee.objects.create(
                 user=user,
                 email=user.email,
-                company_name=company_name,
+                shop=shop,
             )
         return user
