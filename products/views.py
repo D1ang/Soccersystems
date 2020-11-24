@@ -1,8 +1,10 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .models import ProductGroup, ProductItem
 from .filters import ItemFilter
 
 
+@login_required
 def products_list(request):
     """
     Shows all the available product
@@ -25,6 +27,7 @@ def products_list(request):
     return render(request, 'products/products.html', context)
 
 
+@login_required
 def product_items(request, pk_product):
     """
     A product items page for the employee
