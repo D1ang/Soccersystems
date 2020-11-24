@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!--Signup-->
+<section id="auth">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 p-3 mt-5">
+        <div class="auth-custom-card w-100 fixed-card-height">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-center text-uppercase">account sign up</h4>
+
+            <form id="auth-form" method="POST" action="{% url 'account_signup' %}" class="my-4">
+              {% csrf_token %}
+
+              {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+              {% endif %}
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-user"></i></div>
+                </div>
+                {{ form.username }}
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-building"></i></div>
+                </div>
+                {{ form.shop }}
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-at"></i></div>
+                </div>
+                {{ form.email }}
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-key"></i></div>
+                </div>
+                {{ form.password1 }}
+              </div>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-key"></i></div>
+                </div>
+                {{ form.password2 }}
+              </div>
+                {{ form.errors }}
+                
+              <div class="justify-content-center btn-login-padding my-4">
+                <input class="btn btn-black-sm" type="submit" value="Sign up!">
+              </div>
+            </form>
+
+            <div class="row subtext">
+              <div class="col-12 text-center">
+                <p>Already have an account?</p>
+              </div>
+              <div class="col-12 text-center">
+                <a href="{{ login_url }}" class="subtext"><i class="fas fa-sign-in-alt mr-1"></i> Login here</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="auth-bg" class="col-12 col-lg-6 p-3 mt-3">
+        <img src="{% static 'svg/designer-shop.svg' %}" class="img-fluid pl-4" alt="designer-shop">
+      </div>
+    </div>
+  </div>
+</section>
+<!--Signup end-->
+
+{% endblock %}
