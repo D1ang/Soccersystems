@@ -14,10 +14,10 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown">Account</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="">Dashboard</a>
+            <a class="dropdown-item" href="{% url 'accounts:customerpage' %}">Dashboard</a>
             <a class="dropdown-item" href="">Profile</a>
 
-            <form method="POST" action="">
+            <form method="POST" action="{% url 'account_logout' %}">
               {% csrf_token %}
               {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
@@ -28,7 +28,7 @@
           </div>
         </li>
       {% else %}
-        <li class="nav-item"><a class="nav-link" href="">sign up</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
       {% endif %}
 
       {% if request.user.is_authenticated %}
