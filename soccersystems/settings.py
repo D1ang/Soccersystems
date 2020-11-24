@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'accounts',
     'home',
     'products',
+    'accounts',
 
     'allauth',
     'allauth.account',
@@ -163,7 +163,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/'
 ACCOUNT_FORMS = {'signup': 'accounts.forms.MyCustomSignupForm'}
 ACCOUNT_ADAPTER = 'invitations.models.InvitationsAdapter'
-INVITATIONS_INVITATION_ONLY = True
+INVITATIONS_INVITATION_ONLY = False
 
 # Messages
 
