@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 
 class ProductGroup(models.Model):
@@ -24,19 +25,53 @@ class ItemGroup(models.Model):
         return self.name
 
 
+class ItemTag(models.Model):
+    """
+    A model for the item tags with selectable
+    Bootstrap colours.
+    """
+    TAG_COLOURS = (
+        ('danger', 'Red'),
+        ('success', 'Green'),
+        ('info', 'Blue'),
+        ('warning', 'Yellow'),
+        ('secondary', 'Gray')
+    )
+
+    name = models.CharField(max_length=10)
+    colour = models.CharField(
+        choices=TAG_COLOURS, max_length=10, default='Red')
+
+    def __str__(self):
+        return self.name
+
+
 class ProductItem(models.Model):
     """
     A model for the product items.
-    Urls are slug based on the serial field.
+    Urls are slug based on the slug field.
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
     item_group = models.ForeignKey(ItemGroup, null=True,
                                    blank=True, on_delete=models.SET_NULL)
-    serial = models.SlugField()
+    slug = models.SlugField()
     description = models.CharField(max_length=25)
     size = models.IntegerField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='images', null=True, blank=True)
+    clicks = models.IntegerField(default=0)
+    tag = models.ForeignKey(
+        ItemTag, null=True, blank=True, on_delete=models.SET_NULL)
+
+    def get_add_to_cart_url(self):
+        return reverse('orders:add_to_cart', kwargs={
+            'slug': self.slug
+        })
+
+    def get_remove_from_cart_url(self):
+        return reverse('orders:remove_from_cart', kwargs={
+            'slug': self.slug
+        })
 
     def _get_name(self):
         # Returns the articles full description.
