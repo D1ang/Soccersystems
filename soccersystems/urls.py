@@ -25,6 +25,7 @@ admin.site.index_title = "Welcome to the Soccersystems Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('invitations/', include('invitations.urls')),
 
     path('', include('home.urls', namespace='home')),
     path('', include('products.urls', namespace='products')),

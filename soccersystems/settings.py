@@ -47,8 +47,9 @@ INSTALLED_APPS = [
 
     'allauth',
     'allauth.account',
-    'django_filters',
+    'invitations',
     'crispy_forms',
+    'django_filters',
     'django_excel_fixture',
     'phonenumber_field',
 ]
@@ -141,6 +142,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
 # Allauth Authentication
 
 AUTHENTICATION_BACKENDS = (
@@ -156,16 +158,17 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'optional'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = False
-ACCOUNT_EMAIL_VERIFICATION = 'None'
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/'
 ACCOUNT_FORMS = {'signup': 'accounts.forms.MyCustomSignupForm'}
-
+ACCOUNT_ADAPTER = 'invitations.models.InvitationsAdapter'
+INVITATIONS_INVITATION_ONLY = True
 
 # Messages
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 
 # Crispy Forms
 
