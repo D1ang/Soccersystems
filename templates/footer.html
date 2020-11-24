@@ -28,7 +28,7 @@
           {% if request.user.is_authenticated %}
             <li><a href="#">To top</a></li>
           {% else %}
-            <li><a href="">Sign up</a></li>
+            <li><a href="{% url 'account_signup' %}">Sign up</a></li>
           {% endif %}
 
         </ul>
