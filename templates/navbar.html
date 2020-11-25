@@ -1,3 +1,5 @@
+{% load cart_navbar_badge %}
+
 <!--Navbar-->
 <nav id="custom-navbar" class="navbar navbar-expand-md navbar-dark">
   <a class="navbar-brand custom-navbarLogo" href="{% url 'home:index' %}">Soccersystems</a>
@@ -33,9 +35,9 @@
 
       {% if request.user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="{% url 'orders:cart' %}">
             <span class="badge badge-pill badge-light">
-              
+              {{ request.user|cart_item_count }} <i class="fas fa-shopping-cart"></i>
             </span>
           </a>
         </li>
