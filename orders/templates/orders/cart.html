@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="cart">
+  <div class="container pt-3">
+
+    <!--Cart items-->
+    <div class="cart-container mt-4 ">
+      <table class="nowrap table table-sm height-fix">
+        <thead>
+          <tr>
+            <th>Cart</th>
+            <th class="cart-align-right">Price</th>
+            <th class="cart-align-right">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order_item in object.items.all %}
+            <tr>
+              <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
+              <td class="cart-align-right">{{ order_item.item.price }}€</td>
+              <td class="cart-align-right">
+                <a href="{% url 'orders:remove_from_cart' order_item.item.slug %}" class="btn-delete-cart"><i class="fas fa-trash"></i></a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--Cart items end-->
+
+  <!--Additional costs-->
+  <div class="container">
+    <div class="cart-container my-4">
+      <table class="nowrap table table-sm height-fix">
+        <thead>
+          <tr>
+            <th>Additional costs</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tax 21 %</td>
+            <td class="cart-align-right">{{ tax|floatformat:2 }}€</td>
+          </tr>
+          <tr>
+            <td class="font-weight-bold">Total</td>
+            <td class="cart-align-right font-weight-bold">{{ total|floatformat:2 }}€</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form-row justify-content-center px-2 mt-3">
+        <div class="form-group col-md-6 mb-3">
+          <a href="{% url 'products:products' %}" class="btn btn-black-sm" role="button">Add more services</a>
+        </div>
+        <div class="form-group col-md-6 mb-0">
+          <a href="" class="btn btn-black-sm" role="button">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Additional costs end-->
+
+{% endblock content %}
