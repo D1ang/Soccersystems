@@ -29,6 +29,7 @@
                       <span class="badge badge-pill badge-{{ item.price }}">{{ order.status }}</span>
                     </td>
                     <td>
+                      <a href="{% url 'orders:add_to_cart' item.slug %}" class="btn btn-black-outline-sm mt-3">Add to cart</a>
                       <a class="subtext" href="">
                         <i class="far fa-eye"></i>
                       </a>
