@@ -82,3 +82,8 @@ class ProductItem(models.Model):
 
     class Meta:
         ordering = ['product_group', 'description', 'size']
+
+    def __str__(self):
+        return '%s / %s / %s cm' % (self.product_group,
+                                    self.description,
+                                    self.size)
