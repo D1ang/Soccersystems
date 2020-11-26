@@ -99,7 +99,8 @@ def remove_from_cart(request, slug):
                 user=request.user,
                 ordered=False
             )[0]
-            order.items.remove(order_item)
+            # order.items.remove(order_item)    <------ old way keeps too much orphans in the order items models, does not delete!
+            order_item.delete()
 
             item.clicks -= 1
             item.save()
