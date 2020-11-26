@@ -3,6 +3,10 @@
 
 [![Build Status](https://travis-ci.org/D1ang/Soccersystems.svg?branch=main)](https://travis-ci.org/D1ang/Soccersystems)
 
+
+python manage.py loaddata articles.xlsx
+
+
 For Amsterdams biggest soccerteam (Ajax) a need for an order system has been requested.
 The main goal of the system is to make the job of shop employees easier and more efficient.
 For the customer we would like to provide an easy to understand and easy to use system so,
