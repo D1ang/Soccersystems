@@ -3,14 +3,12 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 
-@login_required
-@allowed_users(allowed_roles=['supervisor'])
+@login_require@allowed_users(allowed_roles=['supervisor', 'admin'])
 def adminpage(request):
     """
     A view that displays the dashboard
     for the admin & paginate the order list.
     """
-
     return render(request, 'accounts/adminpage.html')
 
 
@@ -21,5 +19,4 @@ def customerpage(request):
     A view that displays the dashboard
     for the customer & paginate the order list.
     """
-
     return render(request, 'accounts/customerpage.html')
