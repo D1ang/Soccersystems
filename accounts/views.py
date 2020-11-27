@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 
-@login_require@allowed_users(allowed_roles=['supervisor', 'admin'])
+@login_required
+@allowed_users(allowed_roles=['supervisor', 'admin'])
 def adminpage(request):
     """
     A view that displays the dashboard
