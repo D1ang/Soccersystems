@@ -43,18 +43,17 @@ def add_to_cart(request, slug):
     """
     Adds an item to the cart, creates an order and
     checks if an item already is in the order.
-    Adds 1 popularity click.
     """
     if request.user.is_anonymous:
-        messages.add_message(request, messages.INFO,
-                             'Please login to order services')
-        return redirect('products:products')
+        messages.add_message(request, messages.INFO, 'Please login to order services')
+        return redirect('products:products')  # <------- !NOTE change this to the login page
     else:
         item = get_object_or_404(Item, slug=slug)
 
         order_item, created = OrderItem.objects.get_or_create(
             item=item,
             user=request.user,
+            quantity=request.GET.get('qty'),
             ordered=False,
         )
         order_querySet = Order.objects.filter(user=request.user, ordered=False)
@@ -63,20 +62,17 @@ def add_to_cart(request, slug):
 
             # check if the order item is in the order
             if order.items.filter(item__slug=item.slug).exists():
-                messages.error(request, 'Only one of the same allowed')
+                messages.error(request, 'Item is already added')
                 return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
             else:
                 order.items.add(order_item)
-
-                item.clicks += 1
                 item.save()
-
-                messages.info(request, 'Service is added to the cart')
+                messages.info(request, 'Item is added to the cart')
                 return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
         else:
             order = Order.objects.create(user=request.user)
             order.items.add(order_item)
-            messages.info(request, 'Service is added to the cart')
+            messages.info(request, 'Item is added to the cart')
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
@@ -85,7 +81,6 @@ def remove_from_cart(request, slug):
     """
     Checks if the item is in the cart
     and removes it if there is an active order.
-    Removes 1 popularity click.
     """
     item = get_object_or_404(Item, slug=slug)
     order_querySet = Order.objects.filter(user=request.user, ordered=False)
@@ -99,10 +94,8 @@ def remove_from_cart(request, slug):
                 user=request.user,
                 ordered=False
             )[0]
-            # order.items.remove(order_item)    <------ old way keeps too much orphans in the order items models, does not delete!
-            order_item.delete()
 
-            item.clicks -= 1
+            order_item.delete()
             item.save()
 
             messages.info(request, 'Item removed from order')
