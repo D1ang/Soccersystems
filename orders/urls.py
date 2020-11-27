@@ -1,9 +1,5 @@
 from django.urls import path
-from .views import (
-    OrderSummaryView,
-    add_to_cart,
-    remove_from_cart
-)
+from .views import OrderSummaryView, add_to_cart, remove_from_cart
 
 app_name = 'orders'
 
