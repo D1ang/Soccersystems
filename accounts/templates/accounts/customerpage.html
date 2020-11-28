@@ -1,11 +1,117 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Employee
+
+<section id="dashboard">
+  <div class="container-fluid mt-4 pb-3">
+
+    {% if page_object %}
+    
+      <!--Ordersstatus-->
+      <div class="row">
+        <div class="col custom-card text-center p-3 m-3">
+          <h5>Orders</h5>
+          <h4>{{ total_orders }}</h4>
+        </div>
+        <div class="col custom-card text-center p-3 m-3">
+          <h5>Pending</h5>
+          <h4>{{ pending_orders }}</h4>
+        </div>
+        <div class="col custom-card text-center p-3 m-3">
+          <h5>Finished</h5>
+          <h4>{{ finished_orders }}</h4>
+        </div>
+      </div>
+      <!--Ordersstatus end-->
+
+      <div class="row mt-3">
+        <div class="col-12">
+          
+          <h5 class="text-uppercase pl-2">order overview</h5>
+          <hr class="dashboard m-0">
+
+          <!--Orderdetails-->
+          <div class="custom-card mt-3">
+            <table id="dataTable" class="nowrap table table-sm height-fix">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for order in page_object %}
+                  <tr>
+                    <td>
+                      {% if order.id_code %}
+                        {{ order.id_code }}
+                      {% else %}
+                        In cart
+                      {% endif %}
+                    </td>
+                    <td>{{ order.date }}</td>
+                    <td>
+                      <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
+                    </td>
+                    <td>
+                      <a class="subtext" href="">
+                        <i class="far fa-eye"></i>
+                      </a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <!--Orderdetails end-->
+
+          <!--Paginator-->
+          <div class="row mb-5">
+            <div class="col">
+              <span>
+                {% if page_object.has_previous %}
+                  <a href="?page={{ page_object.previous_page_number }}" class="subtext">
+                    <i class="fas fa-angle-double-left"></i> previous
+                  </a>
+                {% endif %}
+
+                <span class="subtext-bold px-1">
+                  page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+                </span>
+
+                {% if page_object.has_next %}
+                  <a href="?page={{ page_object.next_page_number }}" class="subtext">next
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                {% endif %}
+              </span>
+            </div>
+          </div>
+          <!--Paginator end-->
+
+        </div>
+      </div>
+
+    <!--No available orders-->
+    {% else %}
+      <div class="custom-card text-center p-3 mt-3">
+          <h4 class="pb-2">Dear customer</h4>
+          <p>
+            Welcome to your personal space! At this moment you don't have any orders, 
+            click the button to complete your profile and use the services page to order.
+          </p>
+        <div class="form-row justify-content-center my-2">
+          <div class="form-group col-md-4 mb-0">
+            <a href="{% url 'accounts:userprofile' %}" class="btn btn-black-sm my-2" role="button">Complete your profile</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <!--No available orders end-->
+    
+  </div>
+</section>
+
 {% endblock content %}
