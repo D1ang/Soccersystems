@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from accounts.models import Shop
 from products.models import ProductItem
 
 
@@ -9,6 +10,7 @@ class OrderItem(models.Model):
     to be collected by the order.
     """
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     item = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     ordered = models.BooleanField(default=False)
@@ -34,6 +36,7 @@ class Order(models.Model):
     id_code = models.CharField(max_length=15)
     date = models.DateField(auto_now_add=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     status = models.CharField(choices=STATUS, default='requested', max_length=10)
     items = models.ManyToManyField(OrderItem)
     ordered = models.BooleanField(default=False)

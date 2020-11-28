@@ -6,6 +6,7 @@ class OrderItemAdmin(admin.ModelAdmin):
     list_display = (
         'item',
         'user',
+        'shop',
         'ordered'
     )
 
@@ -13,6 +14,7 @@ class OrderItemAdmin(admin.ModelAdmin):
 class OrderAdmin(admin.ModelAdmin):
     list_display = (
         'user',
+        'shop',
         'date',
         'ordered',
         'status',
