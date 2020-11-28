@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
-  font-weight: 400;
   color: #000;
-  background-color: #06b3be;
+  background-color: #f8f9fa;
 }
 
 .custom-title {
@@ -79,7 +77,6 @@ h2 {
 /*-----------------------Home sections-------------------------*/
 
 #home {
-  background-color: #f7c945;
   min-height: 100vh;
 }
 
@@ -111,7 +108,7 @@ h2 {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding-right: 30px;
+  padding-right: 20px;
   -webkit-transition: top 0.3s;
   -o-transition: top 0.3s;
   transition: top 0.3s;
@@ -119,14 +116,14 @@ h2 {
 }
 
 .custom-navbarLogo {
-  font-family: 'Pacifico', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 1.3rem;
 }
 
 .navbar .navbar-nav .nav-link {
   padding: 0 18px 0 18px;
   line-height: 20px;
-  border-left: 2px solid #fff;
+  border-left: 1px solid #fff;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 0.030rem;
@@ -138,14 +135,14 @@ h2 {
 }
 
 .dropdown-menu {
-  margin-top: 19px;
+  margin-top: 20px;
   border: 0;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0;
 }
 
 .dropdown-item:hover {
   color: #fff;
-  background-color: #da552f;
+  background-color: #c01336;
 }
 
 @media screen and (max-width: 767px) {
@@ -272,12 +269,10 @@ hr.dashboard {
   background-color: #5cb85c;
 }
 
-/*----------------------Services styling-----------------------*/
+/*----------------------Products styling-----------------------*/
 
-#services {
-  background-color: #06b3be;
-  min-height: 900px;
-  padding-top: 60px;
+#products {
+  padding-top: 80px;
 }
 
 .service-badge {
@@ -294,7 +289,6 @@ hr.dashboard {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 35%;
-  background-color: #06b3be;
   min-height: 100%;
   padding-top: 60px;
 }
