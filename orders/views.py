@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import View
 from .models import OrderItem, Order
+from accounts.models import Shop
 from products.models import ProductItem as Item
 from decimal import Decimal
 
@@ -48,11 +49,13 @@ def add_to_cart(request, slug):
         messages.add_message(request, messages.INFO, 'Please login to order services')
         return redirect('products:products')  # <------- !NOTE change this to the login page
     else:
+        shop = Shop.objects.get(id=1)
         item = get_object_or_404(Item, slug=slug)
 
         order_item, created = OrderItem.objects.get_or_create(
             item=item,
             user=request.user,
+            shop=shop,  # <---- can give dublicates error
             quantity=request.GET.get('qty'),
             ordered=False,
         )
