@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .models import ProductGroup, ProductItem
 from .filters import ItemFilter
+from django.core.paginator import Paginator
 
 
 @login_required
@@ -18,9 +19,15 @@ def products_list(request):
     itemFilter = ItemFilter(request.GET, queryset=product_item_list)
     product_item_list = itemFilter.qs
 
+    # Paginate the order to max 6 result per page
+    paginator = Paginator(product_item_list, 15)
+    page_number = request.GET.get('page')
+    page_object = paginator.get_page(page_number)
+
     context = {
         'product_list': product_list,
         'product_item_list': product_item_list,
+        'page_object': page_object,
         'itemFilter': itemFilter,
     }
 

@@ -29,6 +29,12 @@
                       <span class="badge badge-pill badge-{{ item.price }}">{{ order.status }}</span>
                     </td>
                     <td>
+                      
+                       <form method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
+                        <input name='qty' type="number">
+                        <input type="submit" value="Add to order">
+                      </form>
+
                       <a class="subtext" href="">
                         <i class="far fa-eye"></i>
                       </a>
