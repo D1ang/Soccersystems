@@ -20,8 +20,9 @@ def customerpage(request):
     """
     A view that displays the dashboard
     for the employee & paginate the order list.
+    The orders are shown on a shop based level.
     """
-    order_list = request.user.order_set.all().order_by('-date')
+    order_list = request.user.employee.shop.order_set.all().order_by('-date')
     paginator = Paginator(order_list, 6)
     page_number = request.GET.get('page')
     page_object = paginator.get_page(page_number)
