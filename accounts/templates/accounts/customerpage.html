@@ -37,6 +37,7 @@
                 <tr>
                   <th>Order ID</th>
                   <th>Date</th>
+                  <th>employee</th>
                   <th>Status</th>
                   <th>Details</th>
                 </tr>
@@ -48,10 +49,11 @@
                       {% if order.id_code %}
                         {{ order.id_code }}
                       {% else %}
-                        In cart
+                        In progress...
                       {% endif %}
                     </td>
                     <td>{{ order.date }}</td>
+                    <td>{{ order.user.employee.first_name }}</td>
                     <td>
                       <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
                     </td>
