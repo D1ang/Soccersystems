@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% crispy form form.helper %}
+
+{% block content %}
+
+<section id="cart">
+  <div class="container pt-3">
+
+    <!--Checkoutform-->
+    <div class="cart-container mt-4">
+      <div class="row">
+        <div class="col p-4">
+          <form method="POST" action="" class="uniForm" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <h5>Billing address</h5>
+            <hr>
+             <div class="form-group">
+              {{ form.company_name|as_crispy_field }}
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 mb-0">
+                {{ form.first_name|as_crispy_field }}
+              </div>
+              <div class="form-group col-md-6 mb-0">
+                {{ form.last_name|as_crispy_field }}
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 mb-0">
+                {{ form.street_address|as_crispy_field }}
+              </div>
+              <div class="form-group col-md-6 mb-0">
+                {{ form.address_line_2|as_crispy_field }}
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-5 mb-0">
+                {{ form.city|as_crispy_field }}
+              </div>
+              <div class="form-group col-md-5 mb-0">
+                {{ form.region|as_crispy_field }}
+              </div>
+              <div class="form-group col-md-2 mb-0">
+                {{ form.postal|as_crispy_field }}
+              </div>
+            </div>
+            <div class="form-group">
+              {{ form.country|as_crispy_field }}
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--Checkoutform end-->
+
+    <!--Artwork-->
+    <div class="cart-container my-4">
+      <div class="row">
+        <div class="col p-4">
+          <h5>Artwork details</h5>
+          <hr>
+          <div class="form-group">
+            {{ form.comments|as_crispy_field }}
+          </div>
+        </div>
+      </div>
+      <div class="form-row justify-content-center px-2">
+        <div class="form-group col-md-6 mb-3">
+          {{ form.artwork }}
+        </div>
+        <div class="form-group col-md-6 mb-0"> 
+          <input class="btn btn-black-sm" type="submit" value="Payment">
+        </div>
+      </div>
+    </div>
+    </form>
+    <!--Artwork end-->
+
+  </div>
+</section>
+
+{% endblock content %}
