@@ -1,7 +1,11 @@
 from .decorators import allowed_users
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.core.exceptions import ObjectDoesNotExist
+from django.contrib import messages
 from django.core.paginator import Paginator
+from django.shortcuts import render, redirect
+from orders.models import Order
+from decimal import Decimal
 
 
 @login_required
@@ -38,3 +42,42 @@ def customerpage(request):
         'finished_orders': finished_orders,
     }
     return render(request, 'accounts/customerpage.html', context)
+
+
+@login_required
+@allowed_users(allowed_roles=['employee', 'supervisor', 'admin'])
+def orderdetails(request, pk_order):
+    """
+    A orderdetail page for the customers and admin to view the selected
+    order and be able to download the provided artwork.
+    Extra security is provided to prevent URL snooping.
+    """
+    admin = request.user
+
+    if admin.is_active and admin.is_superuser:
+        order = Order.objects.get(id=pk_order)
+        tax = order.get_total() * Decimal(21 / 100)
+        total = order.get_total() + tax
+
+        context = {
+            'order': order,
+            'tax': tax,
+            'total': total
+        }
+        return render(request, 'accounts/orderdetails.html', context)
+
+    else:
+        try:
+            order = Order.objects.get(id=pk_order, user=request.user)
+            tax = order.get_total() * Decimal(21 / 100)
+            total = order.get_total() + tax
+
+            context = {
+                'order': order,
+                'tax': tax,
+                'total': total
+            }
+            return render(request, 'accounts/orderdetails.html', context)
+        except ObjectDoesNotExist:
+            messages.error(request, 'This order is not available')
+            return redirect('accounts:customerpage')
