@@ -9,3 +9,7 @@ media
 .vscode
 env.py
 env
+
+# Testing
+htmlcov
+.coverage
