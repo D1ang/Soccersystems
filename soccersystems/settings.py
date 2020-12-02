@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_filters',
     'django_excel_fixture',
+    'rest_framework',
     'phonenumber_field',
 ]
 
@@ -175,3 +176,12 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 # Crispy Forms
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
