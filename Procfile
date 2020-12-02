@@ -1,1 +1,1 @@
-web: gunicorn silkscreenservice.wsgi:application
+web: gunicorn soccersystems.wsgi:application
