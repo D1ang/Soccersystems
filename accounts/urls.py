@@ -1,15 +1,11 @@
 from django.urls import path
-from .views import (
-    adminpage,
-    customerpage,
-    orderdetails
-)
+from .views import employee, supervisor, orderdetails
 
 app_name = 'accounts'
 
 urlpatterns = [
-    path('', customerpage, name='customerpage'),
-    path('admin/', adminpage, name='adminpage'),
+    path('', employee, name='employee'),
+    path('supervisor/', supervisor, name='supervisor'),
 
     path('orderdetails/<str:pk_order>/', orderdetails, name='orderdetails'),
 ]

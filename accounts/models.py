@@ -5,9 +5,8 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 class Shop(models.Model):
     """
-    The employee model to create a
-    new employee connected to an User
-    A employee can only have 1 user & user only 1 employee
+    A shop model for employees tocconnect to.
+    1 shop can have multiple employees.
     """
     company_name = models.CharField(max_length=50)
     street_address = models.CharField(max_length=50)
@@ -28,10 +27,10 @@ class Employee(models.Model):
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     email = models.CharField(max_length=50)
     phone = PhoneNumberField(null=True, blank=True)
     mobile = PhoneNumberField(null=True, blank=True)
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.last_name

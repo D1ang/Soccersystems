@@ -5,15 +5,19 @@ from .models import Shop, Employee
 class ShopAdmin(admin.ModelAdmin):
     list_display = (
         'company_name',
-        'city'
+        'city',
+        'region'
     )
 
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = (
         'first_name',
-        'last_name'
+        'last_name',
+        'shop',
+        'email'
     )
+    exclude = ('user',)
 
 
 admin.site.register(Shop, ShopAdmin)

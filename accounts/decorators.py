@@ -17,6 +17,6 @@ def allowed_users(allowed_roles=[]):
             if group in allowed_roles:
                 return view_func(request, *args, **kwargs)
             else:
-                return redirect('accounts:adminpage')
+                return redirect('accounts:supervisor')
         return wrapper_func
     return decorator
