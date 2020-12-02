@@ -9,18 +9,18 @@ from decimal import Decimal
 
 
 @login_required
-@allowed_users(allowed_roles=['supervisor'])
-def adminpage(request):
+@allowed_users(allowed_roles=['supervisor', 'admin'])
+def supervisor(request):
     """
     A view that displays the dashboard
-    for the admin & paginate the order list.
+    for the supervisor & paginate the order list.
     """
-    return render(request, 'accounts/adminpage.html')
+    return render(request, 'accounts/supervisor.html')
 
 
 @login_required
-@allowed_users(allowed_roles=['employee', 'admin'])
-def customerpage(request):
+@allowed_users(allowed_roles=['employee'])
+def employee(request):
     """
     A view that displays the dashboard
     for the employee & paginate the order list.
@@ -41,15 +41,15 @@ def customerpage(request):
         'pending_orders': pending_orders,
         'finished_orders': finished_orders,
     }
-    return render(request, 'accounts/customerpage.html', context)
+    return render(request, 'accounts/dashboard.html', context)
 
 
 @login_required
 @allowed_users(allowed_roles=['employee', 'supervisor', 'admin'])
 def orderdetails(request, pk_order):
     """
-    A orderdetail page for the customers and admin to view the selected
-    order and be able to download the provided artwork.
+    A orderdetail page for the employees and supervisor to
+    view the selected order.
     Extra security is provided to prevent URL snooping.
     """
     admin = request.user
