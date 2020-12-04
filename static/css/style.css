@@ -10,6 +10,7 @@ html {
   font-size: 1.1rem;
   color: #000;
   background-color: #f8f9fa;
+  scroll-behavior: smooth;
 }
 
 .custom-title {
@@ -73,6 +74,79 @@ h2 {
 #id_comments {
   height: 189px;
 }
+
+
+
+
+
+/*----------------------Header---------------- */
+
+.banner-container {
+  height: 560px;
+  background: url(/static/img/banner.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.darker-overlay {
+  position: absolute;
+  left: 0;
+  height: 560px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#logo {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  margin: 80px 0 0 40px;
+  text-align: left;
+}
+
+#logo h1 {
+  font-weight: 600;
+  font-size: 110px;
+  line-height: 120px;
+  letter-spacing: 0.145em;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#logo h6 {
+  font-weight: 300;
+  font-size: 25px;
+  padding-left: 4px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  #logo h1 {
+    padding-top: 20%;
+  }
+  #logo h6 {
+    padding-top: 2%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----------------------Home sections-------------------------*/
 
@@ -184,6 +258,72 @@ h2 {
   color: #fff;
   background-color: #830000;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------Service---------------- */
+
+.service-container {
+  padding-bottom: 2px;
+  background-color: #fff;
+}
+
+.service-container h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+}
+
+.service-container i {
+  color: #fa4616;
+}
+
+.bg-ecologic {
+  height: 400px;
+  background: url(/static/img/ecologic.jpg) fixed center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+
+
+
+/*----------------------Contact---------------- */
+
+.contact-container {
+  height: 800px;
+  background: url(/static/img/contact.jpg) fixed center no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------Auth styling-------------------------*/
 
@@ -339,7 +479,7 @@ footer {
 }
 
 .footer-container h2 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Racing Sans One', cursive;
   font-weight: 100;
   font-size: 32px;
   padding-top: 2px;
@@ -348,7 +488,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .footer-container h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Racing Sans One', cursive;
     font-weight: 100;
     font-size: 18px;
     padding-top: 8px;
