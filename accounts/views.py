@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from orders.models import Order
+from .filters import OrderFilter
 from decimal import Decimal
 
 
@@ -15,7 +16,27 @@ def supervisor(request):
     A view that displays the dashboard
     for the supervisor & paginate the order list.
     """
-    return render(request, 'accounts/supervisor.html')
+    order_list = Order.objects.all().order_by('-date')
+    total_orders = order_list.count()
+    pending_orders = order_list.filter(status='pending').count()
+    finished_orders = order_list.filter(status='finished').count()
+
+    orderFilter = OrderFilter(request.GET, queryset=order_list)
+    order_list = orderFilter.qs
+
+    # Paginate the order to max 6 result per page
+    paginator = Paginator(order_list, 6)
+    page_number = request.GET.get('page')
+    page_object = paginator.get_page(page_number)
+
+    context = {
+        'page_object': page_object,
+        'total_orders': total_orders,
+        'pending_orders': pending_orders,
+        'finished_orders': finished_orders,
+        'orderFilter': orderFilter,
+    }
+    return render(request, 'accounts/supervisor.html', context)
 
 
 @login_required
