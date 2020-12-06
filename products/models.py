@@ -39,8 +39,7 @@ class ItemTag(models.Model):
     )
 
     name = models.CharField(max_length=10)
-    colour = models.CharField(
-        choices=TAG_COLOURS, max_length=10, default='Red')
+    colour = models.CharField(choices=TAG_COLOURS, max_length=10, default='Red')
 
     def __str__(self):
         return self.name
@@ -52,16 +51,14 @@ class ProductItem(models.Model):
     Urls are slug based on the slug field.
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
-    item_group = models.ForeignKey(ItemGroup, null=True,
-                                   blank=True, on_delete=models.SET_NULL)
+    item_group = models.ForeignKey(ItemGroup, null=True, blank=True, on_delete=models.SET_NULL)
     slug = models.SlugField()
     description = models.CharField(max_length=25)
     size = models.IntegerField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    stock = models.IntegerField()
     image = models.ImageField(upload_to='images', null=True, blank=True)
-    clicks = models.IntegerField(default=0)
-    tag = models.ForeignKey(
-        ItemTag, null=True, blank=True, on_delete=models.SET_NULL)
+    tag = models.ForeignKey(ItemTag, null=True, blank=True, on_delete=models.SET_NULL)
 
     def get_add_to_cart_url(self):
         return reverse('orders:add_to_cart', kwargs={
