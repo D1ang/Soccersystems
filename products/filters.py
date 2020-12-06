@@ -12,4 +12,4 @@ class ItemFilter(filters.FilterSet):
 
     class Meta:
         model = ProductItem
-        fields = ['slug']
+        fields = ['description', 'item_group', 'size']
