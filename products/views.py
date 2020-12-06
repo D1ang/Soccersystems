@@ -30,7 +30,6 @@ def products_list(request):
         'page_object': page_object,
         'itemFilter': itemFilter,
     }
-
     return render(request, 'products/products.html', context)
 
 
@@ -43,8 +42,17 @@ def product_items(request, pk_product):
 
     product_item_list = ProductItem.objects.filter(product_group=pk_product)
 
-    context = {
-        'product_item_list': product_item_list
-    }
+    itemFilter = ItemFilter(request.GET, queryset=product_item_list)
+    product_item_list = itemFilter.qs
 
+    # Paginate the order to max 6 result per page
+    paginator = Paginator(product_item_list, 15)
+    page_number = request.GET.get('page')
+    page_object = paginator.get_page(page_number)
+
+    context = {
+        'product_item_list': product_item_list,
+        'page_object': page_object,
+        'itemFilter': itemFilter,
+    }
     return render(request, 'products/product_items.html', context)
