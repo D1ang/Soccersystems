@@ -14,7 +14,7 @@
           {% for product in product_list %}
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
               <div class="card w-100 fixed-card-height rounded-0">
-                <img class="card-img-top rounded-0" src="../media/{{ product.image }}" alt="{{ product.productname }}">
+                <img class="card-img-top rounded-0" src="{{ product.image.url }}" alt="{{ product.productname }}">
                 <div class="card-body d-flex flex-column">
                   <h6 class="card-title text-center">
                     <a href="{% url 'products:product_items' product.id %}">{{ product.productname|upper }}</a>
@@ -29,36 +29,33 @@
       </div>
     </div>
 
-
-
-
-        <!--Ordersearch-->
-        <div class="row">
-          <div class="col-12">
-            <div class="custom-card rounded-0 py-2">
-              <form id="auth-form" method="GET" action="" enctype="uniForm">
-                <div class="form-row align-items-center">
-                  <div class="col-lg-4 col-sm-12 my-1">
-                    {{ itemFilter.form.description }}
-                  </div>
-                  <div class="col-lg-2 col-sm-12 my-1">
-                    {{ orderFilter.form.status }}
-                  </div>
-                  <div class="col-lg-2 col-sm-12 my-1">
-                    {{ orderFilter.form.start_date }}
-                  </div>
-                  <div class="col-lg-2 col-sm-12 my-1">
-                    <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">Search</button>
-                  </div>
-                  <div class="col-lg-2 col-sm-12 my-1">
-                    <a class="btn btn-black-sm" href="">Reset</a>
-                  </div>
-                </div>
-              </form>
+    <!--Ordersearch-->
+    <div class="row">
+      <div class="col-12">
+        <div class="custom-card rounded-0 py-1">
+          <form id="auth-form" method="GET" action="" enctype="uniForm">
+            <div class="form-row align-items-center">
+              <div class="col-lg-4 col-sm-12 my-1">
+                {{ itemFilter.form.description }}
+              </div>
+              <div class="col-lg-2 col-sm-12 my-1">
+                {{ itemFilter.form.item_group }}
+              </div>
+              <div class="col-lg-2 col-sm-12 my-1">
+                {{ itemFilter.form.size }}
+              </div>
+              <div class="col-lg-2 col-sm-12 my-1">
+                <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">Search</button>
+              </div>
+              <div class="col-lg-2 col-sm-12 my-1">
+                <a class="btn btn-black-sm" href="">Reset</a>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-        <!--Ordersearch end-->
+      </div>
+    </div>
+    <!--Ordersearch end-->
 
 
 
@@ -68,68 +65,73 @@
 
 
 
-<!--Orderdetails-->
-          <div class="custom-card rounded-0 mt-3">
-            <table id="dataTable" class="nowrap table table-sm height-fix">
-              <thead>
-                <tr>
-                  <th>Order ID</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for item in page_object %}
-                  <tr>
-                    <td>
-                      {% if order.id_code %}
-                        {{ order.id_code }}
-                      {% else %}
-                        In cart
-                      {% endif %}
-                    </td>
-                    <td>{{ item.description }}</td>
-                    <td>
-                      {{ item.product_group }}
-                      <span class="badge badge-pill badge-{{ item.price }}">{{ order.status }}</span>
-                    </td>
-                    <td>
-                      </a>
-                      <form method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
-                        <input name='qty' type="number">
-                        <input type="submit" value="Add to order">
-                      </form>
-                    </td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-          <!--Orderdetails end-->
+    <!--Orderdetails-->
+    <div class=" rounded-0 mt-3">
+      <table id="dataTable" class="nowrap table table-sm height-fix">
+        <thead>
+          <tr>
+            <th> </th>
+            <th>Article</th>
+            <th>Group</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in page_object %}
+          <tr>
+            <td>
+              <img src="{{ item.image.url }}" alt="" height="50">              
+            </td>
+            <td>
+              {{ item.slug }}<br>
+              {{ item.name }}
+            </td>
+            <td>
+              {{ item.item_group }}
+            </td>
+            <td>
+              € {{ item.price }}
+            </td>
+            <td>
+              <form class="form-inline" method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
+                <input class="amount-field" name='qty' type="number" min="25" step="25" value="25">
+                <input type="submit" value="Add">
+              </form>
+            </td>
+            <td>
+              {{ item.stock }}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <!--Orderdetails end-->
 
 
-        <!--Paginator-->
-        <div class="row mb-5">
-          <div class="col">
-            <span>
-              {% if page_object.has_previous %}
-              <a href="?page={{ page_object.previous_page_number }}" class="subtext">
-                <i class="fas fa-angle-double-left"></i> previous</a>
-              {% endif %}
+    <!--Paginator-->
+    <div class="row mb-5">
+      <div class="col">
+        <span>
+          {% if page_object.has_previous %}
+          <a href="?page={{ page_object.previous_page_number }}" class="subtext">
+            <i class="fas fa-angle-double-left"></i> previous</a>
+          {% endif %}
 
-              <span class="subtext-bold px-1">
-                page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
-              </span>
+          <span class="subtext-bold px-1">
+            page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+          </span>
 
-              {% if page_object.has_next %}
-              <a href="?page={{ page_object.next_page_number }}" class="subtext">next
-                <i class="fas fa-angle-double-right"></i></a>
-              {% endif %}
-            </span>
-          </div>
-        </div>
-        <!--Paginator end-->
+          {% if page_object.has_next %}
+          <a href="?page={{ page_object.next_page_number }}" class="subtext">next
+            <i class="fas fa-angle-double-right"></i></a>
+          {% endif %}
+        </span>
+      </div>
+    </div>
+    <!--Paginator end-->
 
 
 

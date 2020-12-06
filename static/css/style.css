@@ -607,7 +607,7 @@ footer {
   width: 100%;
   color: #fff;
   background-color: #000;
-  border-radius: 6px;
+  border-radius: 0px;
   font-size: 1.1rem;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -695,4 +695,11 @@ table.dataTable > tbody > tr.child ul.dtr-details > li {
 
 .upload-success-text {
   color: #b20000;
+}
+
+.amount-field {
+  background-color: #fff;
+  width: 30%;
+  border: 1px solid #a3a3a3;
+  margin-right: 10px;
 }
