@@ -1,0 +1,3722 @@
+[
+    {
+        "model": "products.productitem",
+        "pk": 1,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202500",
+            "description": "Nr. 0",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 2,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202501",
+            "description": "Nr. 1",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 3,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202502",
+            "description": "Nr. 2",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 4,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202503",
+            "description": "Nr. 3",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 5,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202504",
+            "description": "Nr. 4",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 6,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202505",
+            "description": "Nr. 5",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 7,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202506",
+            "description": "Nr. 6",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 8,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202507",
+            "description": "Nr. 7",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 9,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202508",
+            "description": "Nr. 8",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 10,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH202509",
+            "description": "Nr. 9",
+            "size": 25,
+            "price": "0.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 11,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201600",
+            "description": "Nr. 0",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 12,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201601",
+            "description": "Nr. 1",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 13,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201602",
+            "description": "Nr. 2",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 14,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201603",
+            "description": "Nr. 3",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 15,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201604",
+            "description": "Nr. 4",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 16,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201605",
+            "description": "Nr. 5",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 17,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201606",
+            "description": "Nr. 6",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 18,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201607",
+            "description": "Nr. 7",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 19,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201608",
+            "description": "Nr. 8",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 20,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201609",
+            "description": "Nr. 9",
+            "size": 16,
+            "price": "0.62",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 21,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201000",
+            "description": "Nr. 0 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 22,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201001",
+            "description": "Nr. 1 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 23,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201002",
+            "description": "Nr. 2 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 24,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201003",
+            "description": "Nr. 3 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 25,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201004",
+            "description": "Nr. 4 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 26,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201005",
+            "description": "Nr. 5 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 27,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201006",
+            "description": "Nr. 6 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 28,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201007",
+            "description": "Nr. 7 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 29,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201008",
+            "description": "Nr. 8 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 30,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH201009",
+            "description": "Nr. 9 (short)",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 31,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200900",
+            "description": "Nr. 0 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 32,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200901",
+            "description": "Nr. 1 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 33,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200902",
+            "description": "Nr. 2 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 34,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200903",
+            "description": "Nr. 3 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 35,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200904",
+            "description": "Nr. 4 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 36,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200905",
+            "description": "Nr. 5 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 37,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200906",
+            "description": "Nr. 6 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 38,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200907",
+            "description": "Nr. 7 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 39,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200908",
+            "description": "Nr. 8 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 40,
+        "fields": {
+            "product_group": 1,
+            "item_group": 3,
+            "slug": "XH200909",
+            "description": "Nr. 9 (baby)",
+            "size": 10,
+            "price": "0.53",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 41,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060A",
+            "description": "Letter A",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "images/XH20060A_8L8MZtA.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 42,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060B",
+            "description": "Letter B",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 43,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060C",
+            "description": "Letter C",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 44,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060D",
+            "description": "Letter D",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 45,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060E",
+            "description": "Letter E",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 46,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060F",
+            "description": "Letter F",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 47,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060G",
+            "description": "Letter G",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 48,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060H",
+            "description": "Letter H",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 49,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060I",
+            "description": "Letter I",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 50,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060J",
+            "description": "Letter J",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 51,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060K",
+            "description": "Letter K",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 52,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060L",
+            "description": "Letter L",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 53,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060M",
+            "description": "Letter M",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 54,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060N",
+            "description": "Letter N",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 55,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060O",
+            "description": "Letter O",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 56,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060P",
+            "description": "Letter P",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 57,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060Q",
+            "description": "Letter Q",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 58,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060R",
+            "description": "Letter R",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 59,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060S",
+            "description": "Letter S",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 60,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060T",
+            "description": "Letter T",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 61,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060U",
+            "description": "Letter U",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 62,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060V",
+            "description": "Letter V",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 63,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060W",
+            "description": "Letter W",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 64,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060X",
+            "description": "Letter X",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 65,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060Y",
+            "description": "Letter Y",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 66,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060Z",
+            "description": "Letter Z",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 67,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH200600",
+            "description": "Letter �",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 68,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20060_",
+            "description": "Leestekens",
+            "size": 6,
+            "price": "0.15",
+            "stock": 0,
+            "image": "None",
+            "tag": 1
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 69,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006AZ",
+            "description": "Naamblok �LVAREZ",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006AZ.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 71,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006BL",
+            "description": "Naamblok BABEL",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006BL.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 72,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006BD",
+            "description": "Naamblok BLIND",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006BD.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 73,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006BN",
+            "description": "Naamblok BOTMAN",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006BN.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 74,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006DO",
+            "description": "Naamblok DANILO",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006DO.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 75,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006DW",
+            "description": "Naamblok DE WIT",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006DW.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 76,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006DS",
+            "description": "Naamblok DEST",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006DS.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 77,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006EG",
+            "description": "Naamblok EITING",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006EG.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 78,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006EP",
+            "description": "Naamblok EKKELENKAMP",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006EP.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 79,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006GH",
+            "description": "Naamblok GRAVENBERCH",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006GH.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 80,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006HN",
+            "description": "Naamblok HANSEN",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006HN.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 81,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006HR",
+            "description": "Naamblok HUNTELAAR",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006HR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 82,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006JR",
+            "description": "Naamblok J. TIMBER",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006JR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 83,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006KN",
+            "description": "Naamblok KLAASSEN",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006KN.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 84,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006KR",
+            "description": "Naamblok KLAIBER",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006KR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 86,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006LD",
+            "description": "Naamblok LABYAD",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006LD.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 87,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006LG",
+            "description": "Naamblok LANG",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006LG.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 88,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006MN",
+            "description": "Naamblok MARIN",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006MN.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 89,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006MZ",
+            "description": "Naamblok MARTINEZ",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006MZ.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 90,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006MI",
+            "description": "Naamblok MAZRAOUI",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006MI.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 91,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006NS",
+            "description": "Naamblok NERES",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006NS.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 92,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006PE",
+            "description": "Naamblok PIERIE",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006PE.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 93,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006PS",
+            "description": "Naamblok PROMES",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006PS.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 94,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006QR",
+            "description": "Naamblok Q. TIMBER",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006QR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 95,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006SS",
+            "description": "Naamblok SCHUURS",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006SS.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 96,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006TC",
+            "description": "Naamblok TADIC",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006TC.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 97,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006TO",
+            "description": "Naamblok TAGLIAFICO",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006TO.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 98,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006TR",
+            "description": "Naamblok TAYLOR",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006TR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 99,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006TE",
+            "description": "Naamblok TRAORE",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006TE.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 100,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006UR",
+            "description": "Naamblok �N�VAR",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006UR.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 101,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006VK",
+            "description": "Naamblok VAN DE BEEK",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006VK.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 102,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006ZH",
+            "description": "Naamblok ZIYECH",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "images/XH2006ZH.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 103,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040A",
+            "description": "Letter A (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "images/XH20060A_DY4kxa8.png",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 104,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040B",
+            "description": "Letter B (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 105,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040C",
+            "description": "Letter C (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 106,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040D",
+            "description": "Letter D (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 107,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040E",
+            "description": "Letter E (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 108,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040F",
+            "description": "Letter F (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 109,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040G",
+            "description": "Letter G (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 110,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040H",
+            "description": "Letter H (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 111,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040I",
+            "description": "Letter I (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 112,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040J",
+            "description": "Letter J (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 113,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040K",
+            "description": "Letter K (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 114,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040L",
+            "description": "Letter L (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 115,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040M",
+            "description": "Letter M (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 116,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040N",
+            "description": "Letter N (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 117,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040O",
+            "description": "Letter O (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 118,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040P",
+            "description": "Letter P (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 119,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040Q",
+            "description": "Letter Q (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 120,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040R",
+            "description": "Letter R (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 121,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040S",
+            "description": "Letter S (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 122,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040T",
+            "description": "Letter T (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 123,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040U",
+            "description": "Letter U (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 124,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040V",
+            "description": "Letter V (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 125,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040W",
+            "description": "Letter W (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 126,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040X",
+            "description": "Letter X (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 127,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040Y",
+            "description": "Letter Y (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 128,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040Z",
+            "description": "Letter Z (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 129,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH200400",
+            "description": "Letter � (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 130,
+        "fields": {
+            "product_group": 1,
+            "item_group": 2,
+            "slug": "XH20040_",
+            "description": "Leestekens (baby)",
+            "size": 4,
+            "price": "0.13",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 131,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202500",
+            "description": "Nr. 0",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 132,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202501",
+            "description": "Nr. 1",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 133,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202502",
+            "description": "Nr. 2",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 134,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202503",
+            "description": "Nr. 3",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 135,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202504",
+            "description": "Nr. 4",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 136,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202505",
+            "description": "Nr. 5",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 137,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202506",
+            "description": "Nr. 6",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 138,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202507",
+            "description": "Nr. 7",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 139,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202508",
+            "description": "Nr. 8",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 140,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA202509",
+            "description": "Nr. 9",
+            "size": 25,
+            "price": "0.85",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 141,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201600",
+            "description": "Nr. 0",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 142,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201601",
+            "description": "Nr. 1",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 143,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201602",
+            "description": "Nr. 2",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 144,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201603",
+            "description": "Nr. 3",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 145,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201604",
+            "description": "Nr. 4",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 146,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201605",
+            "description": "Nr. 5",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 147,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201606",
+            "description": "Nr. 6",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 148,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201607",
+            "description": "Nr. 7",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 149,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201608",
+            "description": "Nr. 8",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 150,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201609",
+            "description": "Nr. 9",
+            "size": 16,
+            "price": "0.55",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 151,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201000",
+            "description": "Nr. 0",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 152,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201001",
+            "description": "Nr. 1",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 153,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201002",
+            "description": "Nr. 2",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 154,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201003",
+            "description": "Nr. 3",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 155,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201004",
+            "description": "Nr. 4",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 156,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201005",
+            "description": "Nr. 5",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 157,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201006",
+            "description": "Nr. 6",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 158,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201007",
+            "description": "Nr. 7",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 159,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201008",
+            "description": "Nr. 8",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 160,
+        "fields": {
+            "product_group": 3,
+            "item_group": 3,
+            "slug": "XA201009",
+            "description": "Nr. 9",
+            "size": 10,
+            "price": "0.45",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 161,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060A",
+            "description": "Letter A",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 162,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060B",
+            "description": "Letter B",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 163,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060C",
+            "description": "Letter C",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 164,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060D",
+            "description": "Letter D",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 165,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060E",
+            "description": "Letter E",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 166,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060F",
+            "description": "Letter F",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 167,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060G",
+            "description": "Letter G",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 168,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060H",
+            "description": "Letter H",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 169,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060I",
+            "description": "Letter I",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 170,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060J",
+            "description": "Letter J",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 171,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060K",
+            "description": "Letter K",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 172,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060L",
+            "description": "Letter L",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 173,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060M",
+            "description": "Letter M",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 174,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060N",
+            "description": "Letter N",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 175,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060O",
+            "description": "Letter O",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 176,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060P",
+            "description": "Letter P",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 177,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060Q",
+            "description": "Letter Q",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 178,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060R",
+            "description": "Letter R",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 179,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060S",
+            "description": "Letter S",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 180,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060T",
+            "description": "Letter T",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 181,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060U",
+            "description": "Letter U",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 182,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060V",
+            "description": "Letter V",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 183,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060W",
+            "description": "Letter W",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 184,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060X",
+            "description": "Letter X",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 185,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060Y",
+            "description": "Letter Y",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 186,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060Z",
+            "description": "Letter Z",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 187,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA200600",
+            "description": "Letter �",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 188,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20060_",
+            "description": "Leestekens",
+            "size": 6,
+            "price": "0.12",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 189,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006AZ",
+            "description": "Naamblok �LVAREZ",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 190,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006AY",
+            "description": "Naamblok ANTONY",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 191,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006BL",
+            "description": "Naamblok BABEL",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 192,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006BD",
+            "description": "Naamblok BLIND",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 193,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006BN",
+            "description": "Naamblok BOTMAN",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 194,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006DO",
+            "description": "Naamblok DANILO",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 195,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006DW",
+            "description": "Naamblok DE WIT",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 196,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006DS",
+            "description": "Naamblok DEST",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 197,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006EG",
+            "description": "Naamblok EITING",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 198,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006EP",
+            "description": "Naamblok EKKELENKAMP",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 199,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006GH",
+            "description": "Naamblok GRAVENBERCH",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 200,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006HN",
+            "description": "Naamblok HANSEN",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 201,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006HR",
+            "description": "Naamblok HUNTELAAR",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 202,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006JR",
+            "description": "Naamblok J. TIMBER",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 203,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006KN",
+            "description": "Naamblok KLAASSEN",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 204,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006KR",
+            "description": "Naamblok KLAIBER",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 205,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006KS",
+            "description": "Naamblok KUDUS",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 206,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006LD",
+            "description": "Naamblok LABYAD",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 207,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006LG",
+            "description": "Naamblok LANG",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 208,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006MN",
+            "description": "Naamblok MARIN",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 209,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006MZ",
+            "description": "Naamblok MARTINEZ",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 210,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006MI",
+            "description": "Naamblok MAZRAOUI",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 211,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006NS",
+            "description": "Naamblok NERES",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 212,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006PE",
+            "description": "Naamblok PIERIE",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 213,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006PS",
+            "description": "Naamblok PROMES",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 214,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006QR",
+            "description": "Naamblok Q. TIMBER",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 215,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006SS",
+            "description": "Naamblok SCHUURS",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 216,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006TC",
+            "description": "Naamblok TADIC",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 217,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006TO",
+            "description": "Naamblok TAGLIAFICO",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 218,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006TR",
+            "description": "Naamblok TAYLOR",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 219,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006TE",
+            "description": "Naamblok TRAORE",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 220,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006UR",
+            "description": "Naamblok �N�VAR",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 221,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006VK",
+            "description": "Naamblok VAN DE BEEK",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 222,
+        "fields": {
+            "product_group": 3,
+            "item_group": 1,
+            "slug": "XA2006ZH",
+            "description": "Naamblok ZIYECH",
+            "size": 6,
+            "price": "1.95",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 223,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040A",
+            "description": "Letter A (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 224,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040B",
+            "description": "Letter B (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 225,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040C",
+            "description": "Letter C (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 226,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040D",
+            "description": "Letter D (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 227,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040E",
+            "description": "Letter E (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 228,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040F",
+            "description": "Letter F (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 229,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040G",
+            "description": "Letter G (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 230,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040H",
+            "description": "Letter H (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 231,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040I",
+            "description": "Letter I (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 232,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040J",
+            "description": "Letter J (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 233,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040K",
+            "description": "Letter K (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 234,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040L",
+            "description": "Letter L (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 235,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040M",
+            "description": "Letter M (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 236,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040N",
+            "description": "Letter N (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 237,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040O",
+            "description": "Letter O (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 238,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040P",
+            "description": "Letter P (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 239,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040Q",
+            "description": "Letter Q (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 240,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040R",
+            "description": "Letter R (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 241,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040S",
+            "description": "Letter S (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 242,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040T",
+            "description": "Letter T (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 243,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040U",
+            "description": "Letter U (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 244,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040V",
+            "description": "Letter V (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 245,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040W",
+            "description": "Letter W (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 246,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040X",
+            "description": "Letter X (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 247,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040Y",
+            "description": "Letter Y (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 248,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040Z",
+            "description": "Letter Z (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 249,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA200400",
+            "description": "Letter � (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 250,
+        "fields": {
+            "product_group": 3,
+            "item_group": 2,
+            "slug": "XA20040_",
+            "description": "Leestekens (baby)",
+            "size": 4,
+            "price": "0.10",
+            "stock": 0,
+            "image": "None",
+            "tag": null
+        }
+    }
+]
