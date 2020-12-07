@@ -33,7 +33,7 @@ html {
 
 a.subtext:link,
 a.subtext:visited {
-  color: #fff;
+  color: rgb(190, 19, 53);
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -70,14 +70,6 @@ h2 {
 .custom-file-input {
   cursor: pointer;
 }
-
-#id_comments {
-  height: 189px;
-}
-
-
-
-
 
 /*----------------------Header---------------- */
 
@@ -186,7 +178,7 @@ h2 {
   -webkit-transition: top 0.3s;
   -o-transition: top 0.3s;
   transition: top 0.3s;
-  background-color: #c01336;
+  background-color: rgb(190, 19, 53);
 }
 
 .custom-navbarLogo {
@@ -374,9 +366,9 @@ hr.dashboard {
 }
 
 .custom-card {
-  background: rgba(0, 0, 0, 0.18);
+  background: #fff;
   padding: 0 8px 40px 8px;
-  border-radius: 7px;
+  border-radius: 0px;
 }
 
 .badge-requested {
@@ -409,17 +401,44 @@ hr.dashboard {
   background-color: #5cb85c;
 }
 
-/*----------------------Products styling-----------------------*/
+/*----------------------Products styling-----------------------!!!!!!!!!!!!!!!!*/
 
 #products {
   padding-top: 80px;
 }
 
-.service-badge {
-  font-size: 17px;
-  font-weight: 300;
-  vertical-align: 4px;
-  margin-left: 5px;
+#id_comments {
+  height: 189px;
+}
+
+#id_description {
+  width: 100%;
+  height: 44px; 
+  padding-left: 10px;
+  margin: 11px 0 11px 0;
+}
+
+#id_item_group {
+  width: 100%;
+  height: 44px;
+  padding-left: 10px;
+  margin: 11px 0 11px 0;
+}
+
+#id_size {
+  width: 100%;
+  height: 44px;  
+  padding-left: 10px;
+  margin: 11px 0 11px 0;
+}
+
+#amount-inputfield {
+  background-color: rgb(255, 255, 255);
+  height: 35px;
+  width: 45%;
+  border: 1px solid rgb(163, 163, 163);
+  padding-left: 8px;
+  margin-right: -1px;
 }
 
 /*------------------------Cart styling-------------------------*/
@@ -615,7 +634,7 @@ footer {
 }
 
 .btn-black-sm:hover {
-  background-color: #fff;
+  background-color: rgb(190, 190, 190);
 }
 
 .btn-gray-sm {
@@ -658,7 +677,11 @@ footer {
 .table > tbody > tr > td {
   border: 0px;
   padding: 10px;
-  border-top: solid 1px rgba(0, 0, 0, 0.5);
+  border-top: solid 1px rgba(82, 82, 82, 0.192);
+}
+
+.tablerows {
+  background-color: #fff;
 }
 
 .table thead > tr > th {
@@ -695,11 +718,4 @@ table.dataTable > tbody > tr.child ul.dtr-details > li {
 
 .upload-success-text {
   color: #b20000;
-}
-
-.amount-field {
-  background-color: #fff;
-  width: 30%;
-  border: 1px solid #a3a3a3;
-  margin-right: 10px;
 }

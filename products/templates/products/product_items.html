@@ -3,48 +3,126 @@
 
 {% block content %}
 
-<!--Orderdetails-->
-          <div class="custom-card mt-3">
-            <table id="dataTable" class="nowrap table table-sm height-fix">
-              <thead>
-                <tr>
-                  <th>Order ID</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for item in page_object %}
-                  <tr>
-                    <td>
-                      {% if order.id_code %}
-                        {{ order.id_code }}
-                      {% else %}
-                        In cart
-                      {% endif %}
-                    </td>
-                    <td>{{ item.description }}</td>
-                    <td>
-                      <span class="badge badge-pill badge-{{ item.price }}">{{ order.status }}</span>
-                    </td>
-                    <td>
-                      
-                       <form method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
-                        <input name='qty' type="number">
-                        <input type="submit" value="Add to order">
-                      </form>
+<!--Products top-->
+<section id="products">
+  <div class="container-fluid">
 
-                      <a class="subtext" href="">
-                        <i class="far fa-eye"></i>
-                      </a>
-                    </td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
+    <!--Product groups-->
+    <div class="row">
+      {% for product in product_list %}
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card w-100 fixed-card-height rounded-0">
+            <img class="card-img-top rounded-0" src="{{ product.image.url }}" alt="{{ product.productname }}">
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title text-center">
+                <a href="{% url 'products:product_items' product.id %}">{{ product.productname|upper }}</a>
+              </h6>
+            </div>
           </div>
-          <!--Orderdetails end-->
+        </div>
+      {% endfor %}
+    </div>
+    <!--Product groups end-->
 
+    <!--Ordersearch-->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="card px-2 rounded-0">
+          <form id="auth-form" method="GET" action="" enctype="uniForm">
+            <div class="form-row align-items-center">
+              <div class="col-lg-4 col-sm-12">
+                {{ itemFilter.form.description }}
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                {{ itemFilter.form.item_group }}
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                {{ itemFilter.form.size }}
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">Search</button>
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                <a class="btn btn-black-sm" href="{% url 'products:products' %}">Reset</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Ordersearch end-->
+
+    <!--Order items-->
+    <div class="row">
+      <div class="col-12">
+        <table id="dataTable" class="nowrap table table-sm height-fix border" style="width:100%">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Article</th>
+              <th>Group</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody class="tablerows">
+            {% for item in page_object %}
+            <tr>
+              <td>
+                <img src="{{ item.image.url }}" alt="" height="50">              
+              </td>
+              <td>
+                <strong>{{ item.slug }}</strong><br>
+                {{ item.name }}
+              </td>
+              <td>
+                {{ item.item_group }}
+              </td>
+              <td>
+                € {{ item.price }}
+              </td>
+              <td>
+                {{ item.stock }}
+              </td>
+              <td>
+                <form class="form-inline" method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
+                  <input id="amount-inputfield" name='qty' type="number" min="25" step="25" value="25">
+                  <input type="submit" value="Add">
+                </form>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--Order items end-->
+
+    <!--Paginator-->
+    <div class="row mb-5">
+      <div class="col-12">
+        <span>
+          {% if page_object.has_previous %}
+          <a href="{{ request.get_full_path }}&page={{ page_object.previous_page_number }}" class="subtext">
+            <i class="fas fa-angle-double-left"></i> prev</a>
+          {% endif %}
+
+          <span class="subtext-bold px-1">
+            page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+          </span>
+
+          {% if page_object.has_next %}
+          <a href="{{ request.get_full_path }}&page={{ page_object.next_page_number }}" class="subtext">next
+            <i class="fas fa-angle-double-right"></i></a>
+          {% endif %}
+        </span>
+      </div>
+    </div>
+    <!--Paginator end-->
+
+  </div>
+</section>
+<!--products top end-->
 
 {% endblock content %}
