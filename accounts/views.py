@@ -5,8 +5,10 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from orders.models import Order
+from .forms import InviteForm
 from .filters import OrderFilter
 from decimal import Decimal
+from invitations.utils import get_invitation_model
 
 
 @login_required
@@ -102,3 +104,14 @@ def orderdetails(request, pk_order):
         except ObjectDoesNotExist:
             messages.error(request, 'This order is not available')
             return redirect('accounts:customerpage')
+
+
+def invite(request):
+    """
+    An invite page for the supervisor to invite employees
+    to register their account.
+    """
+    form = InviteForm()
+    context = {'form': form}
+
+    return render(request, 'accounts/invite.html', context)
