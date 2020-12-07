@@ -33,7 +33,7 @@ $(document).ready(function() {
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementById('custom-navbar').style.top = '0';
 		} else {
-			document.getElementById('custom-navbar').style.top = '-62px';
+			document.getElementById('custom-navbar').style.top = '-63px';
 		}
 		prevScrollpos = currentScrollPos;
 	};
