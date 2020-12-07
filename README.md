@@ -359,3 +359,25 @@ Illustrations: https://illlustrations.co/
 - Django 3.0 documentation [link](https://docs.djangoproject.com/en/3.0/)
 - Django Admin Cookbook [link](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/introduction.html)
 - SVG compressing [link](https://www.compresss.com/compress-svg.htm)
+
+
+
+
+
+
+
+
+PRODUCTS:
+OM en om style op tabellen (wit-grijs)
+Tabellen beter responsive maken
+Product groepen hover zoom effect
+Add buttons beter stylen naar zwart
+Paginator links
+
+
+SOCCERSYSTEMS:
+urls
+
+
+REQUIREMENTS
+Cleanup
