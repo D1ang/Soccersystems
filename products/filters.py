@@ -1,5 +1,6 @@
 import django_filters as filters
-from products.models import ProductItem
+from products.models import ItemGroup, ProductItem
+from django.forms.widgets import TextInput
 
 
 class ItemFilter(filters.FilterSet):
@@ -8,7 +9,20 @@ class ItemFilter(filters.FilterSet):
     This will search through the ProductItem model
     and filter out the request provided by the user.
     """
-    description = filters.CharFilter(lookup_expr='icontains')
+    description = filters.CharFilter(
+        lookup_expr='icontains',
+        widget=TextInput(attrs={'placeholder': 'Article name'})
+    )
+
+    item_group = filters.ModelChoiceFilter(
+        queryset=ItemGroup.objects.all(),
+        empty_label=('Group')
+    )
+
+    size = filters.CharFilter(
+        lookup_expr='icontains',
+        widget=TextInput(attrs={'placeholder': 'Size'})
+    )
 
     class Meta:
         model = ProductItem

@@ -81,6 +81,7 @@ class ProductItem(models.Model):
         ordering = ['product_group', 'description', 'size']
 
     def __str__(self):
+        # Returns the articles full description for valuelists.
         return '%s / %s / %s cm' % (self.product_group,
                                     self.description,
                                     self.size)

@@ -12,7 +12,6 @@ def products_list(request):
     groups and all available product items
     on 1 page.
     """
-
     product_list = ProductGroup.objects.all()
     product_item_list = ProductItem.objects.all()
 
@@ -39,7 +38,7 @@ def product_items(request, pk_product):
     A product items page for the employee
     to view and order articles.
     """
-
+    product_list = ProductGroup.objects.all()
     product_item_list = ProductItem.objects.filter(product_group=pk_product)
 
     itemFilter = ItemFilter(request.GET, queryset=product_item_list)
@@ -51,6 +50,7 @@ def product_items(request, pk_product):
     page_object = paginator.get_page(page_number)
 
     context = {
+        'product_list': product_list,
         'product_item_list': product_item_list,
         'page_object': page_object,
         'itemFilter': itemFilter,
