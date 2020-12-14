@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
-{% load static %}
-
 {% block content %}
 
 <section id="cart">
-  <div class="container pt-3">
+  <div class="container-fluid">
 
     <!--Checkout items-->
-    <div class="cart-container mt-4">
+    <div class="card rounded-0">
       <table class="nowrap table table-sm height-fix">
         <thead>
           <tr>
             <th>Items </th>
+            <th>Amount</th>
             <th class="cart-align-right">Price</th>
           </tr>
         </thead>
@@ -20,6 +19,7 @@
           {% for order_item in order.items.all %}
             <tr>
               <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
+              <td>{{ order_item.quantity }}</td>
               <td class="cart-align-right">{{ order_item.item.price }}€</td>
             </tr>
           {% endfor %}
@@ -30,8 +30,8 @@
   <!--Checkout items end-->
 
   <!--Payment details-->
-  <div class="container">
-    <div class="cart-container my-4">
+  <div class="container-fluid my-4">
+    <div class="card rounded-0">
       <table class="nowrap table table-sm height-fix">
         <thead>
           <tr>
