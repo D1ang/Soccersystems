@@ -46,7 +46,7 @@ class PaymentView(LoginRequiredMixin, View):
 
         except ObjectDoesNotExist:
             messages.warning(self.request, 'There is no active order')
-            return redirect('orders:services')
+            return redirect('orders:cart')
 
     def post(self, *args, **kwargs):
         """
@@ -79,4 +79,4 @@ class PaymentView(LoginRequiredMixin, View):
         order.save()
 
         messages.success(self.request, 'Your order was successful!')
-        return redirect('accounts:customerpage')
+        return redirect('accounts:employee')
