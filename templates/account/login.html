@@ -6,9 +6,9 @@
 
 <!--Login-->
 <section id="auth">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 p-3 mt-5">
+      <div class="col p-3 mt-5">
         <div class="auth-custom-card w-100 fixed-card-height">
           <div class="card-body d-flex flex-column">
             <h4 class="card-title text-center text-uppercase">account login</h4>
@@ -22,13 +22,13 @@
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fas fa-user"></i></div>
+                  <div class="input-group-text rounded-0"><i class="fas fa-user"></i></div>
                 </div>
                 {{ form.login }}
               </div>
-              <div class="input-group mb-2 pb-4">
+              <div class="input-group mb-3 pb-4">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fas fa-key"></i></div>
+                  <div class="input-group-text rounded-0"><i class="fas fa-key"></i></div>
                 </div>
                 {{ form.password }}
               </div>
@@ -44,15 +44,12 @@
                 <p>Don't have an account?</p>
               </div>
               <div class="col-12 text-center">
-                <p><a href="{{ signup_url }}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Sign up</a></p>
+                <p><a href="{% url 'home:index' %}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Send a request</a></p>
               </div>
             </div>
 
           </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 p-3 mt-3">
-        <img src="{% static 'svg/designer-shop.svg' %}" class="img-fluid pl-4" alt="designer-shop">
       </div>
     </div>
   </div>

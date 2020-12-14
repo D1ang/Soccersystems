@@ -322,6 +322,7 @@ h2 {
 #auth {
   min-height: 100%;
   padding-top: 60px;
+  background-color: #5cb85c;
 }
 
 .auth-custom-card {
@@ -346,6 +347,11 @@ h2 {
   padding: 6px 0px 6px 16px;
   margin-top: 10px;
   font-size: 18px;
+}
+
+
+.form-control {
+  border-radius: 0;
 }
 
 /*----------------------Dashboard styling----------------------*/
@@ -433,29 +439,19 @@ hr.dashboard {
 }
 
 #amount-inputfield {
-  background-color: rgb(255, 255, 255);
   height: 35px;
   width: 45%;
-  border: 1px solid rgb(163, 163, 163);
   padding-left: 8px;
   margin-right: -1px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(163, 163, 163);
 }
 
-/*------------------------Cart styling-------------------------*/
+/*------------------------Cart styling-------------------------!!!!!!!!!!!!!!!!*/
 
 #cart {
-  background-image: url(/static/svg/wallet.svg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 35%;
   min-height: 100%;
-  padding-top: 60px;
-}
-
-.cart-container {
-  background: rgba(0, 0, 0, 0.18);
-  padding: 0 8px 40px 8px;
-  border-radius: 7px;
+  padding-top: 80px;
 }
 
 .btn-delete-cart {
