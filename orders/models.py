@@ -15,6 +15,10 @@ class OrderItem(models.Model):
     quantity = models.IntegerField(default=1)
     ordered = models.BooleanField(default=False)
 
+    @property
+    def total_cost(self):
+        return self.quantity * self.item.price
+
     def get_total_item_price(self):
         return self.item.price
 
