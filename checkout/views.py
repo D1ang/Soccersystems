@@ -6,7 +6,6 @@ from django.views.generic import View
 from orders.models import Order
 from .models import Payment
 from decimal import Decimal
-import datetime
 import random
 import string
 
