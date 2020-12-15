@@ -1,0 +1,81 @@
+[
+    {
+        "model": "accounts.shop",
+        "pk": 1,
+        "fields": {
+            "company_name": "Ajax Fanshop Kalverstraat",
+            "street_address": "Kalverstraat 124",
+            "city": "Amsterdam",
+            "postal": "1012PK",
+            "region": "Noord-Holland"
+        }
+    },
+    {
+        "model": "accounts.shop",
+        "pk": 2,
+        "fields": {
+            "company_name": "AFC Ajax NV (afdeling Merchandising)",
+            "street_address": "Arena Boulevard 29",
+            "city": "Amsterdam Zuidoost",
+            "postal": "1101AX",
+            "region": "Noord-Holland"
+        }
+    },
+    {
+        "model": "accounts.shop",
+        "pk": 3,
+        "fields": {
+            "company_name": "Ajax Fanshop Bataviastad",
+            "street_address": "Bataviaplein 62-64",
+            "city": "Lelystad",
+            "postal": "8242PN",
+            "region": "Flevoland"
+        }
+    },
+    {
+        "model": "accounts.shop",
+        "pk": 4,
+        "fields": {
+            "company_name": "Official Ajax Fanshop",
+            "street_address": "Arena boulevard 3",
+            "city": "Amsterdam",
+            "postal": "1101AX",
+            "region": "Noord-Holland"
+        }
+    },
+    {
+        "model": "accounts.shop",
+        "pk": 5,
+        "fields": {
+            "company_name": "Ingram",
+            "street_address": "Energieweg 2",
+            "city": "Waalwijk",
+            "postal": "5145NW",
+            "region": "Noord-Brabant"
+        }
+    },
+    {
+        "model": "accounts.shop",
+        "pk": 6,
+        "fields": {
+            "company_name": "Sportpark De Toekomst",
+            "street_address": "Borchlandweg 18",
+            "city": "Amsterdam-Duivendrecht",
+            "postal": "1114BD",
+            "region": "Noord-Holland"
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "first_name": "Django",
+            "last_name": "Heimgartner",
+            "email": "info@ibsgraphics.nl",
+            "phone": "+31297286884",
+            "mobile": null,
+            "shop": 2
+        }
+    }
+]

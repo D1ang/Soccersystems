@@ -1,5 +1,70 @@
 [
     {
+        "model": "products.productgroup",
+        "pk": 1,
+        "fields": {
+            "productcode": "XH20",
+            "productname": "Thuis Collectie 2020-2021",
+            "image": "XA20.jpg"
+        }
+    },
+    {
+        "model": "products.productgroup",
+        "pk": 2,
+        "fields": {
+            "productcode": "XH21",
+            "productname": "Thuis Collectie 2021-2022",
+            "image": "XH21.png"
+        }
+    },
+    {
+        "model": "products.productgroup",
+        "pk": 3,
+        "fields": {
+            "productcode": "XA20",
+            "productname": "Uit Collectie 2020-2021",
+            "image": "XA20.png"
+        }
+    },
+    {
+        "model": "products.productgroup",
+        "pk": 4,
+        "fields": {
+            "productcode": "XA21",
+            "productname": "Uit Collectie 2021-2022",
+            "image": "XA21.png"
+        }
+    },
+    {
+        "model": "products.itemgroup",
+        "pk": 1,
+        "fields": {
+            "name": "Naamblokken"
+        }
+    },
+    {
+        "model": "products.itemgroup",
+        "pk": 2,
+        "fields": {
+            "name": "Letters"
+        }
+    },
+    {
+        "model": "products.itemgroup",
+        "pk": 3,
+        "fields": {
+            "name": "Nummers"
+        }
+    },
+    {
+        "model": "products.itemtag",
+        "pk": 1,
+        "fields": {
+            "name": "Nieuw",
+            "colour": "danger"
+        }
+    },
+    {
         "model": "products.productitem",
         "pk": 1,
         "fields": {
@@ -610,7 +675,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "images/XH20060A_8L8MZtA.png",
+            "image": "images/XH20060A.png",
             "tag": null
         }
     },
@@ -625,7 +690,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060B.png",
             "tag": null
         }
     },
@@ -640,7 +705,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060C.png",
             "tag": null
         }
     },
@@ -655,7 +720,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060D.png",
             "tag": null
         }
     },
@@ -670,7 +735,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060E.png",
             "tag": null
         }
     },
@@ -685,7 +750,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060F.png",
             "tag": null
         }
     },
@@ -700,7 +765,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060G.png",
             "tag": null
         }
     },
@@ -715,7 +780,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060H.png",
             "tag": null
         }
     },
@@ -730,7 +795,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060I.png",
             "tag": null
         }
     },
@@ -745,7 +810,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060J.png",
             "tag": null
         }
     },
@@ -760,7 +825,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060K.png",
             "tag": null
         }
     },
@@ -775,7 +840,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060L.png",
             "tag": null
         }
     },
@@ -790,7 +855,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060M.png",
             "tag": null
         }
     },
@@ -805,7 +870,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060N.png",
             "tag": null
         }
     },
@@ -820,7 +885,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060O.png",
             "tag": null
         }
     },
@@ -835,7 +900,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060P.png",
             "tag": null
         }
     },
@@ -850,7 +915,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060Q.png",
             "tag": null
         }
     },
@@ -865,7 +930,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060R.png",
             "tag": null
         }
     },
@@ -880,7 +945,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060S.png",
             "tag": null
         }
     },
@@ -895,7 +960,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060T.png",
             "tag": null
         }
     },
@@ -910,7 +975,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060U.png",
             "tag": null
         }
     },
@@ -925,7 +990,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060V.png",
             "tag": null
         }
     },
@@ -940,7 +1005,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060W.png",
             "tag": null
         }
     },
@@ -955,7 +1020,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060X.png",
             "tag": null
         }
     },
@@ -970,7 +1035,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060Y.png",
             "tag": null
         }
     },
@@ -985,7 +1050,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060Z.png",
             "tag": null
         }
     },
@@ -1000,7 +1065,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH200600.png",
             "tag": null
         }
     },
@@ -1015,7 +1080,7 @@
             "size": 6,
             "price": "0.15",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20060_.png",
             "tag": 1
         }
     },
@@ -1506,11 +1571,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040A",
-            "description": "Letter A (baby)",
+            "description": "Baby letter A",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "images/XH20060A_DY4kxa8.png",
+            "image": "images/XH20040A.png",
             "tag": null
         }
     },
@@ -1521,11 +1586,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040B",
-            "description": "Letter B (baby)",
+            "description": "Baby letter B",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040B.png",
             "tag": null
         }
     },
@@ -1536,11 +1601,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040C",
-            "description": "Letter C (baby)",
+            "description": "Baby letter C",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040C.png",
             "tag": null
         }
     },
@@ -1551,11 +1616,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040D",
-            "description": "Letter D (baby)",
+            "description": "Baby letter D",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040D.png",
             "tag": null
         }
     },
@@ -1566,11 +1631,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040E",
-            "description": "Letter E (baby)",
+            "description": "Baby letter E",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040E.png",
             "tag": null
         }
     },
@@ -1581,11 +1646,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040F",
-            "description": "Letter F (baby)",
+            "description": "Baby letter F",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040F.png",
             "tag": null
         }
     },
@@ -1596,11 +1661,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040G",
-            "description": "Letter G (baby)",
+            "description": "Baby letter G",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040G.png",
             "tag": null
         }
     },
@@ -1611,11 +1676,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040H",
-            "description": "Letter H (baby)",
+            "description": "Baby letter H",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040H.png",
             "tag": null
         }
     },
@@ -1626,11 +1691,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040I",
-            "description": "Letter I (baby)",
+            "description": "Baby letter I",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040I.png",
             "tag": null
         }
     },
@@ -1641,11 +1706,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040J",
-            "description": "Letter J (baby)",
+            "description": "Baby letter J",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040J.png",
             "tag": null
         }
     },
@@ -1656,11 +1721,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040K",
-            "description": "Letter K (baby)",
+            "description": "Baby letter K",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040K.png",
             "tag": null
         }
     },
@@ -1671,11 +1736,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040L",
-            "description": "Letter L (baby)",
+            "description": "Baby letter L",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040L.png",
             "tag": null
         }
     },
@@ -1686,11 +1751,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040M",
-            "description": "Letter M (baby)",
+            "description": "Baby letter M",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040M.png",
             "tag": null
         }
     },
@@ -1701,11 +1766,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040N",
-            "description": "Letter N (baby)",
+            "description": "Baby letter N",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040N.png",
             "tag": null
         }
     },
@@ -1716,11 +1781,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040O",
-            "description": "Letter O (baby)",
+            "description": "Baby letter O",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040O.png",
             "tag": null
         }
     },
@@ -1731,11 +1796,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040P",
-            "description": "Letter P (baby)",
+            "description": "Baby letter P",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040P.png",
             "tag": null
         }
     },
@@ -1746,11 +1811,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040Q",
-            "description": "Letter Q (baby)",
+            "description": "Baby letter Q",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040Q.png",
             "tag": null
         }
     },
@@ -1761,11 +1826,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040R",
-            "description": "Letter R (baby)",
+            "description": "Baby letter R",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040R.png",
             "tag": null
         }
     },
@@ -1776,11 +1841,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040S",
-            "description": "Letter S (baby)",
+            "description": "Baby letter S",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040S.png",
             "tag": null
         }
     },
@@ -1791,11 +1856,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040T",
-            "description": "Letter T (baby)",
+            "description": "Baby letter T",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040T.png",
             "tag": null
         }
     },
@@ -1806,11 +1871,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040U",
-            "description": "Letter U (baby)",
+            "description": "Baby letter U",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040U.png",
             "tag": null
         }
     },
@@ -1821,11 +1886,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040V",
-            "description": "Letter V (baby)",
+            "description": "Baby letter V",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040V.png",
             "tag": null
         }
     },
@@ -1836,11 +1901,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040W",
-            "description": "Letter W (baby)",
+            "description": "Baby letter W",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040W.png",
             "tag": null
         }
     },
@@ -1851,11 +1916,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040X",
-            "description": "Letter X (baby)",
+            "description": "Baby letter X",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040X.png",
             "tag": null
         }
     },
@@ -1866,11 +1931,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040Y",
-            "description": "Letter Y (baby)",
+            "description": "Baby letter Y",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040Y.png",
             "tag": null
         }
     },
@@ -1881,11 +1946,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040Z",
-            "description": "Letter Z (baby)",
+            "description": "Baby letter Z",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040Z.png",
             "tag": null
         }
     },
@@ -1896,11 +1961,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH200400",
-            "description": "Letter � (baby)",
+            "description": "Baby letter �",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH200400.png",
             "tag": null
         }
     },
@@ -1911,11 +1976,11 @@
             "product_group": 1,
             "item_group": 2,
             "slug": "XH20040_",
-            "description": "Leestekens (baby)",
+            "description": "Baby leestekens",
             "size": 4,
             "price": "0.13",
             "stock": 0,
-            "image": "None",
+            "image": "images/XH20040_.png",
             "tag": null
         }
     },
@@ -3716,6 +3781,36 @@
             "price": "0.10",
             "stock": 0,
             "image": "None",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 251,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006AY",
+            "description": "Naamblok ANTONY",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "",
+            "tag": null
+        }
+    },
+    {
+        "model": "products.productitem",
+        "pk": 252,
+        "fields": {
+            "product_group": 1,
+            "item_group": 1,
+            "slug": "XH2006KS",
+            "description": "Naamblok KUDUS",
+            "size": 6,
+            "price": "2.25",
+            "stock": 0,
+            "image": "",
             "tag": null
         }
     }
