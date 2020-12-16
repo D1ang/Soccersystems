@@ -69,7 +69,7 @@
             {% for item in page_object %}
             <tr>
               <td>
-                <img src="{{ item.image.url }}" alt="" height="50">              
+                <img src="{{ item.image.url }}" alt="{{ item.name }}" height="50">              
               </td>
               <td>
                 <strong>{{ item.slug }}</strong><br>
@@ -103,8 +103,11 @@
       <div class="col-12">
         <span>
           {% if page_object.has_previous %}
-          <a href="{{ request.get_full_path }}&page={{ page_object.previous_page_number }}" class="subtext">
-            <i class="fas fa-angle-double-left"></i> prev</a>
+            {% if 'description' in request.get_full_path %}
+              <a href="{{ request.get_full_path }}&page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
+            {% else %}
+              <a href="?page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
+            {% endif %}
           {% endif %}
 
           <span class="subtext-bold px-1">
@@ -112,8 +115,11 @@
           </span>
 
           {% if page_object.has_next %}
-          <a href="{{ request.get_full_path }}&page={{ page_object.next_page_number }}" class="subtext">next
-            <i class="fas fa-angle-double-right"></i></a>
+            {% if 'description' in request.get_full_path %}
+              <a href="{{ request.get_full_path }}&page={{ page_object.next_page_number }}" class="subtext">next <i class="fas fa-angle-double-right"></i></a>
+            {% else %}
+              <a href="?page={{ page_object.next_page_number }}" class="subtext">next <i class="fas fa-angle-double-right"></i></a>
+            {% endif %}
           {% endif %}
         </span>
       </div>
