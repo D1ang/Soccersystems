@@ -10,6 +10,7 @@ class ProductGroup(models.Model):
     productcode = models.CharField(max_length=5)
     productname = models.CharField(max_length=30)
     image = models.ImageField(blank=True, null=True)
+    sort = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
         return self.productname

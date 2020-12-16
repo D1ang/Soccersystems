@@ -12,7 +12,7 @@ def products_list(request):
     groups and all available product items
     on 1 page.
     """
-    product_list = ProductGroup.objects.all()
+    product_list = ProductGroup.objects.all().order_by('sort')
     product_item_list = ProductItem.objects.all()
 
     itemFilter = ItemFilter(request.GET, queryset=product_item_list)
@@ -38,7 +38,7 @@ def product_items(request, pk_product):
     A product items page for the employee
     to view and order articles.
     """
-    product_list = ProductGroup.objects.all()
+    product_list = ProductGroup.objects.all().order_by('sort')
     product_item_list = ProductItem.objects.filter(product_group=pk_product)
 
     itemFilter = ItemFilter(request.GET, queryset=product_item_list)
