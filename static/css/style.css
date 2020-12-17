@@ -413,6 +413,16 @@ hr.dashboard {
   padding-top: 80px;
 }
 
+#image-zoom {
+  filter: grayscale(100%);
+}
+  
+#image-zoom:hover {
+  filter: grayscale(0%);
+  transition: transform .8s;
+  cursor: pointer;
+}
+
 #id_comments {
   height: 189px;
 }
