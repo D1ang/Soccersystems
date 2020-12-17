@@ -59,6 +59,7 @@ $(document).ready(function() {
 		info: false,
 		paging: false,
 		bSort: false,
-		responsive: true
+		responsive: true,
+		language: {"emptyTable": "no articles available for this group"}
 	});
 });
