@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
+{% load custom_tags %}
 
 {% block content %}
 
@@ -44,7 +45,7 @@
                 <p>Don't have an account?</p>
               </div>
               <div class="col-12 text-center">
-                <p><a href="{% url 'home:index' %}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Send a request</a></p>
+                <p><a href="{% anchor 'home:index' 'contact' %}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Send a request</a></p>
               </div>
             </div>
 
