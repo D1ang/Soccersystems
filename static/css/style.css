@@ -294,7 +294,7 @@ header .overlay {
 #auth {
   min-height: 90%;
   padding-top: 60px;
-  background: url(/static/img/pexels3.jpg) fixed center no-repeat;
+  background: url(/static/img/auth.jpg) fixed center no-repeat;
 }
 
 .auth-custom-card {
