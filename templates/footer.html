@@ -7,9 +7,9 @@
           <li>
             <div class="list-unstyled list-inline xs-text-center mb-3">
               <h2>soccersystems.nl</h2>
-              <a target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x px-1"></i></a>
-              <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x px-1"></i></a>
-              <a target="_blank" href="https://wa.me/5551337"><i class="fab fa-whatsapp-square fa-2x px-1"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/company/69604583"><i class="fab fa-linkedin fa-2x px-1"></i></a>
+              <a target="_blank" href="https://www.facebook.com/IBSgraphics/"><i class="fab fa-facebook-square fa-2x px-1"></i></a>
+              <a target="_blank" href="https://www.instagram.com/ibsgraphics"><i class="fab fa-instagram-square fa-2x px-1"></i></a>
             </div>
           </li>
         </ul>
@@ -28,7 +28,7 @@
           {% if request.user.is_authenticated %}
             <li><a href="#">To top</a></li>
           {% else %}
-            <li><a href="{% url 'account_signup' %}">Sign up</a></li>
+            <li><a href="{% url 'account_login' %}">Login</a></li>
           {% endif %}
 
         </ul>
