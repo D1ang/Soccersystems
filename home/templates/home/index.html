@@ -6,30 +6,26 @@
 <!--Home-->
 <section id="home">
 
-    
-
-
-<body id="home">
-
-
-  <!--Hero image-->
-  <div class="darker-overlay"></div>
-  <div class="container-fluid banner-container">
-
-  </div>
-  <!--Hero image end-->
+  <!--Hero banner-->
+  <header>
+    <div class="container-fluid banner-container overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{% static 'vid/ball_bouncing.mp4' %}" type="video/mp4">
+    </video>
+  </header>
+  <!--Hero banner end-->
 
   <!--Callout-->
-  <div class="container-fluid callout-container text-center">
+  <div class="container text-center">
     <div class="row">
       <div class="col-12">
-        <h2 class="text-uppercase my-4">Je hebt rugnummers nodig voor je team, maar hoe?</h2>
+        <h2 class="my-5">Je hebt rugnummers nodig voor je team, maar hoe?</h2>
         <p class="my-4">
           Wij bieden de vereiste flexibiliteit, service, kennis en snelheid
           om een ​​hoogwaardig, eco-efficiënt geproduceerd en duurzaam product te leveren voor een fatsoenlijke prijs.
         </p>
-        <div class="text-center my-4">
-          <a href="#contact" class="btn btn-lg btn-custom-orange mb-4" role="button">
+        <div class="text-center my-5">
+          <a href="#contact" class="btn btn-lg btn-custom-red mb-4" role="button">
             laten we samenwerken!
           </a>
         </div>
@@ -38,217 +34,221 @@
   </div>
   <!--Callout end-->
 
-  <!--Products-->
-  <section class="bg-color-blue">
-    <div id="products" class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="font-weight-light text-center text-uppercase my-5">Onze producten</h2>
-        </div>
+</section>
+<!--Home end-->
+
+<!--Products-->
+<section class="bg-color-blue">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col my-5">
+        <h2 class="font-weight-light text-center text-uppercase">Onze producten</h2>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="card-deck pb-5">
-            <div class="productcard card rounded-0">
-              <div class="card-body d-flex flex-column">
-                <h3 class="card-title text-center text-uppercase">Standaard</h3>
-                <div class="productcard-icon text-center">
-                  <i class="fas fa-store-alt fa-stack-1x fa-inverse"></i>
-                </div>
-                <ul>
-                  <li> Snelle levertijden </li>
-                  <li> Geen extra kosten </li>
-                  <li> Op kool basis anti-bleed blocker </li>
-                  <li> Tot 5 standaardontwerpen </li>
-                  <li> ECO-vriendelijk </li>
-                  <li> Duurzaam </li>
-                </ul>
-                <a href="#contact" class="btn btn-lg btn-block btn-custom-orange align-self-end" role="button">neem contact op</a>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <div class="card-deck pb-5">
+          <div class="productcard card rounded-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title text-center text-uppercase">Standaard</h3>
+              <div class="productcard-icon text-center">
+                <i class="fas fa-store-alt fa-stack-1x fa-inverse"></i>
               </div>
-            </div>
-
-            <div class="productcard card rounded-0">
-              <div class="card-body d-flex flex-column">
-                <h3 class="card-title text-center text-uppercase">Custom</h3>
-                <div class="productcard-icon text-center">
-                  <i class=" fas fa-cog fa-stack-1x fa-inverse"></i>
-                </div>
-                <ul>
-                  <li> Fatsoenlijke maar snelle levertijden </li>
-                  <li> Eigen ontwerpmogelijkheden </li>
-                  <li> Inclusief anti-bleed blocker </li>
-                  <li> Verkrijgbaar in elke kleur en maat </li>
-                  <li> ECO-vriendelijk </li>
-                  <li> Duurzaam </li>
-                </ul>
-                <a href="#contact" class="btn btn-lg btn-block btn-custom-orange align-self-end" role="button">neem contact op</a>
-              </div>
-            </div>
-
-            <div class="productcard card rounded-0">
-              <div class="card-body d-flex flex-column">
-                <h3 class="card-title text-center text-uppercase">Badges</h3>
-                <div class="productcard-icon text-center">
-                  <i class=" fas fa-shield-alt fa-stack-1x fa-inverse"></i>
-                </div>
-                <ul>
-                  <li> Levering tot 5 werkdagen </li>
-                  <li> Elke kleur mogelijk </li>
-                  <li> Op kool basis anti-bleed backer </li>
-                  <li> Beschikbare maten op aanvraag </li>
-                  <li> ECO-vriendelijk </li>
-                  <li> Duurzaam </li>
-                </ul>
-                <a href="#contact" class="btn btn-lg btn-block btn-custom-orange align-self-end" role="button">neem contact op</a>
-              </div>
+              <ul>
+                <li> Snelle levertijden </li>
+                <li> Geen extra kosten </li>
+                <li> Op kool basis anti-bleed block </li>
+                <li> Tot 5 standaardontwerpen </li>
+                <li> ECO-vriendelijk </li>
+                <li> Duurzaam </li>
+              </ul>
+              <a href="#contact" class="btn btn-lg btn-block btn-custom-red align-self-end" role="button">neem contact op</a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Products end-->
 
-  <!--Service-->
-  <div id="service" class="container-fluid service-container">
-    <div class="row">
-      <div class="col-12 my-5">
-        <h2 class="font-weight-light text-center text-uppercase">Waarom zou je voor ons kiezen?</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-leaf"></i> Speciale goedkeuring</h3>
-          <p>
-            Al onze materialen zijn extern getest door Bureau Vertias op milieuvriendelijkheid.
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-user-graduate"></i> Professionele service</h3>
-          <p>
-            25 jaar kennis en ondersteuning staan ​​5 dagen per week voor u klaar.
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-thumbs-up"></i> Stabiele kwaliteit</h3>
-          <p>
-            We testen onze producten dagelijks om aan de normen van professionele sporten te voldoen.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row my-2">
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-trophy"></i> Gebruikt door pro's</h3>
-          <p>
-            De afgelopen 5 jaar intensief gebruikt door EreDivisie clubs in betaald voetbal.
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-user-cog"></i> Flexibel</h3>
-          <p>
-            Korte communicatielijnen! Dankzij onze eigen ontwerpstudio en productiefaciliteit.
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="service">
-          <h3 class="text-uppercase"><i class="fas fa-shipping-fast"></i> Snelle leveringen</h3>
-          <p>
-            Onze standaard productietijd is 2 - 5 werkdagen. op standaard nummers 1 werkdag.
-          </p>
+          <div class="productcard card rounded-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title text-center text-uppercase">Custom</h3>
+              <div class="productcard-icon text-center">
+                <i class=" fas fa-cog fa-stack-1x fa-inverse"></i>
+              </div>
+              <ul>
+                <li> Snelle levertijden </li>
+                <li> Eigen ontwerpmogelijkheden </li>
+                <li> Inclusief anti-bleed block </li>
+                <li> Verkrijgbaar in elke kleur</li>
+                <li> ECO-vriendelijk </li>
+                <li> Duurzaam </li>
+              </ul>
+              <a href="#contact" class="btn btn-lg btn-block btn-custom-red align-self-end" role="button">neem contact op</a>
+            </div>
+          </div>
+
+          <div class="productcard card rounded-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title text-center text-uppercase">Badges</h3>
+              <div class="productcard-icon text-center">
+                <i class=" fas fa-shield-alt fa-stack-1x fa-inverse"></i>
+              </div>
+              <ul>
+                <li> Levering tot 5 werkdagen </li>
+                <li> Elke kleur mogelijk </li>
+                <li> Op kool basis anti-bleed backer </li>
+                <li> Maten op aanvraag </li>
+                <li> ECO-vriendelijk </li>
+                <li> Duurzaam </li>
+              </ul>
+              <a href="#contact" class="btn btn-lg btn-block btn-custom-red align-self-end" role="button">neem contact op</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
+<!--Products end-->
 
-  <div class="container-fluid bg-ecologic"></div>
-  <!--Service end-->
-
-  <!--Prices-->
-  <div id="price" class="container-fluid prices-container">
-    <div class="row">
-      <div class="col-12 my-5">
-        <h2 class="font-weight-light text-center text-uppercase">Onze prijzen</h2>
-      </div>
+<!--Service-->
+<div class="container-fluid service-container">
+  <div class="row">
+    <div class="col-12 my-5">
+      <h2 class="font-weight-light text-center text-uppercase">Waarom zou je voor ons kiezen?</h2>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="card-deck">
-          <div class="card price-card rounded-0">
-            <div class="card-body ">
-              <h3 class="card-title text-center">5.0 CM</h3>
-              <p class="card-text text-center">
-                <img src="{% static 'svg/nr1.svg' %}" alt="Swiss 1">
-              </p>
-              <p class="card-text text-center">€ 0.35</p>
-            </div>
-          </div>
-          <div class="card price-card rounded-0">
-            <div class="card-body">
-              <h3 class="card-title text-center">10.0 CM</h3>
-              <p class="card-text text-center">
-                <img src="{% static 'svg/nr2.svg' %}" alt="Swiss 2">
-              </p>
-              <p class="card-text text-center">€ 0.55</p>
-            </div>
-          </div>
-          <div class="card price-card rounded-0">
-            <div class="card-body">
-              <h3 class="card-title text-center">15.0 CM</h3>
-              <p class="card-text text-center">
-                <img src="{% static 'svg/nr3.svg' %}" alt="Swiss 3">
-              </p>
-              <p class="card-text text-center">€ 0.95</p>
-            </div>
-          </div>
-          <div class="card price-card rounded-0">
-            <div class="card-body">
-              <h3 class="card-title text-center">20.0 CM</h3>
-              <p class="card-text text-center">
-                <img src="{% static 'svg/nr4.svg' %}" alt="Swiss 4">
-              </p>
-              <p class="card-text text-center">€ 1.15</p>
-            </div>
-          </div>
-          <div class="card price-card rounded-0">
-            <div class="card-body">
-              <h3 class="card-title text-center">23.0 CM</h3>
-              <p class="card-text text-center">
-                <img src="{% static 'svg/nr5.svg' %}" alt="Swiss 5">
-              </p>
-              <p class="card-text text-center">€ 1.30</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h3 class="text-uppercase text-center my-5">Wat te verwachten als de prijs goed is?</h3>
-        <p class="text-center mb-2">
-          De volgende prijzen zijn gebaseerd op onze standaardproducten.
-          Alle standaard nummers zijn inclusief een antibleed backer
+  </div>
+  <div class="row mb">
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-leaf"></i> Speciale goedkeuring</h3>
+        <p>
+          Al onze materialen zijn extern getest door Bureau Vertias op milieuvriendelijkheid.
         </p>
-        <p class="text-center mb-5">
-          * prijzen zijn per nummer en op basis van het formaat in hoogte
+      </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-user-graduate"></i> Professionele service</h3>
+        <p>
+          25 jaar kennis en ondersteuning staan ​​5 dagen per week voor u klaar.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-thumbs-up"></i> Stabiele kwaliteit</h3>
+        <p>
+          We testen onze producten dagelijks om aan de normen van professionele sporten te voldoen.
         </p>
       </div>
     </div>
   </div>
-  <!--Prices end-->
+  <div class="row my-2">
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-trophy"></i> Gebruikt door pro's</h3>
+        <p>
+          De afgelopen 5 jaar intensief gebruikt door EreDivisie clubs in betaald voetbal.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-user-cog"></i> Flexibel</h3>
+        <p>
+          Korte communicatielijnen! Dankzij onze eigen ontwerpstudio en productiefaciliteit.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <div>
+        <h3 class="text-uppercase"><i class="fas fa-shipping-fast"></i> Snelle leveringen</h3>
+        <p>
+          Onze standaard productietijd is 2 - 5 werkdagen. op standaard nummers 1 werkdag.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!--Contact-->
-  <div id="contact" class="container-fluid contact-container pt-4">
+<div class="container-fluid bg-ecologic"></div>
+<!--Service end-->
+
+<!--Prices-->
+<div id="price" class="container-fluid prices-container">
+  <div class="row">
+    <div class="col-12 my-5">
+      <h2 class="font-weight-light text-center text-uppercase">Onze prijzen</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card-deck">
+        <div class="card price-card rounded-0">
+          <div class="card-body ">
+            <h3 class="card-title text-center">5.0 CM</h3>
+            <p class="card-text text-center">
+              <img src="{% static 'svg/nr1.svg' %}" alt="Swiss 1">
+            </p>
+            <p class="card-text text-center">€ 0.35</p>
+          </div>
+        </div>
+        <div class="card price-card rounded-0">
+          <div class="card-body">
+            <h3 class="card-title text-center">10.0 CM</h3>
+            <p class="card-text text-center">
+              <img src="{% static 'svg/nr2.svg' %}" alt="Swiss 2">
+            </p>
+            <p class="card-text text-center">€ 0.55</p>
+          </div>
+        </div>
+        <div class="card price-card rounded-0">
+          <div class="card-body">
+            <h3 class="card-title text-center">15.0 CM</h3>
+            <p class="card-text text-center">
+              <img src="{% static 'svg/nr3.svg' %}" alt="Swiss 3">
+            </p>
+            <p class="card-text text-center">€ 0.95</p>
+          </div>
+        </div>
+        <div class="card price-card rounded-0">
+          <div class="card-body">
+            <h3 class="card-title text-center">20.0 CM</h3>
+            <p class="card-text text-center">
+              <img src="{% static 'svg/nr4.svg' %}" alt="Swiss 4">
+            </p>
+            <p class="card-text text-center">€ 1.15</p>
+          </div>
+        </div>
+        <div class="card price-card rounded-0">
+          <div class="card-body">
+            <h3 class="card-title text-center">23.0 CM</h3>
+            <p class="card-text text-center">
+              <img src="{% static 'svg/nr5.svg' %}" alt="Swiss 5">
+            </p>
+            <p class="card-text text-center">€ 1.30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-uppercase text-center my-5">Wat te verwachten als de prijs goed is?</h3>
+      <p class="text-center mb-2">
+        De volgende prijzen zijn gebaseerd op onze standaardproducten.
+        Alle standaard nummers zijn inclusief een antibleed backer
+      </p>
+      <p class="text-center mb-5">
+        * prijzen zijn per nummer en op basis van het formaat in hoogte
+      </p>
+    </div>
+  </div>
+</div>
+<!--Prices end-->
+
+<!--Contact-->
+<section id="contact">
+  <div class="container-fluid contact-container pt-4">
     <div class="row">
       <div class="col-12 my-4">
         <h2 class="font-weight-light text-center text-uppercase text-white">Neem contact op</h2>
@@ -256,24 +256,11 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <?php include('include/contact.php'); ?>
+        
       </div>
     </div>
   </div>
-  <!--Contact end-->
-
-
-
-
-
-
-
-
-
-
-
-
 </section>
-<!--Home end-->
+<!--Contact end-->
 
 {% endblock content %}
