@@ -51,7 +51,7 @@ a.subtext:active {
   font-size: 1rem;
 }
 
-/*----------------------Colours---------------- */
+/*---------------------------Colors----------------------------*/
 
 .bg-color-blue {
   background-color: rgb(88, 202, 236);
@@ -154,11 +154,11 @@ a.subtext:active {
 }
 
 .badge-light:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: rgb(131, 0, 0);
 }
 
-/*----------------------Header---------------- */
+/*---------------------------Header----------------------------*/
 
 #home {
   min-height: 100vh;
@@ -212,7 +212,7 @@ header .overlay {
   }
 }
 
-/*----------------------Products---------------- */
+/*--------------------------Products---------------------------*/
 
 .productcard {
   border: 0;
@@ -249,11 +249,11 @@ header .overlay {
   letter-spacing: -0.015em;
 }
 
-/*----------------------Service---------------- */
+/*---------------------------Service---------------------------*/
 
 .service-container {
   padding-bottom: 50px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .service-container h3 {
@@ -277,14 +277,41 @@ header .overlay {
   display: flex;
 }
 
+/*---------------------------Prices----------------------------*/
 
+.prices-container {
+  background-color: rgb(62, 198, 241);
+}
 
+.prices-container h3 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: 0.01em;
+}
 
+.price-card {
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+}
 
-/*----------------------Contact---------------- */
+.price-card h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 71px;
+}
+
+.price-card p {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 53px;
+}
+
+/*---------------------------Contact---------------------------*/
 
 .contact-container {
-  height: 800px;
+  min-height: 850px;
   background: url(/static/img/contact.jpg) fixed center no-repeat;
   background-size: cover;
 }
@@ -292,20 +319,20 @@ header .overlay {
 /*------------------------Auth styling-------------------------*/
 
 #auth {
-  min-height: 90%;
+  height: 85%;
   padding-top: 60px;
   background: url(/static/img/auth.jpg) fixed center no-repeat;
 }
 
 .auth-custom-card {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
   padding: 4px;
 }
 
 .errorlist {
-  background-color: #f88080;
-  color: #fff;
+  background-color: rgb(248, 128, 128);
+  color: rgb(255, 255, 255);
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 5px;
@@ -313,8 +340,8 @@ header .overlay {
 }
 
 #login-messages {
-  background-color: #f88080;
-  color: #fff;
+  background-color: rgb(248, 128, 128);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   padding: 6px 0px 6px 16px;
   margin-top: 10px;
@@ -494,7 +521,7 @@ footer {
 
 @media screen and (max-width: 575px) {
   .footer-container h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Racing Sans One', cursive;
     font-weight: 100;
     font-size: 28px;
     padding-top: 8px;
@@ -503,12 +530,12 @@ footer {
 }
 
 .footer-container a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .footer-container a:hover {
   text-decoration: none;
-  color: #830000;
+  color: hsl(0, 100%, 26%);
 }
 
 @media screen and (max-width: 575px) {
@@ -529,8 +556,8 @@ footer {
 }
 
 .alert-error {
-  color: #721c24;
-  background-color: #f8d7da;
+  color: rgb(114, 28, 36);
+  background-color: rgb(248, 215, 218);
 }
 
 .close {
