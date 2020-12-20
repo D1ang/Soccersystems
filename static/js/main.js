@@ -1,28 +1,5 @@
 $(document).ready(function() {
 	/*
-	Add smooth scrolling to all links, 
-	while keeping cross-browser compatibility.
-	https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-	*/
-	$('a').on('click', function(event) {
-		if (this.hash !== '') {
-			event.preventDefault();
-
-			let hash = this.hash;
-
-			$('html, body').animate(
-				{
-					scrollTop: $(hash).offset().top
-				},
-				800,
-				function() {
-					window.location.hash = hash;
-				}
-			);
-		}
-	});
-
-	/*
 	When the user scrolls down, hide the navbar and
 	when the user scrolls up, show the navbar.
 	https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
