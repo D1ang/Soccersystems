@@ -8,15 +8,18 @@ html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
-  color: #000;
-  background-color: #f8f9fa;
+  color: rgb(35, 35, 35);
+  background-color: rgb(248, 249, 250);
   scroll-behavior: smooth;
 }
 
-.custom-title {
-  font-family: 'Pacifico', cursive;
-  font-size: 4vw;
-  padding-bottom: 50px;
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .subtext {
@@ -40,12 +43,7 @@ a.subtext:visited {
 
 a.subtext:hover,
 a.subtext:active {
-  color: #000;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  color: rgb(0, 0, 0);
 }
 
 .fixed-card-height {
@@ -53,11 +51,17 @@ h2 {
   font-size: 1rem;
 }
 
-/*-------------------Crispy forms overrides--------------------*/
+/*----------------------Colours---------------- */
 
-#div_id_artwork .input-group-text {
-  width: 115px;
+.bg-color-blue {
+  background-color: rgb(88, 202, 236);
 }
+
+.form-bg-color {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*-------------------Crispy forms overrides--------------------*/
 
 .custom-control {
   display: none;
@@ -67,105 +71,8 @@ h2 {
   display: none;
 }
 
-.custom-file-input {
-  cursor: pointer;
-}
-
-/*----------------------Header---------------- */
-
-.banner-container {
-  height: 560px;
-  background: url(/static/img/banner.jpg) no-repeat center center fixed;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.darker-overlay {
-  position: absolute;
-  left: 0;
-  height: 560px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-#logo {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  margin: 80px 0 0 40px;
-  text-align: left;
-}
-
-#logo h1 {
-  font-weight: 600;
-  font-size: 110px;
-  line-height: 120px;
-  letter-spacing: 0.145em;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-#logo h6 {
-  font-weight: 300;
-  font-size: 25px;
-  padding-left: 4px;
-  letter-spacing: 0.01em;
-  color: #fff;
-}
-
-@media screen and (max-width: 600px) {
-  #logo h1 {
-    padding-top: 20%;
-  }
-  #logo h6 {
-    padding-top: 2%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------Home sections-------------------------*/
-
-#home {
-  min-height: 100vh;
-}
-
-#additional {
-  background-color: #fff;
-  min-height: 850px;
-}
-
-#freq_services {
-  background-color: #06b3be;
-  min-height: 900px;
-  padding-top: 60px;
-}
-
-#readmore-icon a {
-  color: #a38329;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-#readmore-icon a:hover {
-  color: #000;
+#div_id_artwork .input-group-text {
+  width: 115px;
 }
 
 /*-----------------------Navbar styling------------------------*/
@@ -189,11 +96,11 @@ h2 {
 .navbar .navbar-nav .nav-link {
   padding: 0 18px 0 18px;
   line-height: 20px;
-  border-left: 1px solid #fff;
+  border-left: 1px solid rgb(255, 255, 255);
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 0.030rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .navbar .navbar-nav .nav-item:first-child .nav-link {
@@ -207,8 +114,8 @@ h2 {
 }
 
 .dropdown-item:hover {
-  color: #fff;
-  background-color: #c01336;
+  color: rgb(255, 255, 255);
+  background-color: rgb(192, 19, 54);
 }
 
 @media screen and (max-width: 767px) {
@@ -243,28 +150,109 @@ h2 {
 
 .navbar .nav-item.active .nav-link,
 .navbar .nav-item:hover .nav-link {
-  color: #830000;
+  color: rgb(131, 0, 0);
 }
 
 .badge-light:hover {
   color: #fff;
-  background-color: #830000;
+  background-color: rgb(131, 0, 0);
 }
 
+/*----------------------Header---------------- */
 
+#home {
+  min-height: 100vh;
+}
 
+header {
+  position: relative;
+  height: 60vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
 
+header .container {
+  position: relative;
+  z-index: 2;
+}
 
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  z-index: 1;
+}
 
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url(/static/img/banner.jpg) no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
 
+/*----------------------Products---------------- */
 
+.productcard {
+  border: 0;
+}
 
+.productcard-icon {
+  height: 200px;
+}
+
+.productcard h3 {
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+}
+
+.productcard i {
+  font-size: 82px;
+  width: 158px;
+  height: 158px;
+  line-height: 158px;
+  border-radius: 50%;
+  position: inherit;
+  background: rgb(190, 19, 53);
+}
+
+.productcard ul {
+  margin-bottom: 50px;
+}
+
+.productcard li {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+}
 
 /*----------------------Service---------------- */
 
 .service-container {
-  padding-bottom: 2px;
+  padding-bottom: 50px;
   background-color: #fff;
 }
 
@@ -277,11 +265,11 @@ h2 {
 }
 
 .service-container i {
-  color: #fa4616;
+  color: rgb(190, 19, 53);
 }
 
 .bg-ecologic {
-  height: 400px;
+  height: 450px;
   background: url(/static/img/ecologic.jpg) fixed center no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -301,33 +289,17 @@ h2 {
   background-size: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------Auth styling-------------------------*/
 
 #auth {
-  min-height: 100%;
+  min-height: 90%;
   padding-top: 60px;
-  background-color: #5cb85c;
+  background: url(/static/img/pexels3.jpg) fixed center no-repeat;
 }
 
 .auth-custom-card {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
   padding: 4px;
 }
 
@@ -348,7 +320,6 @@ h2 {
   margin-top: 10px;
   font-size: 18px;
 }
-
 
 .form-control {
   border-radius: 0;
@@ -568,6 +539,17 @@ footer {
 
 /*---------------------------Buttons---------------------------*/
 
+.btn-custom-red {
+  margin-top: auto;
+  height: 70px;
+  border-radius: 0;
+  padding-top: 14px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgb(190, 19, 53);
+}
+
 .btn-black {
   height: 100px;
   width: 100%;
@@ -687,7 +669,7 @@ footer {
 }
 
 .tablerows {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .table thead > tr > th {
@@ -703,25 +685,4 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control:b
 table.dataTable > tbody > tr.child ul.dtr-details > li {
   border-style: none;
   padding: 0;
-}
-
-/*----------------------File input Widget--------------------- */
-
-.btn-file {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.upload-success-text {
-  color: #b20000;
 }
