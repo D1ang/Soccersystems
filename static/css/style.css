@@ -366,7 +366,7 @@ header .overlay {
 }
 
 hr.dashboard {
-  border-top: solid 0.1px #000;
+  border-top: solid 0.1px rgb(0, 0, 0);
 }
 
 .custom-card {
