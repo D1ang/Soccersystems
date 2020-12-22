@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
+
 {% load static %}
+
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
 
 {% block content %}
 
@@ -254,25 +258,25 @@
         <h2 class="text-center text-uppercase text-white">Neem contact op</h2>
       </div>
     </div>
-    <div class="row mt-3">
+    <div class="row">
       <div class="col-12">
-        <form class="container form-bg-color text-white p-4">
+
+        <form role="form" method="post" class="container form-bg-color text-white p-4">
+          {% csrf_token %}
           <div class="form-group">
-            <label for="fname">Naam</label>
-            <input type="text" class="form-control bg-transparent rounded-0 text-white" id="fname" required>
+            {{ form.contact_name|add_class:"form-control bg-transparent rounded-0 text-white"|as_crispy_field }}
           </div>
           <div class="form-group">
-            <label for="lname">Email</label>
-            <input type="text" class="form-control bg-transparent rounded-0 text-white" id="lname" required>
+            {{ form.contact_email|add_class:"form-control bg-transparent rounded-0 text-white"|as_crispy_field }}
           </div>
           <div class="form-group">
-            <label for="mail">Bericht</label>
-            <input type="email" class="form-control bg-transparent rounded-0 text-white" id="mail" required>
+            {{ form.content|add_class:"form-control bg-transparent rounded-0 text-white"|as_crispy_field }}
           </div>
           <div class="text-center py-4">
-            <a href="#" class="btn btn-lg btn-custom-red" role="button" aria-pressed="true">verstuur bericht</a>
+            <button type="submit" class="btn btn-lg btn-custom-red">verstuur bericht</button>
           </div>
-        </form>        
+        </form>
+
       </div>
     </div>
   </div>
