@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'invitations',
     'crispy_forms',
+    'widget_tweaks',
     'django_filters',
     'django_excel_fixture',
     'rest_framework',
