@@ -8,6 +8,11 @@ from home.forms import ContactForm
 
 
 def index(request):
+    """
+    Load the homepage if there is
+    no POST request. if POST load the data
+    and send an email with office365 smtp.
+    """
     form = ContactForm
 
     if request.method == 'POST':
@@ -19,7 +24,7 @@ def index(request):
             form_content = request.POST.get('content', '')
 
             # Create the email on the contact template
-            template = get_template('contact_template.txt')
+            template = get_template('contact.html')
             context = {
                 'contact_name': contact_name,
                 'contact_email': contact_email,
@@ -34,7 +39,7 @@ def index(request):
                 headers={'Reply-To': contact_email}
             )
             email.send()
-            messages.success(request, 'Message sent successfully')
+            messages.success(request, 'Bericht is succesvol verzonden!')
             return HttpResponseRedirect('/')
 
     return render(request, 'home/index.html', {
