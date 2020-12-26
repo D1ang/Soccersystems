@@ -37,6 +37,6 @@ $(document).ready(function() {
 		paging: false,
 		bSort: false,
 		responsive: true,
-		language: {"emptyTable": "no articles available for this group"}
+		language: {"emptyTable": "Geen artikelen in deze product groep beschikbaar"}
 	});
 });
