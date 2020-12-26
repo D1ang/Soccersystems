@@ -5,7 +5,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 class Shop(models.Model):
     """
-    A shop model for employees tocconnect to.
+    A shop model for employees to connect to.
     1 shop can have multiple employees.
     """
     company_name = models.CharField(max_length=50)

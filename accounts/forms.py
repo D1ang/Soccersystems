@@ -3,7 +3,6 @@ from django import forms
 from allauth.account.forms import SignupForm
 from crispy_forms.helper import FormHelper
 
-# Importing models
 from accounts.models import Shop, Employee
 from django.contrib.auth.models import Group
 from invitations.utils import get_invitation_model
@@ -11,7 +10,7 @@ from invitations.utils import get_invitation_model
 
 class MyCustomSignupForm(SignupForm):
     """
-    Extend the allauth register form and
+    Extends the allauth register form and
     connects an user to an employee profile.
     """
     def __init__(self, *args, **kwargs):
