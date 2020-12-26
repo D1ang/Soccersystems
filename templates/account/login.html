@@ -12,7 +12,7 @@
       <div class="col p-3 mt-5">
         <div class="auth-custom-card w-100 fixed-card-height">
           <div class="card-body d-flex flex-column">
-            <h4 class="text-center text-uppercase">account login</h4>
+            <h4 class="text-center text-uppercase">gebruiker login</h4>
 
             <form id="auth-form" method="POST" action="{% url 'account_login' %}" class="my-4">
               {% csrf_token %}
@@ -42,10 +42,10 @@
               
             <div class="row subtext">
               <div class="col-12 text-center">
-                <p>Don't have an account?</p>
+                <p>Nog geen account aangevraagd?</p>
               </div>
               <div class="col-12 text-center">
-                <p><a href="{% anchor 'home:index' 'contact' %}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Send a request</a></p>
+                <p><a href="{% anchor 'home:index' 'contact' %}" class="subtext"><i class="fas fa-pencil-alt mr-1"></i> Stuur een aanvraag</a></p>
               </div>
             </div>
 
