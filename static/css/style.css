@@ -103,6 +103,14 @@ a.subtext:active {
   color: rgb(255, 255, 255);
 }
 
+.navbar .nav-item:hover .nav-link {
+  color: rgb(131, 0, 0);
+}
+
+.navbar .nav-item.active .nav-link {
+  color: rgb(156, 156, 156);
+}
+
 .navbar .navbar-nav .nav-item:first-child .nav-link {
   border-left: none;
 }
@@ -136,7 +144,6 @@ a.subtext:active {
   .dropdown-menu {
     width: 100%;
     text-align: center;
-    background-color: #da552f;
     border-top: 1px solid #830000;
     border-bottom: 1px solid #830000;
     border-radius: 0;
@@ -146,11 +153,6 @@ a.subtext:active {
     color: #da552f;
     background-color: #fff;
   }
-}
-
-.navbar .nav-item.active .nav-link,
-.navbar .nav-item:hover .nav-link {
-  color: rgb(131, 0, 0);
 }
 
 .badge-light:hover {

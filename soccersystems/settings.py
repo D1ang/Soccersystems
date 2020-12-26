@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django_excel_fixture',
     'rest_framework',
     'phonenumber_field',
+    'active_link',
     'storages',
 ]
 

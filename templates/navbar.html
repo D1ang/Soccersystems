@@ -1,3 +1,4 @@
+{% load active_link_tags %}
 {% load cart_navbar_badge %}
 
 <!--Navbar-->
@@ -9,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a class="nav-link" href="{% url 'home:index' %}">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="{% url 'products:products' %}">Producten</a></li>
+      <li class="nav-item {% active_link 'products:products' 'active' %}"><a class="nav-link" href="{% url 'products:products' %}">Producten</a></li>
 
       {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
