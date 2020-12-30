@@ -361,7 +361,7 @@ header .overlay {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 40%;
-  background-color: #06b3be;
+  background-color: rgb(248, 249, 250);
   min-height: 100%;
   padding-top: 60px;
   font-weight: 400;
