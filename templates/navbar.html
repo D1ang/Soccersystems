@@ -18,7 +18,7 @@
             data-toggle="dropdown">Account</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="{% url 'accounts:employee' %}">Overzicht</a>
-            <a class="dropdown-item" href="">Profiel</a>
+            <a class="dropdown-item" href="{% url 'accounts:userprofile' %}">Profiel</a>
 
             <form method="POST" action="{% url 'account_logout' %}">
               {% csrf_token %}
