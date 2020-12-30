@@ -3,22 +3,22 @@
 {% block content %}
 
 <section id="dashboard">
-  <div class="container-fluid mt-4 pb-3">
+  <div class="container-fluid">
 
     {% if page_object %}
     
       <!--Ordersstatus-->
       <div class="row">
-        <div class="col custom-card text-center p-3 m-3">
-          <h5>Orders</h5>
+        <div class="col card custom-card text-center p-3 m-3">
+          <h5>Geplaatst</h5>
           <h4>{{ total_orders }}</h4>
         </div>
-        <div class="col custom-card text-center p-3 m-3">
-          <h5>Pending</h5>
+        <div class="col card custom-card text-center p-3 m-3">
+          <h5>In afwachting</h5>
           <h4>{{ pending_orders }}</h4>
         </div>
-        <div class="col custom-card text-center p-3 m-3">
-          <h5>Finished</h5>
+        <div class="col card custom-card text-center p-3 m-3">
+          <h5>Gereed</h5>
           <h4>{{ finished_orders }}</h4>
         </div>
       </div>
@@ -27,7 +27,7 @@
       <div class="row mt-3">
         <div class="col-12">
           
-          <h5 class="text-uppercase pl-2">order overview</h5>
+          <h5 class="text-uppercase pl-2">Order overzicht</h5>
           <hr class="dashboard m-0">
 
           <!--Orderdetails-->
@@ -36,8 +36,9 @@
               <thead>
                 <tr>
                   <th>Order ID</th>
-                  <th>Date</th>
-                  <th>employee</th>
+                  <th>Besteld</th>
+                  <th>Medewerker</th>
+                  <th>Leverdatum</th>
                   <th>Status</th>
                   <th>Details</th>
                 </tr>
@@ -49,11 +50,12 @@
                       {% if order.id_code %}
                         {{ order.id_code }}
                       {% else %}
-                        In progress...
+                        In behandeling...
                       {% endif %}
                     </td>
                     <td>{{ order.date }}</td>
                     <td>{{ order.user.employee.first_name }}</td>
+                    <td></td>
                     <td>
                       <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
                     </td>
@@ -71,16 +73,14 @@
 
           <!--Paginator-->
           <div class="row mb-5">
-            <div class="col">
+            <div class="col-12">
               <span>
                 {% if page_object.has_previous %}
-                  <a href="?page={{ page_object.previous_page_number }}" class="subtext">
-                    <i class="fas fa-angle-double-left"></i> previous
-                  </a>
+                  <a href="?page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
                 {% endif %}
 
                 <span class="subtext-bold px-1">
-                  page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+                  pagina {{ page_object.number }} van {{ page_object.paginator.num_pages }}
                 </span>
 
                 {% if page_object.has_next %}
