@@ -202,6 +202,8 @@ INVITATIONS_INVITATION_ONLY = False
 # Messages
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+# Phonenumber fields
+PHONENUMBER_DEFAULT_REGION = 'NL'
 
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
