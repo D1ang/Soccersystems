@@ -8,7 +8,6 @@ from orders.models import Order
 from .forms import InviteForm, EmployeeForm
 from .filters import OrderFilter
 from decimal import Decimal
-from invitations.utils import get_invitation_model
 
 
 @login_required
@@ -84,7 +83,7 @@ def userprofile(request):
         if form.is_valid():
             form.save()
 
-            messages.info(request, 'Profile update successfully')
+            messages.info(request, 'Profiel update succesvol')
 
             # New users will be redirected to the services to start ordering.
             if total_orders < 1:
@@ -131,13 +130,15 @@ def orderdetails(request, pk_order):
             }
             return render(request, 'accounts/orderdetails.html', context)
         except ObjectDoesNotExist:
-            messages.error(request, 'This order is not available')
-            return redirect('accounts:customerpage')
+            messages.error(request, 'Deze bestelling is nog niet afgerond door collega')
+            return redirect('accounts:employee')
 
 
+@login_required
+@allowed_users(allowed_roles=['supervisor', 'admin'])
 def invite(request):
     """
-    An invite page for the supervisor to invite employees
+    An invite page for the supervisors to invite employees
     to register their account.
     """
     form = InviteForm()
