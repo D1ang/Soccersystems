@@ -1,5 +1,6 @@
 # Import forms
 from django import forms
+from django.forms import ModelForm
 from allauth.account.forms import SignupForm
 from crispy_forms.helper import FormHelper
 
@@ -8,10 +9,22 @@ from django.contrib.auth.models import Group
 from invitations.utils import get_invitation_model
 
 
+class EmployeeForm(ModelForm):
+    """
+    An employee edit profile form.
+    'user' is excluded to probhit username edditing.
+    'shop' is excluded to probhit shop edditing by employees.
+    """
+    class Meta:
+        model = Employee
+        fields = '__all__'
+        exclude = ['user', 'shop']
+
+
 class MyCustomSignupForm(SignupForm):
     """
     Extends the allauth register form and
-    connects an user to an employee profile.
+    connects a user to an employee profile.
     """
     def __init__(self, *args, **kwargs):
         super(MyCustomSignupForm, self).__init__(*args, **kwargs)

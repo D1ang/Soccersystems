@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from orders.models import Order
-from .forms import InviteForm
+from .forms import InviteForm, EmployeeForm
 from .filters import OrderFilter
 from decimal import Decimal
 from invitations.utils import get_invitation_model
@@ -65,6 +65,35 @@ def employee(request):
         'finished_orders': finished_orders,
     }
     return render(request, 'accounts/dashboard.html', context)
+
+
+@login_required
+def userprofile(request):
+    """
+    Profile settings for the user,
+    to change/update their own profile.
+    """
+    employee = request.user.employee
+    form = EmployeeForm(instance=employee)
+
+    order_list = request.user.employee.shop.order_set.all().order_by('-date')
+    total_orders = order_list.count()
+
+    if request.method == 'POST':
+        form = EmployeeForm(request.POST, instance=employee)
+        if form.is_valid():
+            form.save()
+
+            messages.info(request, 'Profile update successfully')
+
+            # New users will be redirected to the services to start ordering.
+            if total_orders < 1:
+                return redirect('products:products')
+            else:
+                return redirect('accounts:employee')
+    else:
+        context = {'form': form}
+        return render(request, 'accounts/userprofile.html', context)
 
 
 @login_required
