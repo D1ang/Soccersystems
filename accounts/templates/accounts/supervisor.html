@@ -7,7 +7,8 @@
 
     <!--Orderstatus-->
     <div class="row">
-      <div class="col custom-card text-center p-3 m-3">
+      <div class="col custom-card text-center p-3 m-3
+      card border-left-primary h-100 py-2">
         <h5>Orders</h5>
         <h4>{{ total_orders }}</h4>
       </div>
@@ -61,10 +62,10 @@
             <thead>
               <tr>
                 <th>Order ID</th>
-                <th>Customer</th>
-                <th>Date</th>
+                <th>Shop</th>
+                <th>Datum</th>
                 <th>Status</th>
-                <th>Actions</th>
+                <th>Acties</th>
               </tr>
             </thead>
             <tbody>
@@ -74,10 +75,10 @@
                     {% if order.id_code %}
                       {{ order.id_code }}
                     {% else %}
-                      In cart
+                      In behandeling
                     {% endif %}
                   </td>
-                  <td>{{ order.user.customer.company_name }}</td>
+                  <td>{{ order.user.employee.shop }}</td>
                   <td>{{ order.date }}</td>
                   <td>
                     <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
@@ -89,6 +90,8 @@
                     {% else %}
                       <i class="far fa-edit"></i>
                     {% endif %}
+                    <a href="#" onclick="window.open('{% url 'accounts:orderdetails' order.id %}','print','width=650,height=800').print()">
+                    <i class="fa fa-print"></i></a>
                   </td>
                 </tr>
               {% endfor %}
