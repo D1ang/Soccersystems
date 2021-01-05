@@ -197,7 +197,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/'
 ACCOUNT_FORMS = {'signup': 'accounts.forms.MyCustomSignupForm'}
 ACCOUNT_ADAPTER = 'invitations.models.InvitationsAdapter'
-INVITATIONS_INVITATION_ONLY = False
+INVITATIONS_INVITATION_ONLY = True
 
 # Messages
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
