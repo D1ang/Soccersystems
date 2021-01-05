@@ -29,8 +29,8 @@ class MyCustomSignupForm(SignupForm):
     def __init__(self, *args, **kwargs):
         super(MyCustomSignupForm, self).__init__(*args, **kwargs)
         self.fields['shop'] = forms.ModelChoiceField(queryset=Shop.objects.all(), required=True)
-        self.fields['first_name'] = forms.CharField(max_length=50, required=True)
-        self.fields['last_name'] = forms.CharField(max_length=50, required=True)
+        self.fields['first_name'] = forms.CharField(max_length=50, required=True, widget=forms.TextInput(attrs={'placeholder': 'Firstname'}))
+        self.fields['last_name'] = forms.CharField(max_length=50, required=True, widget=forms.TextInput(attrs={'placeholder': 'Lastname'}))
 
     def save(self, request):
         shop = self.cleaned_data.pop('shop')
