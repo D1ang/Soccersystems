@@ -361,7 +361,7 @@ header .overlay {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 40%;
-  background-color: rgb(248, 249, 250);
+  background-color: #f8f9fc;
   min-height: 100%;
   padding-top: 60px;
   font-weight: 400;
@@ -374,6 +374,7 @@ hr.dashboard {
 .custom-card {
   background: #fff;
   padding: 0 8px 40px 8px;
+  border: 1px solid #e3e6f0;
   border-radius: 0px;
 }
 
