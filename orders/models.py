@@ -12,7 +12,7 @@ class OrderItem(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     item = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=1)
+    quantity = models.IntegerField(default=25)
     ordered = models.BooleanField(default=False)
 
     @property
@@ -51,8 +51,38 @@ class Order(models.Model):
     def get_total(self):
         total = 0
         for order_item in self.items.all():
-            total += order_item.get_total_item_price()
+            total += order_item.get_total_item_price() * order_item.quantity
         return total
 
     def __str__(self):
         return self.user.username
+
+
+
+
+
+
+    # This is my custom JSON Response
+    def serializeCustom(self):
+        items = list(OrderItem.objects.filter(order__pk=self.id).values('item', 'quantity'))
+
+        for item in items:
+            item["Opdrachten::kf_web_order_id"] = self.id_code
+            item["Opdrachten::artikelnummer"] = item.pop("item")
+            item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")     
+
+        data = {
+            "fieldData": {
+                "kp_orderbeheer_id": self.id_code,
+                "order_soort": "Order",
+                "order_status": "Bevestigd",
+                "omschrijving": "Test order",
+                "referentie": "Ingram",
+                "kf_relatiebeheer_id": 92887518,
+                # "shop": list(Shop.objects.filter(order__pk=self.id).values('company_name')),
+            },
+            "portalData": {
+                "portal": items
+            }
+        }
+        return data
