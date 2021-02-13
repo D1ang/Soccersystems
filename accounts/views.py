@@ -1,13 +1,13 @@
 from .decorators import allowed_users
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 from django.core.paginator import Paginator
-from django.shortcuts import render, redirect
 from orders.models import Order
-from .forms import InviteForm, EmployeeForm
-from .filters import OrderFilter
 from decimal import Decimal
+from .forms import EmployeeForm
+from .filters import OrderFilter
 
 
 @login_required
@@ -25,7 +25,7 @@ def supervisor(request):
     orderFilter = OrderFilter(request.GET, queryset=order_list)
     order_list = orderFilter.qs
 
-    # Paginate the order to max 6 result per page
+    # Paginate the orders to max 6 results per page
     paginator = Paginator(order_list, 6)
     page_number = request.GET.get('page')
     page_object = paginator.get_page(page_number)
@@ -45,8 +45,8 @@ def supervisor(request):
 def employee(request):
     """
     A view that displays the dashboard
-    for the employee & paginate the order list.
-    The orders are shown on a shop based level.
+    for the employee & paginate the order list
+    The orders are shown on a shop based level
     """
     order_list = request.user.employee.shop.order_set.all().order_by('-date')
     paginator = Paginator(order_list, 6)
@@ -70,7 +70,7 @@ def employee(request):
 def userprofile(request):
     """
     Profile settings for the user,
-    to change/update their own profile.
+    to change/update their own profile
     """
     employee = request.user.employee
     form = EmployeeForm(instance=employee)
@@ -100,8 +100,8 @@ def userprofile(request):
 def orderdetails(request, pk_order):
     """
     A orderdetail page for the employees and supervisor to
-    view the selected order.
-    Extra security is provided to prevent URL snooping.
+    view the selected order
+    Extra security is provided to prevent URL snooping
     """
     admin = request.user
 
@@ -132,16 +132,3 @@ def orderdetails(request, pk_order):
         except ObjectDoesNotExist:
             messages.error(request, 'Deze bestelling is nog niet afgerond door collega')
             return redirect('accounts:employee')
-
-
-@login_required
-@allowed_users(allowed_roles=['supervisor', 'admin'])
-def invite(request):
-    """
-    An invite page for the supervisors to invite employees
-    to register their account.
-    """
-    form = InviteForm()
-    context = {'form': form}
-
-    return render(request, 'accounts/invite.html', context)
