@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.template.loader import get_template
+from django.utils.translation import gettext as _
 from django.contrib import messages
 
 from django.core.mail import EmailMessage
@@ -9,13 +10,14 @@ from home.forms import ContactForm
 
 def index(request):
     """
-    Load the homepage if there is
-    no POST request. if POST load the data
-    and send an email with office365 smtp.
+    Load the homepage if there is no POST request
+    if POST load the data and
+    send an email with office365 smtp
     """
     form = ContactForm
 
     if request.method == 'POST':
+
         form = form(data=request.POST)
 
         if form.is_valid():
@@ -33,13 +35,15 @@ def index(request):
             content = template.render(context)
 
             email = EmailMessage(
-                "Soccersystems bericht",
+                "Soccersystems message",
                 content,
                 "info@ibsgraphics.nl" + '', ['info@ibsgraphics.nl'],
                 headers={'Reply-To': contact_email}
             )
             email.send()
-            messages.success(request, 'Bericht is succesvol verzonden!')
+
+            message = _('Message has been sent successfully!')
+            messages.success(request, message=message)
             return HttpResponseRedirect('/')
 
     return render(request, 'home/index.html', {
