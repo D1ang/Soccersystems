@@ -53,7 +53,7 @@ class ProductItem(models.Model):
     """
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
     item_group = models.ForeignKey(ItemGroup, null=True, blank=True, on_delete=models.SET_NULL)
-    slug = models.SlugField()
+    slug = models.SlugField(max_length=8, primary_key=True, unique=True)
     description = models.CharField(max_length=25)
     size = models.IntegerField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
