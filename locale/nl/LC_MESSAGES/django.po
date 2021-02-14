@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0 \n"
-"Report-Msgid-Bugs-To: Django Heimgartner \n"
-"POT-Creation-Date: 2021-02-13 14:06+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-14 09:58+0100\n"
 "PO-Revision-Date: 2021-02-13 HO:MI+ZONE\n"
 "Last-Translator: Django Heimgartner <django.heimgartner@gmail.com>\n"
 "Language-Team: Dutch <django.heimgartner@gmail.com>\n"
@@ -1314,7 +1314,10 @@ msgid ""
 "We provide the required flexibility, service, knowledge and speed to deliver "
 "a high quality, eco-efficiently produced and durable product for a decent "
 "price."
-msgstr "Wij bieden de vereiste flexibiliteit, service, kennis en snelheid om een ​​hoogwaardig, eco-efficiënt geproduceerd en duurzaam product te leveren voor een fatsoenlijke prijs."
+msgstr ""
+"Wij bieden de vereiste flexibiliteit, service, kennis en snelheid om een ​​"
+"hoogwaardig, eco-efficiënt geproduceerd en duurzaam product te leveren voor "
+"een fatsoenlijke prijs."
 
 #: .\home\templates\home\index.html:33
 msgid "let's work together!"
@@ -1395,7 +1398,9 @@ msgstr "Speciale goedkeuring"
 #: .\home\templates\home\index.html:128
 msgid ""
 "All our materials are tested externally by Bureau Vertias on ecofriendliness."
-msgstr "Al onze materialen zijn extern getest door Bureau Vertias op milieuvriendelijkheid."
+msgstr ""
+"Al onze materialen zijn extern getest door Bureau Vertias op "
+"milieuvriendelijkheid."
 
 #: .\home\templates\home\index.html:134
 msgid "Professional Service"
@@ -1414,7 +1419,9 @@ msgstr "Stabiele kwaliteit"
 msgid ""
 "We test our products daily to keep up with the standards of professional "
 "sports."
-msgstr "We testen onze producten dagelijks om aan de normen van professionele sporten te voldoen."
+msgstr ""
+"We testen onze producten dagelijks om aan de normen van professionele "
+"sporten te voldoen."
 
 #: .\home\templates\home\index.html:152
 msgid "Used by pro's"
@@ -1422,7 +1429,9 @@ msgstr "Gebruikt door pro's"
 
 #: .\home\templates\home\index.html:154
 msgid "Heavily used by the top soccer team of Amsterdam for the past 5 years."
-msgstr "De afgelopen 5 jaar intensief gebruikt door EreDivisie clubs in betaald voetbal."
+msgstr ""
+"De afgelopen 5 jaar intensief gebruikt door EreDivisie clubs in betaald "
+"voetbal."
 
 #: .\home\templates\home\index.html:160
 msgid "Flexible"
@@ -1432,7 +1441,9 @@ msgstr "Flexibel"
 msgid ""
 "Short lines of communication! Thanks to our inhouse design studio and "
 "production facility."
-msgstr "Korte communicatielijnen! Dankzij onze eigen ontwerpstudio en productiefaciliteit."
+msgstr ""
+"Korte communicatielijnen! Dankzij onze eigen ontwerpstudio en "
+"productiefaciliteit."
 
 #: .\home\templates\home\index.html:168
 msgid "Fast deliveries"
@@ -1442,7 +1453,9 @@ msgstr "Snelle leveringen"
 msgid ""
 "Our standard production time is 2 - 5 business days. on standard 1 business "
 "day."
-msgstr "Onze standaard productietijd is 2 - 5 werkdagen. op standaard nummers 1 werkdag."
+msgstr ""
+"Onze standaard productietijd is 2 - 5 werkdagen. op standaard nummers 1 "
+"werkdag."
 
 #: .\home\templates\home\index.html:184
 msgid "Our prices"
@@ -1456,7 +1469,9 @@ msgstr "Wat te verwachten als de prijs goed is?"
 msgid ""
 "The following prices are based on our standard products. Al standard numbers "
 "include an antibleed backer."
-msgstr "De volgende prijzen zijn gebaseerd op onze standaardproducten. Alle standaard nummers zijn inclusief een antibleed backer."
+msgstr ""
+"De volgende prijzen zijn gebaseerd op onze standaardproducten. Alle "
+"standaard nummers zijn inclusief een antibleed backer."
 
 #: .\home\templates\home\index.html:245
 msgid "* prices are per number and based sizes in height."
@@ -1473,6 +1488,10 @@ msgstr "verstuur bericht"
 #: .\home\views.py:45
 msgid "Message has been sent successfully!"
 msgstr "Bericht is succesvol verstuurd!"
+
+#: .\templates\footer.html:31
+msgid "To the top"
+msgstr "Naar boven"
 
 #: .\templates\invitations\email\email_invite_message.html:4
 #, python-format
@@ -1680,3 +1699,19 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
+
+#: .\templates\navbar.html:14
+msgid "Products"
+msgstr "Producten"
+
+#: .\templates\navbar.html:21
+msgid "Overview"
+msgstr "Overzicht"
+
+#: .\templates\navbar.html:22
+msgid "Profile"
+msgstr "Profiel"
+
+#: .\templates\navbar.html:29
+msgid "Logout"
+msgstr "Uitloggen"
