@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load active_link_tags %}
 {% load cart_navbar_badge %}
 
@@ -10,22 +11,22 @@
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a class="nav-link" href="{% url 'home:index' %}">Home</a></li>
-      <li class="nav-item {% active_link 'products:products' 'active' %}"><a class="nav-link" href="{% url 'products:products' %}">Producten</a></li>
+      <li class="nav-item {% active_link 'products:products' 'active' %}"><a class="nav-link" href="{% url 'products:products' %}">{% trans "Products" %}</a></li>
 
       {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown">Account</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="{% url 'accounts:employee' %}">Overzicht</a>
-            <a class="dropdown-item" href="{% url 'accounts:userprofile' %}">Profiel</a>
+            <a class="dropdown-item" href="{% url 'accounts:employee' %}">{% trans "Overview" %}</a>
+            <a class="dropdown-item" href="{% url 'accounts:userprofile' %}">{% trans "Profile" %}</a>
 
             <form method="POST" action="{% url 'account_logout' %}">
               {% csrf_token %}
               {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
               {% endif %}
-              <a class="dropdown-item" href="#" onclick="this.parentNode.submit();">Uitloggen</a>
+              <a class="dropdown-item" href="#" onclick="this.parentNode.submit();">{% trans "Logout" %}</a>
             </form>
 
           </div>

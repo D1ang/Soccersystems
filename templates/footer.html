@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <!--Footer-->
 <footer>
   <div class="container-fluid footer-container text-white mt-3 px-5">
@@ -26,7 +28,7 @@
           <li><a class="footer-container" href="{% url 'home:index' %}">Home</a></li>
 
           {% if request.user.is_authenticated %}
-            <li><a href="#">Naar boven</a></li>
+            <li><a href="#">{% trans "To the top" %}</a></li>
           {% else %}
             <li><a href="{% url 'account_login' %}">Login</a></li>
           {% endif %}
