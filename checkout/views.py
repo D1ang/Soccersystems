@@ -2,10 +2,10 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect
+from django.utils.translation import gettext as _
 from django.views.generic import View
-from orders.models import Order, OrderItem
-from accounts.models import Employee
-from .models import Payment
+from orders.models import Order
+from .forms import CheckoutForm
 
 from fmrest import dataAPI
 from decimal import Decimal
@@ -16,8 +16,9 @@ fm = dataAPI.DataAPIv1('fm.ibs-mijdrecht.nl')
 
 class PaymentView(LoginRequiredMixin, View):
     """
-    Load the payment view for
-    the order checkout.
+    Load the checkout view for the order
+    including the form. On POST save the
+    order to the Postgres backend and FileMaker.
     """
     def get(self, *args, **kwargs):
         try:
@@ -26,88 +27,99 @@ class PaymentView(LoginRequiredMixin, View):
             total = order.get_total() + tax
 
             if total <= 0:
-                messages.warning(self.request, 'Your cart is empty')
-                return redirect('products:products')
+                message = _('Your cart is empty')
+                messages.warning(self.request, message=message)
 
-            template = 'checkout/payment.html'
-            context = {
-                'order': order,
-                'tax': tax,
-                'total': total
-            }
-            return render(self.request, template, context)
+                return redirect('products:products')
+            else:
+                form = CheckoutForm()
+                context = {
+                    'order': order,
+                    'tax': tax,
+                    'total': total,
+                    'form': form
+                }
+                return render(self.request, 'checkout/payment.html', context)
 
         except ObjectDoesNotExist:
-            messages.warning(self.request, 'There is no active order')
-            return redirect('orders:cart')
+            message = _('There is no active order')
+            messages.warning(self.request, message=message)
+            return redirect('products:products')
 
     def post(self, *args, **kwargs):
         """
         On POST, payment will be created in the database
-        and on processed to the FileMaker data API.
+        and processed to the FileMaker data API.
         """
-        # FileMaker data API - create a token to authenticate database
-        fm.authenticate('Digitrans', 'cwp', 'cwp123')
-        if fm.errorCode != 0:
-            print(fm.errorMessage)
-
-        def fm_serializer(self):
-            shop = str(self.request.user.employee.shop)
+        form = CheckoutForm(self.request.POST, self.request.FILES or None)
+        try:
             order = Order.objects.get(user=self.request.user, ordered=False)
-            order_items = list(order.items.all().values('item', 'quantity'))
+            tax = order.get_total() * Decimal(21 / 100)
+            total = order.get_total() + tax
 
-            order.id_code = uuid.uuid1().int
+            if form.is_valid():
+                # FileMaker data API - create a token to authenticate database
+                fm.authenticate('Digitrans', 'cwp', 'cwp123')
+                if fm.errorCode != 0:
+                    print(fm.errorMessage)
 
-            for item in order_items:
-                item["Opdrachten::kf_web_order_id"] = order.id_code
-                item["Opdrachten::productgroep"] = "Transfers"
-                item["Opdrachten::artikelnummer"] = item.pop("item")
-                item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
+                def fm_serializer(self):
+                    shop = str(self.request.user.employee.shop)
+                    order = Order.objects.get(user=self.request.user, ordered=False)
+                    order_items = list(order.items.all().values('item', 'quantity'))
 
-            data = {
-                "fieldData": {
-                    "kp_orderbeheer_id": order.id_code,
-                    "order_soort": "Order",
-                    "order_status": "Bevestigd",
-                    "omschrijving": "Ajax order",
-                    "referentie": shop,
-                    "kf_relatiebeheer_id": 92887518,
-                },
-                "portalData": {
-                    "portal": order_items
-                }
-            }
-            return data
+                    order.id_code = uuid.uuid1().int
 
-        fm.create_record('web_find_asset_detail', fm_serializer(self))
-        fm.logout()
-        # print(fm_serializer(self))
+                    for item in order_items:
+                        item["Opdrachten::kf_web_order_id"] = order.id_code
+                        item["Opdrachten::productgroep"] = "Transfers"
+                        item["Opdrachten::artikelnummer"] = item.pop("item")
+                        item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
 
-        '''
-        tax = order.get_total() * Decimal(21 / 100)
-        total = order.get_total() + tax
-        amount = int(total * 100)
+                    data = {
+                        "fieldData": {
+                            "kp_orderbeheer_id": order.id_code,
+                            "order_soort": "Order",
+                            "order_status": "Bevestigd",
+                            "omschrijving": "Ajax order",
+                            "referentie": shop,
+                            "kf_relatiebeheer_id": 92887518,
+                        },
+                        "portalData": {
+                            "portal": order_items
+                        }
+                    }
+                    return data
 
-        # Creating the payment
-        payment = Payment()
-        payment.user = self.request.user
-        payment.amount = amount
-        payment.save()
+                print(fm_serializer(self))
+                # fm.create_record('web_find_asset_detail', fm_serializer(self))
+                fm.logout()
 
-        # Assign payment to order
-        order_items = order.items.all()
-        order_items.update(ordered=True)
-        for item in order_items:
-            item.save()
+                # Save order to the backend
+                comments = form.cleaned_data.get('comments')
+                delivery_date = form.cleaned_data.get('delivery_date')
 
-        order.ordered = True
-        order.payment = payment
-        order.total = total
-        order.tax = tax
+                order_items = order.items.all()
+                order_items.update(ordered=True)
+                for item in order_items:
+                    item.save()
 
-        order.id_code = '921-' + generate_id_code()
-        order.save()
+                order.comments = comments
+                order.delivery_date = delivery_date
+                order.ordered = True
+                order.total = total
+                order.tax = tax
+                # order.id_code = '921-' + generate_id_code()
 
-        '''
-        messages.success(self.request, 'Your order was successful!')
-        return redirect('accounts:employee')
+                order.save()
+
+                message = _('Your order was successful!')
+                messages.success(self.request, message=message)
+
+                return redirect('accounts:employee')
+
+        except ObjectDoesNotExist:
+            message = _('There is no active order')
+            messages.warning(self.request, message=message)
+
+            return redirect('checkout:payment')
