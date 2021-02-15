@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
+from django.utils.translation import gettext as _
 from django.core.paginator import Paginator
 from orders.models import Order
 from decimal import Decimal
@@ -83,7 +84,8 @@ def userprofile(request):
         if form.is_valid():
             form.save()
 
-            messages.info(request, 'Profiel update succesvol')
+            message = _('Profile update successful')
+            messages.info(request, message=message)
 
             # New users will be redirected to the services to start ordering.
             if total_orders < 1:
@@ -130,5 +132,6 @@ def orderdetails(request, pk_order):
             }
             return render(request, 'accounts/orderdetails.html', context)
         except ObjectDoesNotExist:
-            messages.error(request, 'Deze bestelling is nog niet afgerond door collega')
+            message = _('This order has not yet been completed by a colleague')
+            messages.error(request, message=message)
             return redirect('accounts:employee')
