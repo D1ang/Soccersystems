@@ -39,6 +39,7 @@ class Order(models.Model):
 
     id_code = models.CharField(max_length=15)
     date = models.DateField(auto_now_add=True)
+    delivery_date = models.DateField(blank=True, null=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     status = models.CharField(choices=STATUS, default='requested', max_length=10)
@@ -57,11 +58,6 @@ class Order(models.Model):
     def __str__(self):
         return self.user.username
 
-
-
-
-
-
     # This is my custom JSON Response
     def serializeCustom(self):
         items = list(OrderItem.objects.filter(order__pk=self.id).values('item', 'quantity'))
@@ -69,7 +65,7 @@ class Order(models.Model):
         for item in items:
             item["Opdrachten::kf_web_order_id"] = self.id_code
             item["Opdrachten::artikelnummer"] = item.pop("item")
-            item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")     
+            item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
 
         data = {
             "fieldData": {
