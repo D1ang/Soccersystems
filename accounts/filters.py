@@ -10,7 +10,7 @@ class OrderFilter(filters.FilterSet):
     and filter out the request provided by the admin.
     """
     company = filters.CharFilter(
-        field_name='user__customer__company_name',
+        field_name='user__employee__shop__company_name',
         lookup_expr='icontains',
         widget=TextInput(attrs={'placeholder': 'Company name'})
     )
