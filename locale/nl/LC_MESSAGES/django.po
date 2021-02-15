@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-14 09:58+0100\n"
+"POT-Creation-Date: 2021-02-15 13:46+0100\n"
 "PO-Revision-Date: 2021-02-13 HO:MI+ZONE\n"
 "Last-Translator: Django Heimgartner <django.heimgartner@gmail.com>\n"
 "Language-Team: Dutch <django.heimgartner@gmail.com>\n"
@@ -21,6 +21,46 @@ msgstr ""
 #: .\accounts\templates\accounts\userprofile.html:18
 msgid "Profile information"
 msgstr "Profiel"
+
+#: .\accounts\views.py:87
+msgid "Profile update successful"
+msgstr "Profielupdate succesvol"
+
+#: .\accounts\views.py:135
+msgid "This order has not yet been completed by a colleague"
+msgstr "Deze bestelling is nog niet afgerond door collega"
+
+#: .\checkout\templates\checkout\payment.html:17
+msgid "Checkout"
+msgstr ""
+
+#: .\checkout\templates\checkout\payment.html:18
+msgid "Amount"
+msgstr ""
+
+#: .\checkout\templates\checkout\payment.html:41
+msgid "Extra details"
+msgstr ""
+
+#: .\checkout\templates\checkout\payment.html:61
+msgid "Return to checkout"
+msgstr ""
+
+#: .\checkout\views.py:30
+msgid "Your cart is empty"
+msgstr "Uw winkelwagen is leeg"
+
+#: .\checkout\views.py:45
+msgid "There is no active order"
+msgstr "Er is geen actieve order"
+
+#: .\checkout\views.py:122
+msgid "There is no active order"
+msgstr "Er is geen actieve order"
+
+#: .\checkout\views.py:116
+msgid "Your order was successful!"
+msgstr "Je bestelling is gelukt!"
 
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
