@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -15,7 +15,7 @@
             <div class="col p-4">
               <form method="POST" action="" enctype="uniForm">
                 {% csrf_token %}
-                <h5>Profiel informatie</h5>
+                <h5>{% trans "Profile information" %}</h5>
                 <hr>
                   <div class="form-group mb-0">
                     {{ form.first_name|as_crispy_field }}
@@ -34,10 +34,10 @@
                   </div>
                 <div class="form-row justify-content-center mt-3">
                   <div class="form-group col-md-4 mb-0">
-                    <a href="{% url 'accounts:employee' %}" class="btn btn-black-sm mb-3" role="button">View dashboard</a>
+                    <a href="{% url 'accounts:employee' %}" class="btn btn-black-sm mb-3" role="button">Terug naar overzicht</a>
                   </div>
                   <div class="form-group col-md-4 mb-0">
-                    <input class="btn btn-black-sm" type="submit" value="Update changes">
+                    <input class="btn btn-black-sm" type="submit" value="Pas gegevens aan">
                   </div>
                 </div>
               </form>
