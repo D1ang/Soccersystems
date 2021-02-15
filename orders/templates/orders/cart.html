@@ -12,8 +12,6 @@
           <tr>
             <th>Cart</th>
             <th class="cart-align-right">Amount</th>
-            <th class="cart-align-right">Item price</th>
-            <th class="cart-align-right">Total</th>
             <th class="cart-align-right">Action</th>
           </tr>
         </thead>
@@ -22,8 +20,6 @@
             <tr>
               <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
               <td class="cart-align-right">{{ order_item.quantity }}</td>
-              <td class="cart-align-right">{{ order_item.item.price }}€</td>
-              <td class="cart-align-right">{{ order_item.total_cost }}€</td>
               <td class="cart-align-right">
                 <a href="{% url 'orders:remove_from_cart' order_item.item.slug %}" class="btn-delete-cart"><i class="fas fa-trash"></i></a>
               </td>
