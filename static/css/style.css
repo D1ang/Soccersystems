@@ -484,6 +484,24 @@ hr.dashboard {
   text-align: right;
 }
 
+/*----------------------------Checkout---------------------------*/
+
+.selectdatewidget {
+  display: inline-block;
+  border: #ced4da 1px solid;
+}
+
+select[name$="_day"].selectdatewidget {
+  width: 26%;
+}
+select[name$="_month"].selectdatewidget {
+  width: 38%;
+  margin: 0 1% 0 1%;
+}
+select[name$="_year"].selectdatewidget {
+  width: 34%;
+}
+
 /*----------------------------Errors---------------------------*/
 
 #error {
