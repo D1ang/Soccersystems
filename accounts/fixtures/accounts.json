@@ -70,10 +70,23 @@
         "pk": 3,
         "fields": {
             "user": 1,
-            "first_name": "Django",
+            "first_name": "Djang",
             "last_name": "Heimgartner",
             "email": "info@ibsgraphics.nl",
             "phone": "+31297286884",
+            "mobile": null,
+            "shop": 2
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 9,
+        "fields": {
+            "user": 7,
+            "first_name": "Petra",
+            "last_name": "Baas",
+            "email": "p.baas@ajax.nl",
+            "phone": null,
             "mobile": null,
             "shop": 2
         }
