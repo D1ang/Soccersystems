@@ -7,10 +7,11 @@ class ProductGroup(models.Model):
     A model for the products
     This can be groups on a product basis
     """
+    slug = models.SlugField(max_length=15, primary_key=True, unique=True)
     productcode = models.CharField(max_length=5)
     productname = models.CharField(max_length=30)
-    image = models.ImageField(blank=True, null=True)
     sort = models.IntegerField(blank=True, null=True)
+    image = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.productname

@@ -1,0 +1,10 @@
+[
+    {
+        "model": "products.itemtag",
+        "pk": 1,
+        "fields": {
+            "name": "Nieuw",
+            "colour": "danger"
+        }
+    }
+]

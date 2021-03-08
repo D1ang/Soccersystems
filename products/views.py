@@ -39,7 +39,7 @@ def product_items(request, pk_product):
     to view and order articles.
     """
     product_list = ProductGroup.objects.all().order_by('sort')
-    product_item_list = ProductItem.objects.filter(product_group=pk_product)
+    product_item_list = ProductItem.objects.filter(product_group_id=pk_product)
 
     itemFilter = ItemFilter(request.GET, queryset=product_item_list)
     product_item_list = itemFilter.qs

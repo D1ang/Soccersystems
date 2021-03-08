@@ -3,7 +3,9 @@ from .models import ProductGroup, ProductItem, ItemGroup, ItemTag
 
 
 class ProductGroupAdmin(admin.ModelAdmin):
+    ordering = ['sort']
     list_display = (
+        'sort',
         'productcode',
         'productname'
     )

@@ -1,0 +1,23 @@
+[
+    {
+        "model": "products.itemgroup",
+        "pk": 1,
+        "fields": {
+            "name": "Naamblokken"
+        }
+    },
+    {
+        "model": "products.itemgroup",
+        "pk": 2,
+        "fields": {
+            "name": "Letters"
+        }
+    },
+    {
+        "model": "products.itemgroup",
+        "pk": 3,
+        "fields": {
+            "name": "Nummers"
+        }
+    }
+]
