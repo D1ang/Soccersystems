@@ -11,7 +11,7 @@ class ProductGroup(models.Model):
     productcode = models.CharField(max_length=5)
     productname = models.CharField(max_length=30)
     sort = models.IntegerField(blank=True, null=True)
-    image = models.ImageField(blank=True, null=True)
+    image = models.ImageField(blank=True, default='no_image.svg', upload_to='productgroups')
 
     def __str__(self):
         return self.productname
@@ -52,14 +52,15 @@ class ProductItem(models.Model):
     A model for the product items.
     Urls are slug based on the slug field.
     """
+    slug = models.SlugField(max_length=8, primary_key=True, unique=True)
     product_group = models.ForeignKey(ProductGroup, on_delete=models.CASCADE)
     item_group = models.ForeignKey(ItemGroup, null=True, blank=True, on_delete=models.SET_NULL)
-    slug = models.SlugField(max_length=8, primary_key=True, unique=True)
+    article_id = models.IntegerField()
     description = models.CharField(max_length=25)
     size = models.IntegerField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     stock = models.IntegerField()
-    image = models.ImageField(upload_to='images', null=True, blank=True)
+    image = models.ImageField(blank=True, default='no_image.svg', upload_to='articles')
     tag = models.ForeignKey(ItemTag, null=True, blank=True, on_delete=models.SET_NULL)
 
     def get_add_to_cart_url(self):
