@@ -66,24 +66,26 @@ class PaymentView(LoginRequiredMixin, View):
                 def fm_serializer(self):
                     shop = str(self.request.user.employee.shop)
                     order = Order.objects.get(user=self.request.user, ordered=False)
-                    order_items = list(order.items.all().values('item', 'quantity'))
+                    order_items = list(order.items.all().values('article_id', 'quantity'))
 
                     order.id_code = uuid.uuid1().int
 
                     for item in order_items:
                         item["Opdrachten::kf_web_order_id"] = order.id_code
-                        item["Opdrachten::productgroep"] = "Transfers"
-                        item["Opdrachten::artikelnummer"] = item.pop("item")
+                        item["Opdrachten::kf_artikelen_id"] = item.pop("article_id")
+                        item["Opdrachten::order_soort"] = "Order"
+                        item["Opdrachten::omschrijving"] = " "
                         item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
+                        item["Opdrachten::werkbon_status"] = 1
 
                     data = {
                         "fieldData": {
                             "kp_orderbeheer_id": order.id_code,
+                            "kf_relatiebeheer_id": 92887518,
                             "order_soort": "Order",
                             "order_status": "Bevestigd",
-                            "omschrijving": "Ajax order",
+                            "omschrijving": shop + " order",
                             "referentie": shop,
-                            "kf_relatiebeheer_id": 92887518,
                         },
                         "portalData": {
                             "portal": order_items
@@ -91,8 +93,7 @@ class PaymentView(LoginRequiredMixin, View):
                     }
                     return data
 
-                print(fm_serializer(self))
-                # fm.create_record('web_find_asset_detail', fm_serializer(self))
+                fm.create_record('web_find_asset_detail', fm_serializer(self))
                 fm.logout()
 
                 # Save order to the backend

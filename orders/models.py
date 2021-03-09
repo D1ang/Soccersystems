@@ -12,7 +12,9 @@ class OrderItem(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     item = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
+    article_id = models.IntegerField()
     quantity = models.IntegerField(default=25)
+    price = models.FloatField()
     ordered = models.BooleanField(default=False)
 
     @property

@@ -53,6 +53,8 @@ def add_to_cart(request, slug):
 
         order_item, created = OrderItem.objects.get_or_create(
             item=item,
+            price=item.price,
+            article_id=item.article_id,
             user=request.user,
             shop=shop,
             quantity=request.GET.get('qty'),
