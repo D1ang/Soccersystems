@@ -41,11 +41,11 @@ class OrderSummaryView(LoginRequiredMixin, View):
 
 def add_to_cart(request, slug):
     """
-    Adds an item to the cart, creates an order and
+    Adds an item to the cart, creates an order &
     checks if an item already is in the order.
     """
     if request.user.is_anonymous:
-        messages.add_message(request, messages.INFO, 'Please login to order services')
+        messages.add_message(request, messages.INFO, 'Please login to order')
         return redirect('products:products')  # <------- !NOTE change this to the login page
     else:
         shop = request.user.employee.shop
