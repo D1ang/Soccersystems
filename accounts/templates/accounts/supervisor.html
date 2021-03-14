@@ -1,31 +1,33 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
 <section id="dashboard">
   <div class="container-fluid mt-4">
 
-    <!--Orderstatus-->
+    <!--Ordersstatus-->
     <div class="row">
-      <div class="col custom-card text-center p-3 m-3
-      card border-left-primary h-100 py-2">
-        <h5>Orders</h5>
+      <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+        <h5>{% trans "Ordered" %}</h5>
         <h4>{{ total_orders }}</h4>
       </div>
-      <div class="col custom-card text-center p-3 m-3">
-        <h5>Pending</h5>
+      <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+        <h5>{% trans "Pending" %}</h5>
         <h4>{{ pending_orders }}</h4>
       </div>
-      <div class="col custom-card text-center p-3 m-3">
-        <h5>Finished</h5>
+      <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+        <h5>{% trans "Finished" %}</h5>
         <h4>{{ finished_orders }}</h4>
       </div>
     </div>
-    <!--Orderstatus end-->
+    <!--Ordersstatus end-->
 
     <div class="row mt-3">
       <div class="col-12">
-        <h5 class="text-uppercase pl-2">order overview</h5>
+
+        <h5 class="text-uppercase pl-2">{% trans "Order overview" %}</h5>
         <hr class="dashboard m-0">
 
         <!--Ordersearch-->
@@ -35,19 +37,19 @@
               <form id="auth-form" method="GET" action="" enctype="uniForm">
                 <div class="form-row align-items-center">
                   <div class="col-lg-4 col-sm-12 my-1">
-                    {{ orderFilter.form.company }}
+                    {{ orderFilter.form.shop }}
                   </div>
                   <div class="col-lg-2 col-sm-12 my-1">
                     {{ orderFilter.form.status }}
                   </div>
                   <div class="col-lg-2 col-sm-12 my-1">
-                    {{ orderFilter.form.start_date }}
+                    {{ orderFilter.form.delivery_date }}
                   </div>
                   <div class="col-lg-2 col-sm-12 my-1">
-                    <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">Search</button>
+                    <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">{% trans "Search" %}</button>
                   </div>
                   <div class="col-lg-2 col-sm-12 my-1">
-                    <a class="btn btn-black-sm" href="{% url 'accounts:supervisor' %}">Reset</a>
+                    <a class="btn btn-black-sm" href="{% url 'accounts:supervisor' %}">{% trans "Reset" %}</a>
                   </div>
                 </div>
               </form>
@@ -61,11 +63,11 @@
           <table id="dataTable" class="nowrap table table-sm height-fix">
             <thead>
               <tr>
-                <th>Order ID</th>
-                <th>Shop</th>
-                <th>Datum</th>
-                <th>Status</th>
-                <th>Acties</th>
+                <th>{% trans "order ID" %}</th>
+                <th>{% trans "shop" %}</th>
+                <th>{% trans "delivery date" %}</th>
+                <th>{% trans "status" %}</th>
+                <th>{% trans "details" %}</th>
               </tr>
             </thead>
             <tbody>
@@ -75,11 +77,17 @@
                     {% if order.id_code %}
                       {{ order.id_code }}
                     {% else %}
-                      In behandeling
+                      {% trans "In treatment..." %}
                     {% endif %}
                   </td>
                   <td>{{ order.user.employee.shop }}</td>
-                  <td>{{ order.date }}</td>
+                  <td>
+                    {% if order.id_code %}
+                      {{ order.delivery_date }}
+                    {% else %}
+                      {% trans "In treatment..." %}
+                    {% endif %}
+                  </td>
                   <td>
                     <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
                   </td>
@@ -105,17 +113,19 @@
           <div class="col">
             <span>
               {% if page_object.has_previous %}
-              <a href="?page={{ page_object.previous_page_number }}" class="subtext">
-                <i class="fas fa-angle-double-left"></i> previous</a>
+                <a href="?page={{ page_object.previous_page_number }}" class="subtext">
+                  <i class="fas fa-angle-double-left"></i> {% trans "prev" %}
+                </a>
               {% endif %}
 
               <span class="subtext-bold px-1">
-                page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+                {% trans "page" %} {{ page_object.number }} {% trans "of" %} {{ page_object.paginator.num_pages }}
               </span>
 
               {% if page_object.has_next %}
-              <a href="?page={{ page_object.next_page_number }}" class="subtext">next
-                <i class="fas fa-angle-double-right"></i></a>
+                <a href="?page={{ page_object.next_page_number }}" class="subtext">{% trans "next" %}
+                  <i class="fas fa-angle-double-right"></i>
+                </a>
               {% endif %}
             </span>
           </div>

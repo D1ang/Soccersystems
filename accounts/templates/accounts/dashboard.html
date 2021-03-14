@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
 <section id="dashboard">
@@ -9,16 +11,16 @@
     
       <!--Ordersstatus-->
       <div class="row">
-        <div class="col card custom-card text-center p-3 m-3">
-          <h5>Geplaatst</h5>
+        <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+          <h5>{% trans "Ordered" %}</h5>
           <h4>{{ total_orders }}</h4>
         </div>
-        <div class="col card custom-card text-center p-3 m-3">
-          <h5>In afwachting</h5>
+        <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+          <h5>{% trans "Pending" %}</h5>
           <h4>{{ pending_orders }}</h4>
         </div>
-        <div class="col card custom-card text-center p-3 m-3">
-          <h5>Gereed</h5>
+        <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
+          <h5>{% trans "Finished" %}</h5>
           <h4>{{ finished_orders }}</h4>
         </div>
       </div>
@@ -27,7 +29,7 @@
       <div class="row mt-3">
         <div class="col-12">
           
-          <h5 class="text-uppercase pl-2">Order overzicht</h5>
+          <h5 class="text-uppercase pl-2">{% trans "Order overview" %}</h5>
           <hr class="dashboard m-0">
 
           <!--Orderdetails-->
@@ -35,12 +37,12 @@
             <table id="dataTable" class="nowrap table table-sm height-fix">
               <thead>
                 <tr>
-                  <th>Order ID</th>
-                  <th>Besteld</th>
-                  <th>Medewerker</th>
-                  <th>Leverdatum</th>
-                  <th>Status</th>
-                  <th>Details</th>
+                  <th>{% trans "order ID" %}</th>
+                  <th>{% trans "ordered" %}</th>
+                  <th>{% trans "employee" %}</th>
+                  <th>{% trans "delivery date" %}</th>
+                  <th>{% trans "status" %}</th>
+                  <th>{% trans "details" %}</th>
                 </tr>
               </thead>
               <tbody>
@@ -50,18 +52,24 @@
                       {% if order.id_code %}
                         {{ order.id_code }}
                       {% else %}
-                        In behandeling...
+                        {% trans "In treatment..." %}
                       {% endif %}
                     </td>
                     <td>{{ order.date }}</td>
                     <td>{{ order.user.employee.first_name }}</td>
-                    <td></td>
+                    <td>
+                      {% if order.id_code %}
+                        {{ order.delivery_date }}
+                      {% else %}
+                        {% trans "In treatment..." %}
+                      {% endif %}
+                    </td>
                     <td>
                       <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
                     </td>
                     <td>
                       <a class="subtext" href="{% url 'accounts:orderdetails' order.id %}">
-                        <i class="far fa-eye"></i>
+                        <i class="fas fa-info-circle"></i> {% trans "more details..." %}
                       </a>
                     </td>
                   </tr>
@@ -76,15 +84,17 @@
             <div class="col-12">
               <span>
                 {% if page_object.has_previous %}
-                  <a href="?page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
+                  <a href="?page={{ page_object.previous_page_number }}" class="subtext">
+                    <i class="fas fa-angle-double-left"></i> {% trans "prev" %}
+                  </a>
                 {% endif %}
 
                 <span class="subtext-bold px-1">
-                  pagina {{ page_object.number }} van {{ page_object.paginator.num_pages }}
+                  {% trans "page" %} {{ page_object.number }} {% trans "of" %} {{ page_object.paginator.num_pages }}
                 </span>
 
                 {% if page_object.has_next %}
-                  <a href="?page={{ page_object.next_page_number }}" class="subtext">next
+                  <a href="?page={{ page_object.next_page_number }}" class="subtext">{% trans "next" %}
                     <i class="fas fa-angle-double-right"></i>
                   </a>
                 {% endif %}
@@ -99,14 +109,13 @@
     <!--No available orders-->
     {% else %}
       <div class="custom-card text-center p-3 mt-3">
-          <h4 class="pb-2">Dear customer</h4>
+          <h4 class="pb-2">{% trans "Dear collegue" %}</h4>
           <p>
-            Welcome to your personal space! At this moment you don't have any orders, 
-            click the button to complete your profile and use the services page to order.
+            {% trans "Welcome to your personal space! At this moment you don't have any orders, click the button to complete your profile and use the products page to order." %}
           </p>
         <div class="form-row justify-content-center my-2">
           <div class="form-group col-md-4 mb-0">
-            <a href="" class="btn btn-black-sm my-2" role="button">Complete your profile</a>
+            <a href="{% url 'accounts:userprofile' %}" class="btn btn-black-sm my-2" role="button">{% trans "Complete your profile" %}</a>
           </div>
         </div>
       </div>

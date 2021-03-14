@@ -1,6 +1,8 @@
 import django_filters as filters
 from orders.models import Order
+from accounts.models import Shop
 from django.forms.widgets import TextInput
+from django.utils.translation import gettext as _
 
 
 class OrderFilter(filters.FilterSet):
@@ -9,17 +11,19 @@ class OrderFilter(filters.FilterSet):
     This will search through the Order model
     and filter out the request provided by the admin.
     """
-    company = filters.CharFilter(
-        field_name='user__employee__shop__company_name',
-        lookup_expr='icontains',
-        widget=TextInput(attrs={'placeholder': 'Company name'})
+    shop_translated = _('Shop name')
+    status_translated = _('Status')
+
+    shop = filters.ModelChoiceFilter(
+        queryset=Shop.objects.all(),
+        empty_label=shop_translated
     )
     status = filters.ChoiceFilter(
         choices=Order.STATUS,
-        empty_label='Orderstatus'
+        empty_label=status_translated
     )
-    start_date = filters.DateFilter(
-        field_name='date',
+    delivery_date = filters.DateFilter(
+        field_name='delivery_date',
         label='Date',
         lookup_expr='gte',
         widget=TextInput(
@@ -29,4 +33,4 @@ class OrderFilter(filters.FilterSet):
 
     class Meta:
         model = Order
-        fields = ['company', 'status', 'start_date']
+        fields = ['shop', 'status', 'delivery_date']

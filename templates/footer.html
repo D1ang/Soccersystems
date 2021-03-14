@@ -30,7 +30,7 @@
           {% if request.user.is_authenticated %}
             <li><a href="#">{% trans "To the top" %}</a></li>
           {% else %}
-            <li><a href="{% url 'account_login' %}">Login</a></li>
+            <li><a href="{% url 'account_login' %}">{% trans "Login" %}</a></li>
           {% endif %}
 
         </ul>

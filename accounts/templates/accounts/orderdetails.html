@@ -1,26 +1,28 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
 <section id="dashboard">
-  <div class="container-fluid mt-4">
+  <div class="container-fluid">
 
     <!--Orderstatus-->
     <div class="row">
       <div class="col-lg col-md col-sm-12 custom-card text-center p-3 m-3">
-        <h5>Order ID</h5>
+        <h5>{% trans "Order ID" %}</h5>
         {% if order.id_code %}
           <h6>{{ order.id_code }}</h6>
         {% else %}
-          <h6>In cart</h6>
+          <h6>{% trans "Pending" %}</h6>
         {% endif %}
       </div>
       <div class="col custom-card text-center p-3 m-3">
-        <h5>Date</h5>
+        <h5>{% trans "Ordered" %}</h5>
         <h6>{{ order.date }}</h6>
       </div>
       <div class="col custom-card text-center p-3 m-3">
-        <h5>Status</h5>
+        <h5>{% trans "Status" %}</h5>
         <h6>{{ order.status }}</h6>
       </div>
     </div>
@@ -30,7 +32,7 @@
     <div class="row mt-3">
       <div class="col-12">
 
-        <h5 class="text-uppercase pl-2">order details: {{ order.billing_address.company_name }}</h5>
+        <h5 class="text-uppercase pl-2">{% trans "order details:" %}</h5>
         <hr class="dashboard m-0">
 
         <div class="row">
@@ -80,32 +82,6 @@
 
         <!--Order costs-->
         <div class="custom-card my-4">
-          <table class="nowrap table table-sm height-fix">
-            <thead>
-              <tr>
-                <th>Extra costs</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tax 21 %</td>
-                {% if order.tax %}
-                  <td class="cart-align-right">{{ order.tax|floatformat:2 }}€</td>
-                {% else %}
-                  <td class="cart-align-right">{{ tax|floatformat:2 }}€</td>
-                {% endif %}
-              </tr>
-              <tr>
-                <td class="font-weight-bold">Total</td>
-                {% if order.tax %}
-                  <td class="cart-align-right font-weight-bold"><strong>{{ order.total|floatformat:2 }}€</strong></td>
-                {% else %}
-                  <td class="cart-align-right font-weight-bold"><strong>{{ total|floatformat:2 }}€</strong></td>
-                {% endif %}
-              </tr>
-            </tbody>
-          </table>
           <div class="form-row justify-content-center mt-3">
             <div class="form-group col-md-6 mb-0">
               <a href="{% url 'accounts:employee' %}" class="btn btn-black-sm mb-3" role="button">Return to dashboard</a>

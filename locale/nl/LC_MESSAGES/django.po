@@ -1,34 +1,168 @@
-# SOCCERSYSTEMS DUTCH TRANSLATION.
-# Copyright (C) 2021
-# This file is distributed under the same license as the Soccersystems package.
-# Django Heimgartner <django.heimgartner@gmail.com>, 2021.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0 \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-15 13:46+0100\n"
-"PO-Revision-Date: 2021-02-13 HO:MI+ZONE\n"
-"Last-Translator: Django Heimgartner <django.heimgartner@gmail.com>\n"
-"Language-Team: Dutch <django.heimgartner@gmail.com>\n"
-"Language: Dutch \n"
+"POT-Creation-Date: 2021-03-14 15:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\accounts\templates\accounts\userprofile.html:18
+#: .\accounts\filters.py:14
+msgid "Shop name"
+msgstr "Winkel"
+
+#: .\accounts\filters.py:15 .\accounts\templates\accounts\orderdetails.html:25
+#, fuzzy
+#| msgid "status"
+msgid "Status"
+msgstr "Status"
+
+#: .\accounts\templates\accounts\dashboard.html:15
+#: .\accounts\templates\accounts\orderdetails.html:21
+#: .\accounts\templates\accounts\supervisor.html:13
+msgid "Ordered"
+msgstr "Geplaatst"
+
+#: .\accounts\templates\accounts\dashboard.html:19
+#: .\accounts\templates\accounts\orderdetails.html:17
+#: .\accounts\templates\accounts\supervisor.html:17 .\orders\models.py:38
+msgid "Pending"
+msgstr "In afwachting"
+
+#: .\accounts\templates\accounts\dashboard.html:23
+#: .\accounts\templates\accounts\supervisor.html:21 .\orders\models.py:39
+msgid "Finished"
+msgstr "Gereed"
+
+#: .\accounts\templates\accounts\dashboard.html:32
+#: .\accounts\templates\accounts\supervisor.html:30
+msgid "Order overview"
+msgstr "Opdracht overzicht"
+
+#: .\accounts\templates\accounts\dashboard.html:40
+#: .\accounts\templates\accounts\supervisor.html:66
+msgid "order ID"
+msgstr "order ID"
+
+#: .\accounts\templates\accounts\dashboard.html:41
+#, fuzzy
+#| msgid "Ordered"
+msgid "ordered"
+msgstr "Geplaatst"
+
+#: .\accounts\templates\accounts\dashboard.html:42
+msgid "employee"
+msgstr "medewerker"
+
+#: .\accounts\templates\accounts\dashboard.html:43
+#: .\accounts\templates\accounts\supervisor.html:68
+msgid "delivery date"
+msgstr "leverdatum"
+
+#: .\accounts\templates\accounts\dashboard.html:44
+#: .\accounts\templates\accounts\supervisor.html:69
+msgid "status"
+msgstr "status"
+
+#: .\accounts\templates\accounts\dashboard.html:45
+#: .\accounts\templates\accounts\supervisor.html:70
+msgid "details"
+msgstr "details"
+
+#: .\accounts\templates\accounts\dashboard.html:55
+#: .\accounts\templates\accounts\dashboard.html:64
+#: .\accounts\templates\accounts\supervisor.html:80
+#: .\accounts\templates\accounts\supervisor.html:88
+msgid "In treatment..."
+msgstr "In behandeling..."
+
+#: .\accounts\templates\accounts\dashboard.html:72
+msgid "more details..."
+msgstr "meer details..."
+
+#: .\accounts\templates\accounts\dashboard.html:88
+#: .\accounts\templates\accounts\supervisor.html:117
+msgid "prev"
+msgstr "vorige"
+
+#: .\accounts\templates\accounts\dashboard.html:93
+#: .\accounts\templates\accounts\supervisor.html:122
+msgid "page"
+msgstr "pagina"
+
+#: .\accounts\templates\accounts\dashboard.html:93
+#: .\accounts\templates\accounts\supervisor.html:122
+msgid "of"
+msgstr "van"
+
+#: .\accounts\templates\accounts\dashboard.html:97
+#: .\accounts\templates\accounts\supervisor.html:126
+msgid "next"
+msgstr "volgende"
+
+#: .\accounts\templates\accounts\dashboard.html:112
+msgid "Dear collegue"
+msgstr "Beste collega"
+
+#: .\accounts\templates\accounts\dashboard.html:114
+msgid ""
+"Welcome to your personal space! At this moment you don't have any orders, "
+"click the button to complete your profile and use the products page to order."
+msgstr ""
+"Welkom in je persoonlijke ruimte! Op dit moment heb je geen bestellingen, "
+"klik op de knop om je profiel compleet te maken en gebruik de producten "
+"pagina om te bestellen."
+
+#: .\accounts\templates\accounts\dashboard.html:118
+msgid "Complete your profile"
+msgstr "Profiel afronden"
+
+#: .\accounts\templates\accounts\orderdetails.html:13
+#, fuzzy
+#| msgid "order ID"
+msgid "Order ID"
+msgstr "order ID"
+
+#: .\accounts\templates\accounts\orderdetails.html:35
+#, fuzzy
+#| msgid "more details..."
+msgid "order details:"
+msgstr "meer details..."
+
+#: .\accounts\templates\accounts\supervisor.html:49
+msgid "Search"
+msgstr ""
+
+#: .\accounts\templates\accounts\supervisor.html:52
+msgid "Reset"
+msgstr "Resetten"
+
+#: .\accounts\templates\accounts\supervisor.html:67
+msgid "shop"
+msgstr "winkel"
+
+#: .\accounts\templates\accounts\userprofile.html:19
 msgid "Profile information"
-msgstr "Profiel"
+msgstr "Profiel informatie"
 
 #: .\accounts\views.py:87
 msgid "Profile update successful"
-msgstr "Profielupdate succesvol"
+msgstr "Profiel succesvol aangepast"
 
 #: .\accounts\views.py:135
 msgid "This order has not yet been completed by a colleague"
-msgstr "Deze bestelling is nog niet afgerond door collega"
+msgstr ""
 
 #: .\checkout\templates\checkout\payment.html:17
 msgid "Checkout"
@@ -48,19 +182,15 @@ msgstr ""
 
 #: .\checkout\views.py:30
 msgid "Your cart is empty"
-msgstr "Uw winkelwagen is leeg"
+msgstr ""
 
-#: .\checkout\views.py:45
+#: .\checkout\views.py:45 .\checkout\views.py:123
 msgid "There is no active order"
-msgstr "Er is geen actieve order"
+msgstr ""
 
-#: .\checkout\views.py:122
-msgid "There is no active order"
-msgstr "Er is geen actieve order"
-
-#: .\checkout\views.py:116
+#: .\checkout\views.py:117
 msgid "Your order was successful!"
-msgstr "Je bestelling is gelukt!"
+msgstr ""
 
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
@@ -1325,17 +1455,17 @@ msgstr ""
 #: .\env\Lib\site-packages\invitations\templates\invitations\forms\_invite.html:9
 #: .\home\forms.py:11
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\env\Lib\site-packages\invitations\templates\invitations\messages\invite_accepted.txt:3
 #, python-format
 msgid "Invitation to - %(email)s - has been accepted"
-msgstr ""
+msgstr "de uitnodiging naar - %(email)s - is geaccepteerd"
 
 #: .\env\Lib\site-packages\invitations\views.py:45
 #, python-format
 msgid "%(email)s has been invited"
-msgstr ""
+msgstr "%(email)s is uitgenodigd"
 
 #: .\home\forms.py:7
 msgid "Name"
@@ -1346,6 +1476,7 @@ msgid "Message"
 msgstr "Bericht"
 
 #: .\home\templates\home\index.html:27
+#: .\products\templates\products\products.html:142
 msgid "You need squad numbers for your team, but how?"
 msgstr "Je hebt rugnummers nodig voor je team, maar hoe?"
 
@@ -1468,9 +1599,9 @@ msgid "Used by pro's"
 msgstr "Gebruikt door pro's"
 
 #: .\home\templates\home\index.html:154
-msgid "Heavily used by the top soccer team of Amsterdam for the past 5 years."
+msgid "Heavily used by the top soccer team of Amsterdam for the past 6 years."
 msgstr ""
-"De afgelopen 5 jaar intensief gebruikt door EreDivisie clubs in betaald "
+"De afgelopen 6 jaar intensief gebruikt door EreDivisie clubs in betaald "
 "voetbal."
 
 #: .\home\templates\home\index.html:160
@@ -1529,9 +1660,43 @@ msgstr "verstuur bericht"
 msgid "Message has been sent successfully!"
 msgstr "Bericht is succesvol verstuurd!"
 
+#: .\orders\models.py:37
+msgid "Requested"
+msgstr "Aangevraagd"
+
+#: .\templates\account\login.html:17
+msgid "User login"
+msgstr "gebruiker login"
+
+#: .\templates\account\login.html:41
+msgid "Login!"
+msgstr "Log in!"
+
+#: .\templates\account\login.html:47
+msgid "Haven't applied for an account yet?"
+msgstr "Nog geen account aangevraagd?"
+
+#: .\templates\account\login.html:50
+msgid "Send an inquiry"
+msgstr "Stuur een aanvraag"
+
+#: .\templates\account\messages\logged_in.txt:3
+msgid "You successfully signed in"
+msgstr "Je bent succesvol ingelogd"
+
+#: .\templates\account\messages\logged_out.txt:3
+msgid "You have been signed out"
+msgstr "Je bent uitgelogd"
+
 #: .\templates\footer.html:31
 msgid "To the top"
 msgstr "Naar boven"
+
+#: .\templates\footer.html:33
+#, fuzzy
+#| msgid "Login!"
+msgid "Login"
+msgstr "Log in!"
 
 #: .\templates\invitations\email\email_invite_message.html:4
 #, python-format
@@ -1540,47 +1705,56 @@ msgid ""
 "\n"
 "<!doctype html>\n"
 "<html>\n"
-"  <head>\n"
-"    <meta name=\"viewport\" content=\"width=device-width\">\n"
-"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
-"    <title>Soccersystem invitation</title>\n"
 "\n"
-"    <style>\n"
+"<head>\n"
+"  <meta name=\"viewport\" content=\"width=device-width\">\n"
+"  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
+"  <title>Soccersystem invitation</title>\n"
+"\n"
+"  <style>\n"
 "    @media only screen and (max-width: 620px) {\n"
 "      table[class=body] h1 {\n"
 "        font-size: 28px !important;\n"
 "        margin-bottom: 10px !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] p,\n"
-"            table[class=body] ul,\n"
-"            table[class=body] ol,\n"
-"            table[class=body] td,\n"
-"            table[class=body] span,\n"
-"            table[class=body] a {\n"
+"      table[class=body] ul,\n"
+"      table[class=body] ol,\n"
+"      table[class=body] td,\n"
+"      table[class=body] span,\n"
+"      table[class=body] a {\n"
 "        font-size: 16px !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .wrapper,\n"
-"            table[class=body] .article {\n"
+"      table[class=body] .article {\n"
 "        padding: 10px !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .content {\n"
 "        padding: 0 !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .container {\n"
 "        padding: 0 !important;\n"
 "        width: 100%% !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .main {\n"
 "        border-left-width: 0 !important;\n"
 "        border-radius: 0 !important;\n"
 "        border-right-width: 0 !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .btn table {\n"
 "        width: 100%% !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .btn a {\n"
 "        width: 100%% !important;\n"
 "      }\n"
+"\n"
 "      table[class=body] .img-responsive {\n"
 "        height: auto !important;\n"
 "        max-width: 100%% !important;\n"
@@ -1592,14 +1766,16 @@ msgid ""
 "      .ExternalClass {\n"
 "        width: 100%%;\n"
 "      }\n"
+"\n"
 "      .ExternalClass,\n"
-"            .ExternalClass p,\n"
-"            .ExternalClass span,\n"
-"            .ExternalClass font,\n"
-"            .ExternalClass td,\n"
-"            .ExternalClass div {\n"
+"      .ExternalClass p,\n"
+"      .ExternalClass span,\n"
+"      .ExternalClass font,\n"
+"      .ExternalClass td,\n"
+"      .ExternalClass div {\n"
 "        line-height: 100%%;\n"
 "      }\n"
+"\n"
 "      .apple-link a {\n"
 "        color: inherit !important;\n"
 "        font-family: inherit !important;\n"
@@ -1608,6 +1784,7 @@ msgid ""
 "        line-height: inherit !important;\n"
 "        text-decoration: none !important;\n"
 "      }\n"
+"\n"
 "      #MessageViewBody a {\n"
 "        color: inherit;\n"
 "        text-decoration: none;\n"
@@ -1616,125 +1793,141 @@ msgid ""
 "        font-weight: inherit;\n"
 "        line-height: inherit;\n"
 "      }\n"
+"\n"
 "      .btn-primary table td:hover {\n"
 "        background-color: #34495e !important;\n"
 "      }\n"
+"\n"
 "      .btn-primary a:hover {\n"
 "        background-color: #34495e !important;\n"
 "        border-color: #34495e !important;\n"
 "      }\n"
 "    }\n"
-"    </style>\n"
-"  </head>\n"
+"  </style>\n"
+"</head>\n"
 "\n"
-"  <body class=\"\" style=\"background-color: #f6f6f6; font-family: sans-"
-"serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: "
-"1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%%; -webkit-text-size-"
-"adjust: 100%%;\">\n"
-"    <span class=\"preheader\" style=\"color: transparent; display: none; "
-"height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-"
-"hide: all; visibility: hidden; width: 0;\">This is preheader text. Some "
-"clients will show this text as a preview.</span>\n"
-"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"body\" "
-"style=\"border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: "
-"0pt; width: 100%%; background-color: #f6f6f6;\">\n"
-"      <tr>\n"
-"        <td style=\"font-family: sans-serif; font-size: 14px; vertical-"
-"align: top;\">&nbsp;</td>\n"
-"        <td class=\"container\" style=\"font-family: sans-serif; font-size: "
-"14px; vertical-align: top; display: block; Margin: 0 auto; max-width: 580px; "
-"padding: 10px; width: 580px;\">\n"
-"          <div class=\"content\" style=\"box-sizing: border-box; display: "
-"block; Margin: 0 auto; max-width: 580px; padding: 10px;\">\n"
-"\n"
-"            <!-- START CENTERED WHITE CONTAINER -->\n"
-"            <table class=\"main\" style=\"border-collapse: separate; mso-"
-"table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%%; background: #ffffff; "
-"border-radius: 3px;\">\n"
-"\n"
-"              <!-- START MAIN CONTENT AREA -->\n"
-"              <tr>\n"
-"                <td class=\"wrapper\" style=\"font-family: sans-serif; font-"
-"size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;\">\n"
-"                  <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
-"style=\"border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: "
-"0pt; width: 100%%;\">\n"
-"                    <tr>\n"
-"                      <td style=\"font-family: sans-serif; font-size: 14px; "
-"vertical-align: top;\">\n"
-"                        <p style=\"font-family: sans-serif; font-size: 14px; "
-"font-weight: normal; margin: 0; Margin-bottom: 15px;\">You have been invited "
-"to join %(site_name)s</p>\n"
-"                        <table border=\"0\" cellpadding=\"0\" cellspacing="
-"\"0\" class=\"btn btn-primary\" style=\"border-collapse: separate; mso-table-"
-"lspace: 0pt; mso-table-rspace: 0pt; width: 100%%; box-sizing: border-box;"
+"<body class=\"\"\n"
+"  style=\"background-color: #f6f6f6; font-family: sans-serif; -webkit-font-"
+"smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; "
+"padding: 0; -ms-text-size-adjust: 100%%; -webkit-text-size-adjust: 100%%;"
 "\">\n"
-"                          <tbody>\n"
-"                            <tr>\n"
-"                              <td align=\"left\" style=\"font-family: sans-"
-"serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;\">\n"
-"                                <table border=\"0\" cellpadding=\"0\" "
-"cellspacing=\"0\" style=\"border-collapse: separate; mso-table-lspace: 0pt; "
-"mso-table-rspace: 0pt; width: auto;\">\n"
-"                                  <tbody>\n"
-"                                    <tr>\n"
-"                                      <td style=\"font-family: sans-serif; "
-"font-size: 14px; vertical-align: top; background-color: #BE1335; border-"
-"radius: 5px; text-align: center;\"> <a href=\"%(invite_url)s\" target="
-"\"_blank\" style=\"display: inline-block; color: #ffffff; background-color: "
-"#BE1335; border: solid 1px #BE1335; border-radius: 5px; box-sizing: border-"
-"box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: "
-"bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-"
-"color: #BE1335;\">Accept invitation</a> </td>\n"
-"                                    </tr>\n"
-"                                  </tbody>\n"
-"                                </table>\n"
-"                              </td>\n"
-"                            </tr>\n"
-"                          </tbody>\n"
-"                        </table>\n"
-"                        <p style=\"font-family: sans-serif; font-size: 14px; "
-"font-weight: normal; margin: 0; Margin-bottom: 15px;\">We'd love for you to "
-"join us on Soccersystems.nl</p>\n"
-"                        <p style=\"font-family: sans-serif; font-size: 14px; "
-"font-weight: normal; margin: 0; Margin-bottom: 15px;\">Good luck! Hope it "
-"works.</p>\n"
-"                      </td>\n"
-"                    </tr>\n"
-"                  </table>\n"
-"                </td>\n"
-"              </tr>\n"
+"  <span class=\"preheader\"\n"
+"    style=\"color: transparent; display: none; height: 0; max-height: 0; max-"
+"width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; "
+"width: 0;\">This\n"
+"    is preheader text. Some clients will show this text as a preview.</"
+"span>\n"
+"  <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"body\"\n"
+"    style=\"border-collapse: separate; mso-table-lspace: 0pt; mso-table-"
+"rspace: 0pt; width: 100%%; background-color: #f6f6f6;\">\n"
+"    <tr>\n"
+"      <td style=\"font-family: sans-serif; font-size: 14px; vertical-align: "
+"top;\">&nbsp;</td>\n"
+"      <td class=\"container\"\n"
+"        style=\"font-family: sans-serif; font-size: 14px; vertical-align: "
+"top; display: block; Margin: 0 auto; max-width: 580px; padding: 10px; width: "
+"580px;\">\n"
+"        <div class=\"content\"\n"
+"          style=\"box-sizing: border-box; display: block; Margin: 0 auto; "
+"max-width: 580px; padding: 10px;\">\n"
+"\n"
+"          <!-- START CENTERED WHITE CONTAINER -->\n"
+"          <table class=\"main\"\n"
+"            style=\"border-collapse: separate; mso-table-lspace: 0pt; mso-"
+"table-rspace: 0pt; width: 100%%; background: #ffffff; border-radius: 3px;"
+"\">\n"
+"\n"
+"            <!-- START MAIN CONTENT AREA -->\n"
+"            <tr>\n"
+"              <td class=\"wrapper\"\n"
+"                style=\"font-family: sans-serif; font-size: 14px; vertical-"
+"align: top; box-sizing: border-box; padding: 20px;\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"\n"
+"                  style=\"border-collapse: separate; mso-table-lspace: 0pt; "
+"mso-table-rspace: 0pt; width: 100%%;\">\n"
+"                  <tr>\n"
+"                    <td style=\"font-family: sans-serif; font-size: 14px; "
+"vertical-align: top;\">\n"
+"                      <p\n"
+"                        style=\"font-family: sans-serif; font-size: 14px; "
+"font-weight: normal; margin: 0; Margin-bottom: 15px;\">\n"
+"                        You have been invited to join %(site_name)s</p>\n"
+"                      <table border=\"0\" cellpadding=\"0\" cellspacing="
+"\"0\" class=\"btn btn-primary\"\n"
+"                        style=\"border-collapse: separate; mso-table-lspace: "
+"0pt; mso-table-rspace: 0pt; width: 100%%; box-sizing: border-box;\">\n"
+"                        <tbody>\n"
+"                          <tr>\n"
+"                            <td align=\"left\"\n"
+"                              style=\"font-family: sans-serif; font-size: "
+"14px; vertical-align: top; padding-bottom: 15px;\">\n"
+"                              <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\"\n"
+"                                style=\"border-collapse: separate; mso-table-"
+"lspace: 0pt; mso-table-rspace: 0pt; width: auto;\">\n"
+"                                <tbody>\n"
+"                                  <tr>\n"
+"                                    <td\n"
+"                                      style=\"font-family: sans-serif; font-"
+"size: 14px; vertical-align: top; background-color: #BE1335; border-radius: "
+"5px; text-align: center;\">\n"
+"                                      <a href=\"%(invite_url)s\" target="
+"\"_blank\"\n"
+"                                        style=\"display: inline-block; "
+"color: #ffffff; background-color: #BE1335; border: solid 1px #BE1335; border-"
+"radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; "
+"font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-"
+"transform: capitalize; border-color: #BE1335;\">Accept\n"
+"                                        invitation</a> </td>\n"
+"                                  </tr>\n"
+"                                </tbody>\n"
+"                              </table>\n"
+"                            </td>\n"
+"                          </tr>\n"
+"                        </tbody>\n"
+"                      </table>\n"
+"                      <p\n"
+"                        style=\"font-family: sans-serif; font-size: 14px; "
+"font-weight: normal; margin: 0; Margin-bottom: 15px;\">\n"
+"                        We'd love for you to join us.</p>\n"
+"                    </td>\n"
+"                  </tr>\n"
+"                </table>\n"
+"              </td>\n"
+"            </tr>\n"
 "\n"
 "            <!-- END MAIN CONTENT AREA -->\n"
-"            </table>\n"
+"          </table>\n"
 "\n"
-"            <!-- START FOOTER -->\n"
-"            <div class=\"footer\" style=\"clear: both; Margin-top: 10px; "
-"text-align: center; width: 100%%;\">\n"
-"              <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style="
-"\"border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; "
-"width: 100%%;\">\n"
-"                <tr>\n"
-"                  <td class=\"content-block\" style=\"font-family: sans-"
-"serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-"
-"size: 12px; color: #999999; text-align: center;\">\n"
-"                    <span class=\"apple-link\" style=\"color: #999999; font-"
-"size: 12px; text-align: center;\">IBS Graphics, Groot Mijdrechtstraat 24, "
-"3641RW Mijdrecht</span>\n"
-"                  </td>\n"
-"                </tr>\n"
-"              </table>\n"
-"            </div>\n"
-"            <!-- END FOOTER -->\n"
+"          <!-- START FOOTER -->\n"
+"          <div class=\"footer\" style=\"clear: both; Margin-top: 10px; text-"
+"align: center; width: 100%%;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"\n"
+"              style=\"border-collapse: separate; mso-table-lspace: 0pt; mso-"
+"table-rspace: 0pt; width: 100%%;\">\n"
+"              <tr>\n"
+"                <td class=\"content-block\"\n"
+"                  style=\"font-family: sans-serif; vertical-align: top; "
+"padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; "
+"text-align: center;\">\n"
+"                  <span class=\"apple-link\" style=\"color: #999999; font-"
+"size: 12px; text-align: center;\">IBS Graphics,\n"
+"                    Groot Mijdrechtstraat 24, 3641RW Mijdrecht</span>\n"
+"                </td>\n"
+"              </tr>\n"
+"            </table>\n"
+"          </div>\n"
+"          <!-- END FOOTER -->\n"
 "\n"
 "          <!-- END CENTERED WHITE CONTAINER -->\n"
-"          </div>\n"
-"        </td>\n"
-"        <td style=\"font-family: sans-serif; font-size: 14px; vertical-"
-"align: top;\">&nbsp;</td>\n"
-"      </tr>\n"
-"    </table>\n"
-"  </body>\n"
+"        </div>\n"
+"      </td>\n"
+"      <td style=\"font-family: sans-serif; font-size: 14px; vertical-align: "
+"top;\">&nbsp;</td>\n"
+"    </tr>\n"
+"  </table>\n"
+"</body>\n"
+"\n"
 "</html>\n"
 "\n"
 "\n"
@@ -1754,4 +1947,4 @@ msgstr "Profiel"
 
 #: .\templates\navbar.html:29
 msgid "Logout"
-msgstr "Uitloggen"
+msgstr "Logout"

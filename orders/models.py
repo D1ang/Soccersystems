@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from accounts.models import Shop
 from products.models import ProductItem
+from django.utils.translation import gettext as _
 
 
 class OrderItem(models.Model):
@@ -33,10 +34,14 @@ class Order(models.Model):
     A model to collect
     the order items in 1 order
     """
+    requested_trans = _('Requested')
+    pending_trans = _('Pending')
+    finished_trans = _('Finished')
+
     STATUS = (
-        ('requested', 'Requested'),
-        ('pending', 'Pending'),
-        ('finished', 'Finished')
+        ('requested', requested_trans),
+        ('pending', pending_trans),
+        ('finished', finished_trans)
     )
 
     id_code = models.CharField(max_length=15)
