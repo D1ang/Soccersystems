@@ -79,7 +79,7 @@ a.subtext:active {
 
 #custom-navbar {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   padding-right: 20px;
   -webkit-transition: top 0.3s;
@@ -150,8 +150,8 @@ a.subtext:active {
   }
 
   .dropdown-item:hover {
-    color: #da552f;
-    background-color: #fff;
+    color: rgb(218, 85, 47);
+    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -191,7 +191,7 @@ header video {
 
 header .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 header .overlay {
@@ -202,7 +202,7 @@ header .overlay {
   width: 100%;
   background-color: rgb(0, 0, 0);
   opacity: 0.5;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -361,7 +361,7 @@ header .overlay {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 40%;
-  background-color: #f8f9fc;
+  background-color: rgb(248, 249, 252);
   min-height: 100%;
   padding-top: 60px;
   font-weight: 400;
@@ -372,9 +372,9 @@ hr.dashboard {
 }
 
 .custom-card {
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 0 8px 40px 8px;
-  border: 1px solid #e3e6f0;
+  border: 1px solid rgb(227, 230, 240);
   border-radius: 0px;
 }
 
@@ -384,8 +384,8 @@ hr.dashboard {
   width: 90px;
   line-height: 18px;
   font-weight: 300;
-  color: #fff;
-  background-color: #000;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .badge-pending {
@@ -394,8 +394,8 @@ hr.dashboard {
   width: 90px;
   line-height: 18px;
   font-weight: 300;
-  color: #fff;
-  background-color: #b20000;
+  color: rgb(255, 255, 255);
+  background-color: rgb(178, 0, 0);
 }
 
 .badge-finished {
@@ -404,8 +404,8 @@ hr.dashboard {
   width: 90px;
   line-height: 18px;
   font-weight: 300;
-  color: #fff;
-  background-color: #5cb85c;
+  color: rgb(255, 255, 255);
+  background-color: rgb(92, 184, 92);
 }
 
 /*----------------------Products styling-----------------------!!!!!!!!!!!!!!!!*/
@@ -468,7 +468,7 @@ hr.dashboard {
 .btn-delete-cart {
   padding: 2px;
   border: none;
-  color: #b20000;
+  color: rgb(178, 0, 0);
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -476,7 +476,7 @@ hr.dashboard {
 }
 
 .btn-delete-cart:hover {
-  color: #ff0000;
+  color: rgb(255, 0, 0);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -488,7 +488,7 @@ hr.dashboard {
 
 .selectdatewidget {
   display: inline-block;
-  border: #ced4da 1px solid;
+  border: rgb(206, 212, 218) 1px solid;
 }
 
 select[name$="_day"].selectdatewidget {
@@ -509,8 +509,8 @@ select[name$="_year"].selectdatewidget {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 30%;
-  border: 20px solid #06b3be; /* Fake padding */
-  background-color: #06b3be;
+  border: 20px solid rgb(6, 179, 190); /* Fake padding */
+  background-color: rgb(6, 179, 190);
   min-height: 100%;
   padding-top: 60px;
 }
@@ -519,7 +519,7 @@ select[name$="_year"].selectdatewidget {
 
 footer {
   padding: 0.8em;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 
 .footer-container h2 {
@@ -556,7 +556,7 @@ footer {
 
 .footer-container a:hover {
   text-decoration: none;
-  color: hsl(0, 100%, 26%);
+  color: rgb(133, 0, 0);
 }
 
 @media screen and (max-width: 575px) {
@@ -569,7 +569,7 @@ footer {
 
 .alert {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   border: 0;
   border-radius: 0;
   padding-top: 75px;
@@ -594,7 +594,7 @@ footer {
   padding-top: 14px;
   font-size: 24px;
   font-weight: 300;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: rgb(190, 19, 53);
 }
 
@@ -606,15 +606,15 @@ footer {
   margin-top: 5vw;
   font-size: 1.1rem;
   font-weight: 300;
-  color: #fff;
-  background-color: #000;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .btn-black:hover {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .btn-black-title {
@@ -626,8 +626,8 @@ footer {
   height: 100px;
   width: 100%;
   min-width: 255px;
-  color: #000;
-  border: 2px solid #000;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 8px;
   margin-top: 5vw;
   font-size: 1.1rem;
@@ -638,15 +638,15 @@ footer {
 }
 
 .btn-black-outline:hover {
-  color: #fff;
-  border: 2px solid #fff;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .btn-black-outline-sm {
   font-size: 1.1rem;
   width: 100%;
-  color: #000;
-  border: 2px solid #000;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 6px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -654,14 +654,14 @@ footer {
 }
 
 .btn-black-outline-sm:hover {
-  color: #5cb85c;
-  border: 2px solid #5cb85c;
+  color: rgb(92, 184, 92);
+  border: 2px solid rgb(92, 184, 92);
 }
 
 .btn-black-sm {
   width: 100%;
-  color: #fff;
-  background-color: #000;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 0px;
   font-size: 1.1rem;
   -webkit-transition: 0.3s;
@@ -676,7 +676,7 @@ footer {
 .btn-gray-sm {
   width: 100%;
   cursor: default;
-  color: #000;
+  color: rgb(0, 0, 0);
   background-color: rgb(112, 112, 112);
   border-radius: 6px;
   font-size: 1.1rem;
@@ -684,14 +684,14 @@ footer {
 
 .btn-gray-sm:hover {
   cursor: default;
-  color: #000;
+  color: rgb(0, 0, 0);
   background-color: rgb(112, 112, 112);
 }
 
 .btn-black-auth {
   width: 100%;
-  color: #fff;
-  background: #000;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
 }
 
 .btn-login-padding {
