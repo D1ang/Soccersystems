@@ -17,7 +17,6 @@ class EmployeeAdmin(admin.ModelAdmin):
         'shop',
         'email'
     )
-    exclude = ('user',)
 
 
 admin.site.register(Shop, ShopAdmin)
