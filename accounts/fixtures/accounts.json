@@ -3,7 +3,7 @@
         "model": "accounts.shop",
         "pk": 1,
         "fields": {
-            "company_name": "Ajax Fanshop Kalverstraat",
+            "company_name": "Fanshop Kalverstraat",
             "street_address": "Kalverstraat 124",
             "city": "Amsterdam",
             "postal": "1012PK",
@@ -14,7 +14,7 @@
         "model": "accounts.shop",
         "pk": 2,
         "fields": {
-            "company_name": "AFC Ajax NV (afdeling Merchandising)",
+            "company_name": "Ajax NV (afdeling Merch.)",
             "street_address": "Arena Boulevard 29",
             "city": "Amsterdam Zuidoost",
             "postal": "1101AX",
@@ -25,7 +25,7 @@
         "model": "accounts.shop",
         "pk": 3,
         "fields": {
-            "company_name": "Ajax Fanshop Bataviastad",
+            "company_name": "Fanshop Bataviastad",
             "street_address": "Bataviaplein 62-64",
             "city": "Lelystad",
             "postal": "8242PN",
@@ -36,7 +36,7 @@
         "model": "accounts.shop",
         "pk": 4,
         "fields": {
-            "company_name": "Official Ajax Fanshop",
+            "company_name": "Official Fanshop",
             "street_address": "Arena boulevard 3",
             "city": "Amsterdam",
             "postal": "1101AX",
@@ -58,7 +58,7 @@
         "model": "accounts.shop",
         "pk": 6,
         "fields": {
-            "company_name": "Sportpark De Toekomst",
+            "company_name": "De Toekomst",
             "street_address": "Borchlandweg 18",
             "city": "Amsterdam-Duivendrecht",
             "postal": "1114BD",
