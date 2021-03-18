@@ -4,8 +4,9 @@ from .models import OrderItem, Order
 
 class OrderItemAdmin(admin.ModelAdmin):
     list_display = (
+        'article_id',
         'item',
-        'user',
+        'quantity',
         'shop',
         'ordered'
     )
@@ -16,6 +17,7 @@ class OrderAdmin(admin.ModelAdmin):
         'user',
         'shop',
         'date',
+        'delivery_date',
         'ordered',
         'status',
     )
