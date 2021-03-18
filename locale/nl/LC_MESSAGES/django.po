@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-18 10:31+0100\n"
+"POT-Creation-Date: 2021-03-18 11:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,12 +157,14 @@ msgid "order details:"
 msgstr "meer details..."
 
 #: .\accounts\templates\accounts\supervisor.html:49
+#: .\products\templates\products\products.html:47
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: .\accounts\templates\accounts\supervisor.html:52
+#: .\products\templates\products\products.html:50
 msgid "Reset"
-msgstr "Resetten"
+msgstr "Reset"
 
 #: .\accounts\templates\accounts\supervisor.html:67
 msgid "shop"
@@ -189,9 +191,8 @@ msgid "This order has not yet been completed by a colleague"
 msgstr ""
 
 #: .\checkout\templates\checkout\payment.html:17
-#: .\orders\templates\orders\cart.html:38
-msgid "Add orderdetails"
-msgstr "Details toevoegen"
+msgid "Checkout"
+msgstr ""
 
 #: .\checkout\templates\checkout\payment.html:18
 #: .\orders\templates\orders\cart.html:16
@@ -1703,6 +1704,10 @@ msgstr "Bewerk"
 msgid "Add more articles"
 msgstr "Artikelen toevoegen"
 
+#: .\orders\templates\orders\cart.html:38
+msgid "Add orderdetails"
+msgstr "Details toevoegen"
+
 #: .\orders\views.py:50
 msgid "Please login to order"
 msgstr "Log in om te bestellen"
@@ -1722,6 +1727,38 @@ msgstr "Artikel verwijderd van bestelling"
 #: .\orders\views.py:115
 msgid "Item not in your order"
 msgstr "Artikel niet in bestelling"
+
+#: .\products\filters.py:15
+msgid "Article name"
+msgstr "Artikelnaam"
+
+#: .\products\filters.py:20
+msgid "Group"
+msgstr "Artikelgroep"
+
+#: .\products\filters.py:25
+msgid "Size"
+msgstr "Formaat"
+
+#: .\products\templates\products\products.html:65
+msgid "image"
+msgstr "afbeelding"
+
+#: .\products\templates\products\products.html:66
+msgid "article"
+msgstr "artikelnaam"
+
+#: .\products\templates\products\products.html:67
+msgid "group"
+msgstr "artikelgroep"
+
+#: .\products\templates\products\products.html:68
+msgid "stock"
+msgstr "buffer"
+
+#: .\products\templates\products\products.html:69
+msgid "amount"
+msgstr "aantal"
 
 #: .\templates\account\login.html:17
 msgid "User login"

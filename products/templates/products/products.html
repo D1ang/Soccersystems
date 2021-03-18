@@ -44,10 +44,10 @@
                 {{ itemFilter.form.size }}
               </div>
               <div class="col-lg-2 col-sm-12">
-                <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">Search</button>
+                <button type="submit" id="btn-ordersearch" class="btn btn-black-sm">{% trans "Search" %}</button>
               </div>
               <div class="col-lg-2 col-sm-12">
-                <a class="btn btn-black-sm" href="{% url 'products:products' %}">Reset</a>
+                <a class="btn btn-black-sm" href="{% url 'products:products' %}">{% trans "Reset" %}</a>
               </div>
             </div>
           </form>
@@ -62,11 +62,11 @@
         <table id="dataTable" class="nowrap table table-sm height-fix border" style="width:100%">
           <thead>
             <tr>
-              <th>Image</th>
-              <th>Article</th>
-              <th>Group</th>
-              <th>Stock</th>
-              <th>Amount</th>
+              <th>{% trans "image" %}</th>
+              <th>{% trans "article" %}</th>
+              <th>{% trans "group" %}</th>
+              <th>{% trans "stock" %}</th>
+              <th>{% trans "amount" %}</th>
             </tr>
           </thead>
           <tbody class="tablerows">
@@ -132,7 +132,3 @@
 </section>
 
 {% endblock content %}
-
-
-
-{% trans "You need squad numbers for your team, but how?" %}
