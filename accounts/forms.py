@@ -4,25 +4,32 @@ from django.contrib.auth.models import Group
 from django import forms
 from django.forms import ModelForm
 from allauth.account.forms import SignupForm
+from django.utils.translation import gettext_lazy as _
 
 
 class EmployeeForm(ModelForm):
-    """
+    '''
     An employee edit profile form.
     'user' is excluded to probhit username edditing.
     'shop' is excluded to probhit shop edditing by employees.
-    """
+    '''
     class Meta:
         model = Employee
         fields = '__all__'
         exclude = ['user', 'shop']
+        labels = {
+            'first_name': _('First name'),
+            'last_name': _('Last name'),
+            'phone': _('Phone'),
+            'mobile': _('Mobile')
+        }
 
 
 class MyCustomSignupForm(SignupForm):
-    """
+    '''
     Extends the allauth register form and
     connects an user to an employee profile.
-    """
+    '''
     def __init__(self, *args, **kwargs):
         super(MyCustomSignupForm, self).__init__(*args, **kwargs)
         self.fields['shop'] = forms.ModelChoiceField(

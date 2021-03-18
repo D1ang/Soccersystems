@@ -2,14 +2,14 @@ from django.conf import settings
 from django.db import models
 from accounts.models import Shop
 from products.models import ProductItem
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 
 class OrderItem(models.Model):
-    """
+    '''
     A model for the order items
     to be collected by the order.
-    """
+    '''
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     item = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
@@ -30,18 +30,14 @@ class OrderItem(models.Model):
 
 
 class Order(models.Model):
-    """
+    '''
     A model to collect
     the order items in 1 order
-    """
-    requested_trans = _('Requested')
-    pending_trans = _('Pending')
-    finished_trans = _('Finished')
-
+    '''
     STATUS = (
-        ('requested', requested_trans),
-        ('pending', pending_trans),
-        ('finished', finished_trans)
+        ('requested', _('Requested')),
+        ('pending', _('Pending')),
+        ('finished', _('Finished'))
     )
 
     id_code = models.CharField(max_length=15)
@@ -64,28 +60,3 @@ class Order(models.Model):
 
     def __str__(self):
         return self.user.username
-
-    # This is my custom JSON Response
-    def serializeCustom(self):
-        items = list(OrderItem.objects.filter(order__pk=self.id).values('item', 'quantity'))
-
-        for item in items:
-            item["Opdrachten::kf_web_order_id"] = self.id_code
-            item["Opdrachten::artikelnummer"] = item.pop("item")
-            item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
-
-        data = {
-            "fieldData": {
-                "kp_orderbeheer_id": self.id_code,
-                "order_soort": "Order",
-                "order_status": "Bevestigd",
-                "omschrijving": "Test order",
-                "referentie": "Ingram",
-                "kf_relatiebeheer_id": 92887518,
-                # "shop": list(Shop.objects.filter(order__pk=self.id).values('company_name')),
-            },
-            "portalData": {
-                "portal": items
-            }
-        }
-        return data

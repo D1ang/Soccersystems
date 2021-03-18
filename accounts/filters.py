@@ -2,25 +2,22 @@ import django_filters as filters
 from orders.models import Order
 from accounts.models import Shop
 from django.forms.widgets import TextInput
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 
 class OrderFilter(filters.FilterSet):
-    """
+    '''
     Creating a filterset for the Order model.
     This will search through the Order model
     and filter out the request provided by the admin.
-    """
-    shop_translated = _('Shop name')
-    status_translated = _('Status')
-
+    '''
     shop = filters.ModelChoiceFilter(
         queryset=Shop.objects.all(),
-        empty_label=shop_translated
+        empty_label=_('Shop name')
     )
     status = filters.ChoiceFilter(
         choices=Order.STATUS,
-        empty_label=status_translated
+        empty_label=_('Status')
     )
     delivery_date = filters.DateFilter(
         field_name='delivery_date',

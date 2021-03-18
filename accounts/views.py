@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from django.core.paginator import Paginator
 from orders.models import Order
 from decimal import Decimal
@@ -14,10 +14,10 @@ from .filters import OrderFilter
 @login_required
 @allowed_users(allowed_roles=['supervisor', 'admin'])
 def supervisor(request):
-    """
+    '''
     A view that displays the dashboard
     for the supervisor & paginate the order list.
-    """
+    '''
     order_list = Order.objects.all().order_by('-date')
     total_orders = order_list.count()
     pending_orders = order_list.filter(status='pending').count()
@@ -26,8 +26,8 @@ def supervisor(request):
     orderFilter = OrderFilter(request.GET, queryset=order_list)
     order_list = orderFilter.qs
 
-    # Paginate the orders to max 6 results per page
-    paginator = Paginator(order_list, 6)
+    # Paginate the orders to max 10 results per page
+    paginator = Paginator(order_list, 10)
     page_number = request.GET.get('page')
     page_object = paginator.get_page(page_number)
 
@@ -44,13 +44,13 @@ def supervisor(request):
 @login_required
 @allowed_users(allowed_roles=['employee'])
 def employee(request):
-    """
+    '''
     A view that displays the dashboard
     for the employee & paginate the order list
-    The orders are shown on a shop based level
-    """
+    The orders are shown on a shop based level.
+    '''
     order_list = request.user.employee.shop.order_set.all().order_by('-date')
-    paginator = Paginator(order_list, 6)
+    paginator = Paginator(order_list, 10)
     page_number = request.GET.get('page')
     page_object = paginator.get_page(page_number)
 
@@ -69,10 +69,10 @@ def employee(request):
 
 @login_required
 def userprofile(request):
-    """
+    '''
     Profile settings for the user,
-    to change/update their own profile
-    """
+    to change/update their own profile.
+    '''
     employee = request.user.employee
     form = EmployeeForm(instance=employee)
 
@@ -100,11 +100,11 @@ def userprofile(request):
 @login_required
 @allowed_users(allowed_roles=['employee', 'supervisor', 'admin'])
 def orderdetails(request, pk_order):
-    """
-    A orderdetail page for the employees and supervisor to
-    view the selected order
-    Extra security is provided to prevent URL snooping
-    """
+    '''
+    A orderdetail page for the employees &
+    supervisor to view the selected order.
+    Extra security is provided to prevent URL snooping.
+    '''
     admin = request.user
 
     if admin.is_active and admin.is_superuser:
