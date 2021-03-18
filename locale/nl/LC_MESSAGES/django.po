@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-14 15:25+0100\n"
+"POT-Creation-Date: 2021-03-18 10:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\accounts\filters.py:14
+#: .\accounts\filters.py:16
 msgid "Shop name"
 msgstr "Winkel"
 
-#: .\accounts\filters.py:15 .\accounts\templates\accounts\orderdetails.html:25
+#: .\accounts\filters.py:20 .\accounts\templates\accounts\orderdetails.html:25
 #, fuzzy
 #| msgid "status"
 msgid "Status"
 msgstr "Status"
+
+#: .\accounts\forms.py:21
+msgid "First name"
+msgstr "Voornaam"
+
+#: .\accounts\forms.py:22
+msgid "Last name"
+msgstr "Achternaam"
+
+#: .\accounts\forms.py:23
+msgid "Phone"
+msgstr "Telefoon"
+
+#: .\accounts\forms.py:24
+msgid "Mobile"
+msgstr "Mobiel"
 
 #: .\accounts\templates\accounts\dashboard.html:15
 #: .\accounts\templates\accounts\orderdetails.html:21
@@ -36,12 +52,12 @@ msgstr "Geplaatst"
 
 #: .\accounts\templates\accounts\dashboard.html:19
 #: .\accounts\templates\accounts\orderdetails.html:17
-#: .\accounts\templates\accounts\supervisor.html:17 .\orders\models.py:38
+#: .\accounts\templates\accounts\supervisor.html:17 .\orders\models.py:39
 msgid "Pending"
 msgstr "In afwachting"
 
 #: .\accounts\templates\accounts\dashboard.html:23
-#: .\accounts\templates\accounts\supervisor.html:21 .\orders\models.py:39
+#: .\accounts\templates\accounts\supervisor.html:21 .\orders\models.py:40
 msgid "Finished"
 msgstr "Gereed"
 
@@ -156,6 +172,14 @@ msgstr "winkel"
 msgid "Profile information"
 msgstr "Profiel informatie"
 
+#: .\accounts\templates\accounts\userprofile.html:38
+msgid "Back to overview"
+msgstr "Terug naar overzicht"
+
+#: .\accounts\templates\accounts\userprofile.html:41
+msgid "Update profile"
+msgstr "Profiel afronden"
+
 #: .\accounts\views.py:87
 msgid "Profile update successful"
 msgstr "Profiel succesvol aangepast"
@@ -165,12 +189,14 @@ msgid "This order has not yet been completed by a colleague"
 msgstr ""
 
 #: .\checkout\templates\checkout\payment.html:17
-msgid "Checkout"
-msgstr ""
+#: .\orders\templates\orders\cart.html:38
+msgid "Add orderdetails"
+msgstr "Details toevoegen"
 
 #: .\checkout\templates\checkout\payment.html:18
+#: .\orders\templates\orders\cart.html:16
 msgid "Amount"
-msgstr ""
+msgstr "Aantal"
 
 #: .\checkout\templates\checkout\payment.html:41
 msgid "Extra details"
@@ -184,9 +210,10 @@ msgstr ""
 msgid "Your cart is empty"
 msgstr ""
 
-#: .\checkout\views.py:45 .\checkout\views.py:123
+#: .\checkout\views.py:45 .\checkout\views.py:123 .\orders\views.py:27
+#: .\orders\views.py:39 .\orders\views.py:119
 msgid "There is no active order"
-msgstr ""
+msgstr "Er is geen actieve order"
 
 #: .\checkout\views.py:117
 msgid "Your order was successful!"
@@ -1476,7 +1503,7 @@ msgid "Message"
 msgstr "Bericht"
 
 #: .\home\templates\home\index.html:27
-#: .\products\templates\products\products.html:142
+#: .\products\templates\products\products.html:138
 msgid "You need squad numbers for your team, but how?"
 msgstr "Je hebt rugnummers nodig voor je team, maar hoe?"
 
@@ -1660,9 +1687,41 @@ msgstr "verstuur bericht"
 msgid "Message has been sent successfully!"
 msgstr "Bericht is succesvol verstuurd!"
 
-#: .\orders\models.py:37
+#: .\orders\models.py:38
 msgid "Requested"
 msgstr "Aangevraagd"
+
+#: .\orders\templates\orders\cart.html:15
+msgid "Cart"
+msgstr "Bestelling"
+
+#: .\orders\templates\orders\cart.html:17
+msgid "Edit"
+msgstr "Bewerk"
+
+#: .\orders\templates\orders\cart.html:35
+msgid "Add more articles"
+msgstr "Artikelen toevoegen"
+
+#: .\orders\views.py:50
+msgid "Please login to order"
+msgstr "Log in om te bestellen"
+
+#: .\orders\views.py:72
+msgid "Item is already added"
+msgstr "Artikel is al toegevoegd"
+
+#: .\orders\views.py:78 .\orders\views.py:84
+msgid "Item is added to the cart"
+msgstr "Artikel is toegevoegd"
+
+#: .\orders\views.py:111
+msgid "Item removed from order"
+msgstr "Artikel verwijderd van bestelling"
+
+#: .\orders\views.py:115
+msgid "Item not in your order"
+msgstr "Artikel niet in bestelling"
 
 #: .\templates\account\login.html:17
 msgid "User login"
@@ -1948,3 +2007,8 @@ msgstr "Profiel"
 #: .\templates\navbar.html:29
 msgid "Logout"
 msgstr "Logout"
+
+#, fuzzy
+#~| msgid "There is no active order"
+#~ msgid "There is'nt an active order"
+#~ msgstr "Er is geen actieve order"
