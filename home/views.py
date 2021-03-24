@@ -9,11 +9,10 @@ from home.forms import ContactForm
 
 
 def index(request):
-    """
-    Load the homepage if there is no POST request
-    if POST load the data and
-    send an email with office365 smtp
-    """
+    '''
+    Load the homepage if there is no POST request.
+    If POST load the data & send an email with office365 smtp
+    '''
     form = ContactForm
 
     if request.method == 'POST':
