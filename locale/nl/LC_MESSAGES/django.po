@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-18 11:42+0100\n"
+"POT-Creation-Date: 2021-03-24 10:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,21 +109,33 @@ msgstr "meer details..."
 
 #: .\accounts\templates\accounts\dashboard.html:88
 #: .\accounts\templates\accounts\supervisor.html:117
+#: .\products\templates\products\product_items.html:115
+#: .\products\templates\products\product_items.html:117
+#: .\products\templates\products\products.html:115
+#: .\products\templates\products\products.html:117
 msgid "prev"
 msgstr "vorige"
 
 #: .\accounts\templates\accounts\dashboard.html:93
 #: .\accounts\templates\accounts\supervisor.html:122
+#: .\products\templates\products\product_items.html:122
+#: .\products\templates\products\products.html:122
 msgid "page"
 msgstr "pagina"
 
 #: .\accounts\templates\accounts\dashboard.html:93
 #: .\accounts\templates\accounts\supervisor.html:122
+#: .\products\templates\products\product_items.html:122
+#: .\products\templates\products\products.html:122
 msgid "of"
 msgstr "van"
 
 #: .\accounts\templates\accounts\dashboard.html:97
 #: .\accounts\templates\accounts\supervisor.html:126
+#: .\products\templates\products\product_items.html:127
+#: .\products\templates\products\product_items.html:129
+#: .\products\templates\products\products.html:127
+#: .\products\templates\products\products.html:129
 msgid "next"
 msgstr "volgende"
 
@@ -157,12 +169,14 @@ msgid "order details:"
 msgstr "meer details..."
 
 #: .\accounts\templates\accounts\supervisor.html:49
-#: .\products\templates\products\products.html:47
+#: .\products\templates\products\product_items.html:52
+#: .\products\templates\products\products.html:52
 msgid "Search"
 msgstr "Zoeken"
 
 #: .\accounts\templates\accounts\supervisor.html:52
-#: .\products\templates\products\products.html:50
+#: .\products\templates\products\product_items.html:55
+#: .\products\templates\products\products.html:55
 msgid "Reset"
 msgstr "Reset"
 
@@ -190,35 +204,56 @@ msgstr "Profiel succesvol aangepast"
 msgid "This order has not yet been completed by a colleague"
 msgstr ""
 
-#: .\checkout\templates\checkout\payment.html:17
-msgid "Checkout"
-msgstr ""
+#: .\checkout\forms.py:13
+msgid "Comments"
+msgstr "Opmerking"
 
-#: .\checkout\templates\checkout\payment.html:18
+#: .\checkout\forms.py:14
+msgid "max 250 characters"
+msgstr "maximaal 250 tekens"
+
+#: .\checkout\forms.py:18
+msgid "Delivery date"
+msgstr "Leverdatum"
+
+#: .\checkout\templates\checkout\details.html:17
+#: .\orders\templates\orders\cart.html:15
+msgid "Cart"
+msgstr "Bestelling"
+
+#: .\checkout\templates\checkout\details.html:18
 #: .\orders\templates\orders\cart.html:16
 msgid "Amount"
 msgstr "Aantal"
 
-#: .\checkout\templates\checkout\payment.html:41
+#: .\checkout\templates\checkout\details.html:41
 msgid "Extra details"
-msgstr ""
+msgstr "Extra details"
 
-#: .\checkout\templates\checkout\payment.html:61
+#: .\checkout\templates\checkout\details.html:61
 msgid "Return to checkout"
-msgstr ""
+msgstr "Bestelling aanpassen"
+
+#: .\checkout\templates\checkout\details.html:64
+msgid "Place order"
+msgstr "Bestelling afronden"
 
 #: .\checkout\views.py:30
 msgid "Your cart is empty"
-msgstr ""
+msgstr "Uw bestelling is leeg"
 
-#: .\checkout\views.py:45 .\checkout\views.py:123 .\orders\views.py:27
+#: .\checkout\views.py:45 .\checkout\views.py:124 .\orders\views.py:27
 #: .\orders\views.py:39 .\orders\views.py:119
 msgid "There is no active order"
 msgstr "Er is geen actieve order"
 
-#: .\checkout\views.py:117
+#: .\checkout\views.py:64
+msgid "Could not connect to the FM database "
+msgstr "Er kon geen verbinding met de FM database worden gemaakt"
+
+#: .\checkout\views.py:118
 msgid "Your order was successful!"
-msgstr ""
+msgstr "De bestelling is succesvol geplaatst"
 
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
@@ -1504,7 +1539,6 @@ msgid "Message"
 msgstr "Bericht"
 
 #: .\home\templates\home\index.html:27
-#: .\products\templates\products\products.html:138
 msgid "You need squad numbers for your team, but how?"
 msgstr "Je hebt rugnummers nodig voor je team, maar hoe?"
 
@@ -1684,17 +1718,13 @@ msgstr "Neem contact op"
 msgid "send a message"
 msgstr "verstuur bericht"
 
-#: .\home\views.py:45
+#: .\home\views.py:44
 msgid "Message has been sent successfully!"
 msgstr "Bericht is succesvol verstuurd!"
 
 #: .\orders\models.py:38
 msgid "Requested"
 msgstr "Aangevraagd"
-
-#: .\orders\templates\orders\cart.html:15
-msgid "Cart"
-msgstr "Bestelling"
 
 #: .\orders\templates\orders\cart.html:17
 msgid "Edit"
@@ -1740,23 +1770,28 @@ msgstr "Artikelgroep"
 msgid "Size"
 msgstr "Formaat"
 
-#: .\products\templates\products\products.html:65
+#: .\products\templates\products\product_items.html:70
+#: .\products\templates\products\products.html:70
 msgid "image"
 msgstr "afbeelding"
 
-#: .\products\templates\products\products.html:66
+#: .\products\templates\products\product_items.html:71
+#: .\products\templates\products\products.html:71
 msgid "article"
 msgstr "artikelnaam"
 
-#: .\products\templates\products\products.html:67
+#: .\products\templates\products\product_items.html:72
+#: .\products\templates\products\products.html:72
 msgid "group"
 msgstr "artikelgroep"
 
-#: .\products\templates\products\products.html:68
+#: .\products\templates\products\product_items.html:73
+#: .\products\templates\products\products.html:73
 msgid "stock"
 msgstr "buffer"
 
-#: .\products\templates\products\products.html:69
+#: .\products\templates\products\product_items.html:74
+#: .\products\templates\products\products.html:74
 msgid "amount"
 msgstr "aantal"
 
@@ -2044,8 +2079,3 @@ msgstr "Profiel"
 #: .\templates\navbar.html:29
 msgid "Logout"
 msgstr "Logout"
-
-#, fuzzy
-#~| msgid "There is no active order"
-#~ msgid "There is'nt an active order"
-#~ msgstr "Er is geen actieve order"
