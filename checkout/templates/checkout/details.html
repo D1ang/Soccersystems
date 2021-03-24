@@ -14,7 +14,7 @@
       <table class="nowrap table table-sm height-fix">
         <thead>
           <tr>
-            <th>{% trans "Checkout" %}</th>
+            <th>{% trans "Cart" %}</th>
             <th class="cart-align-right">{% trans "Amount" %}</th>
           </tr>
         </thead>
@@ -61,7 +61,7 @@
               <a href="{% url 'orders:cart' %}" class="btn btn-black-sm mb-3" role="button">{% trans "Return to checkout" %}</a>
             </div>
             <div class="form-group col-md-6 mb-0">
-              <input name="commit" class="btn btn-black-sm" type="submit" value="Place order">
+              <input name="commit" class="btn btn-black-sm" type="submit" value="{% trans "Place order" %}">
             </div>
           </div>
         </div>
