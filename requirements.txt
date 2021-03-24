@@ -1,5 +1,4 @@
 asgiref==3.3.1
-autopep8==1.5.4
 boto3==1.16.28
 botocore==1.19.28
 certifi==2020.11.8
@@ -20,9 +19,7 @@ django-storages==1.10.1
 django-widget-tweaks==1.4.8
 djangorestframework==3.12.2
 et-xmlfile==1.0.1
-flake8==3.8.4
 fmrest==1.1.2
-freeze==3.0
 gunicorn==20.0.4
 idna==2.10
 jdcal==1.4.1
@@ -32,14 +29,12 @@ Markdown==3.3.3
 mccabe==0.6.1
 oauthlib==3.1.0
 openpyxl==3.0.5
-pep8==1.7.1
 phonenumbers==8.12.13
 Pillow==8.0.1
 psycopg2-binary==2.8.6
 pycodestyle==2.6.0
 pycparser==2.20
 pyexcel-io==0.6.4
-pyflakes==2.2.0
 PyJWT==1.7.1
 python-dateutil==2.8.1
 python3-openid==3.2.0
