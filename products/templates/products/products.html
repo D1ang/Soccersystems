@@ -13,14 +13,19 @@
     <div class="row">
       {% for product in product_list %}
         <a href="{% url 'products:product_items' product.slug %}">
-          <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-            <div class="card w-100 fixed-card-height rounded-0">
-              <img class="card-img-top img rounded-0" id="image-zoom" src="{{ product.image.url }}" alt="{{ product.productname }}">
-              <div class="card-body d-flex flex-column">
-                <h6 class="card-title text-center">
-                  <a href="{% url 'products:product_items' product.slug %}">{{ product.productname|upper }}</a>
+          <div class="col-lg-2 col-md-6 col-sm-12 my-3">
+            <div class="card w-100 rounded-0">
+
+              <a class="product-link" href="{% url 'products:product_items' product.slug %}">
+                <img class="card-img-top product-image rounded-0" src="{{ product.image.url }}" alt="{{ product.productname }}">
+              </a>
+
+              <div class="d-flex flex-column pt-2">
+                <h6 class="product-title text-center py-2">
+                  <a href="{% url 'products:product_items' product.slug %}">{{ product.productname }}</a>
                 </h6>
               </div>
+
             </div>
           </div>
         </a>
@@ -59,24 +64,23 @@
     <!--Order items-->
     <div class="row">
       <div class="col-12">
-        <table id="dataTable" class="nowrap table table-sm height-fix border" style="width:100%">
+        <table id="dataTable" class="nowrap table table-sm border">
           <thead>
             <tr>
               <th>{% trans "image" %}</th>
               <th>{% trans "article" %}</th>
               <th>{% trans "group" %}</th>
               <th>{% trans "stock" %}</th>
-              <th>{% trans "amount" %}</th>
+              <th class="table-align-right">{% trans "amount" %}</th>
             </tr>
           </thead>
           <tbody class="tablerows">
             {% for item in page_object %}
             <tr>
               <td>
-                <img src="{{ item.image.url }}" alt="{{ item.name }}" height="50">
+                <img class="table-image" src="{{ item.image.url }}" alt="{{ item.name }}">
               </td>
               <td>
-                <strong>{{ item.slug }}</strong><br>
                 {{ item.name }}
               </td>
               <td>
@@ -86,10 +90,12 @@
                 {{ item.stock }}
               </td>
               <td>
-                <form class="form-inline" method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
+                <form class="form-inline table-align-right" method='GET' action="{% url 'orders:add_to_cart' item.slug %}">
                   {% csrf_token %}
                   <input id="amount-inputfield" name='qty' type="number" min="25" step="25" value="25">
-                  <input type="submit" value="Add">
+                  <button type="submit" class="btn btn-black-add">
+                    <i class="fas fa-plus"></i>
+                  </button>
                 </form>
               </td>
             </tr>
@@ -106,21 +112,21 @@
         <span>
           {% if page_object.has_previous %}
             {% if 'description' in request.get_full_path %}
-              <a href="{{ request.get_full_path }}&page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
+              <a href="{{ request.get_full_path }}&page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> {% trans "prev" %}</a>
             {% else %}
-              <a href="?page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> prev</a>
+              <a href="?page={{ page_object.previous_page_number }}" class="subtext"><i class="fas fa-angle-double-left"></i> {% trans "prev" %}</a>
             {% endif %}
           {% endif %}
 
           <span class="subtext-bold px-1">
-            page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+            {% trans "page" %} {{ page_object.number }} {% trans "of" %} {{ page_object.paginator.num_pages }}
           </span>
 
           {% if page_object.has_next %}
             {% if 'description' in request.get_full_path %}
-              <a href="{{ request.get_full_path }}&page={{ page_object.next_page_number }}" class="subtext">next <i class="fas fa-angle-double-right"></i></a>
+              <a href="{{ request.get_full_path }}&page={{ page_object.next_page_number }}" class="subtext">{% trans "next" %} <i class="fas fa-angle-double-right"></i></a>
             {% else %}
-              <a href="?page={{ page_object.next_page_number }}" class="subtext">next <i class="fas fa-angle-double-right"></i></a>
+              <a href="?page={{ page_object.next_page_number }}" class="subtext">{% trans "next" %} <i class="fas fa-angle-double-right"></i></a>
             {% endif %}
           {% endif %}
         </span>

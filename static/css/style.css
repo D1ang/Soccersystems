@@ -108,7 +108,7 @@ a.subtext:active {
 }
 
 .navbar .nav-item.active .nav-link {
-  color: rgb(156, 156, 156);
+  color: rgb(131, 0, 0);
 }
 
 .navbar .navbar-nav .nav-item:first-child .nav-link {
@@ -411,22 +411,43 @@ hr.dashboard {
 /*----------------------Products styling-----------------------!!!!!!!!!!!!!!!!*/
 
 #products {
-  padding-top: 80px;
+  padding-top: 85px;
 }
 
-#image-zoom {
-  filter: grayscale(100%);
-}
-  
-#image-zoom:hover {
-  filter: grayscale(0%);
-  transition: transform .8s;
-  cursor: pointer;
+.product-link {
+  display: block;
+  overflow: hidden;
+  transition: 300ms;
 }
 
-#id_comments {
-  height: 189px;
+.product-link:hover>img {
+  filter: saturate(1);
+  transform: scale(1.05);
 }
+
+.product-image {
+  transform: scale(1.2);
+  filter: saturate(0);
+  transition: all 300ms;
+}
+
+.product-title a {
+  color: rgb(36, 36, 36);
+  font-weight: bold;
+}
+
+.product-title a:hover {
+  color: rgb(190, 19, 53);
+  transition: 300ms;
+}
+
+#product-selected {
+  color: rgb(190, 19, 53);
+  filter: saturate(1);
+  transform: scale(1.05);
+}
+
+
 
 #id_description {
   width: 100%;
@@ -669,6 +690,17 @@ footer {
   transition: 0.3s;
 }
 
+.btn-black-add {
+  height: 35px;
+  padding-top: 4px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(12, 158, 97);
+  border-radius: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .btn-black-sm:hover {
   background-color: rgb(190, 190, 190);
 }
@@ -713,6 +745,7 @@ footer {
 .table > tbody > tr > td {
   border: 0px;
   padding: 10px;
+  vertical-align: middle;
   border-top: solid 1px rgba(82, 82, 82, 0.192);
 }
 
@@ -723,6 +756,7 @@ footer {
 .table thead > tr > th {
   border: 0px;
   padding: 10px;
+  vertical-align: middle;
 }
 
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td.dtr-control:before,
@@ -733,4 +767,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control:b
 table.dataTable > tbody > tr.child ul.dtr-details > li {
   border-style: none;
   padding: 0;
+}
+
+.table-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-image {
+  height: 50px;
 }
