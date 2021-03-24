@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import View
 from orders.models import Order
 from .forms import CheckoutForm
@@ -14,12 +14,12 @@ import uuid
 fm = dataAPI.DataAPIv1('fm.ibs-mijdrecht.nl')
 
 
-class PaymentView(LoginRequiredMixin, View):
-    """
+class CheckoutView(LoginRequiredMixin, View):
+    '''
     Load the checkout view for the order
     including the form. On POST save the
-    order to the Postgres backend and FileMaker.
-    """
+    order to the Postgres backend & FileMaker.
+    '''
     def get(self, *args, **kwargs):
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
@@ -39,7 +39,7 @@ class PaymentView(LoginRequiredMixin, View):
                     'total': total,
                     'form': form
                 }
-                return render(self.request, 'checkout/payment.html', context)
+                return render(self.request, 'checkout/details.html', context)
 
         except ObjectDoesNotExist:
             message = _('There is no active order')
@@ -47,10 +47,10 @@ class PaymentView(LoginRequiredMixin, View):
             return redirect('products:products')
 
     def post(self, *args, **kwargs):
-        """
+        '''
         On POST, payment will be created in the database
-        and processed to the FileMaker data API.
-        """
+        & processed to the FileMaker data API.
+        '''
         form = CheckoutForm(self.request.POST, self.request.FILES or None)
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
@@ -61,7 +61,8 @@ class PaymentView(LoginRequiredMixin, View):
                 # FileMaker data API - create a token to authenticate database
                 fm.authenticate('Digitrans', 'cwp', 'cwp123')
                 if fm.errorCode != 0:
-                    print(fm.errorMessage)
+                    message = _('Could not connect to the FM database ')
+                    messages.warning(self.request, message=message)
 
                 def fm_serializer(self):
                     shop = str(self.request.user.employee.shop)
@@ -93,7 +94,13 @@ class PaymentView(LoginRequiredMixin, View):
                     }
                     return data
 
-                fm.create_record('web_find_asset_detail', fm_serializer(self))
+                # Create record on FM database
+                create_record = fm.create_record('web_find_asset_detail', fm_serializer(self))
+                recordId = create_record['response']['recordId']
+
+                # Return the invoice serial to the backend & close FM connection.
+                find_record = fm.get_record('web_find_asset_detail', recordId)
+                serialID = find_record['response']['data'][0]['fieldData']['invoice_serial']
                 fm.logout()
 
                 # Save order to the backend
@@ -110,7 +117,7 @@ class PaymentView(LoginRequiredMixin, View):
                 order.ordered = True
                 order.total = total
                 order.tax = tax
-                # order.id_code = '921-' + generate_id_code()
+                order.id_code = serialID
 
                 order.save()
 
@@ -123,4 +130,4 @@ class PaymentView(LoginRequiredMixin, View):
             message = _('There is no active order')
             messages.warning(self.request, message=message)
 
-            return redirect('checkout:payment')
+            return redirect('checkout:checkout')
