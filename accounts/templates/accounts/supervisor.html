@@ -89,7 +89,7 @@
                     {% endif %}
                   </td>
                   <td>
-                    <span class="badge badge-pill badge-{{ order.status }}">{{ order.status }}</span>
+                    <span class="badge badge-pill badge-{{ order.status }}">{{ order.get_status_display }}</span>
                   </td>
                   <td>
                     <a class="subtext" href="{% url 'accounts:orderdetails' order.id %}"><i class="far fa-eye mr-1"></i></a>
