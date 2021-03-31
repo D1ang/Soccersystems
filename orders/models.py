@@ -26,7 +26,7 @@ class OrderItem(models.Model):
         return self.item.price
 
     def __str__(self):
-        return self.item.name
+        return '%s - %s' % (self.shop, self.item.name)
 
 
 class Order(models.Model):
