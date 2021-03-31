@@ -9,27 +9,6 @@
 <section id="cart">
   <div class="container-fluid">
 
-    <!--Checkout items-->
-    <div class="card rounded-0">
-      <table class="nowrap table table-sm height-fix">
-        <thead>
-          <tr>
-            <th>{% trans "Cart" %}</th>
-            <th class="cart-align-right">{% trans "Amount" %}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for order_item in order.items.all %}
-            <tr>
-              <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
-              <td class="cart-align-right">{{ order_item.quantity }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-    <!--Checkout items end-->
-
     <!--Place order-->
     <div class="card rounded-0 my-4">
       <form role="form" method="post" id="payment-form" action="">
