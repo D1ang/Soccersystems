@@ -3,7 +3,9 @@ from .models import OrderItem, Order
 
 
 class OrderItemAdmin(admin.ModelAdmin):
+    ordering = ['-id']
     list_display = (
+        'id',
         'article_id',
         'item',
         'quantity',
