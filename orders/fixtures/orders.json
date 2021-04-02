@@ -1,0 +1,6784 @@
+[
+{
+    "model": "orders.orderitem",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040_",
+        "article_id": 83018943,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210400",
+        "article_id": 1306435,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040A",
+        "article_id": 92789740,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040B",
+        "article_id": 50681036,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040C",
+        "article_id": 96407959,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040D",
+        "article_id": 13808563,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040E",
+        "article_id": 22383167,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040F",
+        "article_id": 84599867,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040G",
+        "article_id": 92443765,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040H",
+        "article_id": 72579256,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040I",
+        "article_id": 18108960,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 12,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040J",
+        "article_id": 59366270,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 13,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040K",
+        "article_id": 21121821,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 14,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040L",
+        "article_id": 38767764,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 15,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040M",
+        "article_id": 21600396,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 16,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040N",
+        "article_id": 3077119,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040O",
+        "article_id": 29240238,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040P",
+        "article_id": 19974648,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040Q",
+        "article_id": 54567076,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040R",
+        "article_id": 5204901,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 21,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040S",
+        "article_id": 21366472,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 22,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040T",
+        "article_id": 89350499,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 23,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040U",
+        "article_id": 12532079,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040V",
+        "article_id": 48362297,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 25,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040W",
+        "article_id": 80130123,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 26,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040X",
+        "article_id": 85134386,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 27,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040Y",
+        "article_id": 90905649,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 28,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21040Z",
+        "article_id": 20630060,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 29,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060_",
+        "article_id": 85604440,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 30,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210600",
+        "article_id": 35875272,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 31,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060A",
+        "article_id": 46846534,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 32,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060B",
+        "article_id": 55119603,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 33,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060C",
+        "article_id": 36188598,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 34,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060D",
+        "article_id": 42894729,
+        "quantity": 1200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 35,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060E",
+        "article_id": 70242057,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 36,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060F",
+        "article_id": 64804285,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 37,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060G",
+        "article_id": 32863248,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 38,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060H",
+        "article_id": 99024920,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 39,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060I",
+        "article_id": 34283835,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 40,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060J",
+        "article_id": 94832032,
+        "quantity": 600,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 41,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060K",
+        "article_id": 58032721,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 42,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060L",
+        "article_id": 47441858,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 43,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060M",
+        "article_id": 52331603,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 44,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060N",
+        "article_id": 53270683,
+        "quantity": 1200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 45,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060O",
+        "article_id": 85452317,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 46,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060P",
+        "article_id": 87667265,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 47,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060Q",
+        "article_id": 6723159,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 48,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060R",
+        "article_id": 64340495,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 49,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060S",
+        "article_id": 37215080,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 50,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060T",
+        "article_id": 3005203,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 51,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060U",
+        "article_id": 43724266,
+        "quantity": 1200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 52,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060V",
+        "article_id": 96116282,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 53,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060W",
+        "article_id": 34708583,
+        "quantity": 800,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 54,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060X",
+        "article_id": 26422898,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 55,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060Y",
+        "article_id": 34455382,
+        "quantity": 500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 56,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA21060Z",
+        "article_id": 93448342,
+        "quantity": 700,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 57,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106AY",
+        "article_id": 75179725,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 58,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106AZ",
+        "article_id": 72207496,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 59,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106BD",
+        "article_id": 37179586,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 60,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106EP",
+        "article_id": 51594934,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 61,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106GH",
+        "article_id": 49846331,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 62,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106HE",
+        "article_id": 17543268,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 63,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106JR",
+        "article_id": 22563889,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 64,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106KN",
+        "article_id": 56893477,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 65,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106KR",
+        "article_id": 70743624,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 66,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106KS",
+        "article_id": 38928838,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 67,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106LD",
+        "article_id": 77807493,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 68,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106MI",
+        "article_id": 57115951,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 69,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106MZ",
+        "article_id": 53592943,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 70,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106NS",
+        "article_id": 2213260,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 71,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106RH",
+        "article_id": 62141561,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 72,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106SS",
+        "article_id": 90770017,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 73,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106TC",
+        "article_id": 23357354,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 74,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106TE",
+        "article_id": 22561141,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 75,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106TO",
+        "article_id": 96671188,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 76,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106TR",
+        "article_id": 78994810,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 77,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA2106UR",
+        "article_id": 81507611,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 78,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210900",
+        "article_id": 53275431,
+        "quantity": 150,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 79,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210901",
+        "article_id": 18858100,
+        "quantity": 150,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 80,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210902",
+        "article_id": 7956905,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 81,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210903",
+        "article_id": 92019584,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 82,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210904",
+        "article_id": 72722985,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 83,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210905",
+        "article_id": 34457088,
+        "quantity": 50,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 84,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210906",
+        "article_id": 82793794,
+        "quantity": 50,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 85,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210907",
+        "article_id": 5455658,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 86,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210908",
+        "article_id": 81447813,
+        "quantity": 50,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 87,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA210909",
+        "article_id": 11644954,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 88,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211600",
+        "article_id": 38241344,
+        "quantity": 700,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 89,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211601",
+        "article_id": 86229793,
+        "quantity": 700,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 90,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211602",
+        "article_id": 10024586,
+        "quantity": 500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 91,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211603",
+        "article_id": 14652780,
+        "quantity": 400,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 92,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211604",
+        "article_id": 35984703,
+        "quantity": 400,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 93,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211605",
+        "article_id": 6212746,
+        "quantity": 400,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 94,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211606",
+        "article_id": 98367596,
+        "quantity": 400,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 95,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211607",
+        "article_id": 87295252,
+        "quantity": 500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 96,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211608",
+        "article_id": 50963368,
+        "quantity": 400,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 97,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA211609",
+        "article_id": 7861089,
+        "quantity": 500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 98,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212500",
+        "article_id": 92292186,
+        "quantity": 800,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 99,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212501",
+        "article_id": 6228958,
+        "quantity": 800,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 100,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212502",
+        "article_id": 25337936,
+        "quantity": 500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 101,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212503",
+        "article_id": 76335627,
+        "quantity": 500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 102,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212504",
+        "article_id": 32826558,
+        "quantity": 500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 103,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212505",
+        "article_id": 4828830,
+        "quantity": 400,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 104,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212506",
+        "article_id": 66443310,
+        "quantity": 400,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 105,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212507",
+        "article_id": 54424269,
+        "quantity": 500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 106,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212508",
+        "article_id": 51265695,
+        "quantity": 400,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 107,
+    "fields": {
+        "user": 1,
+        "shop": 4,
+        "item": "XA212509",
+        "article_id": 65120941,
+        "quantity": 500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 108,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060_",
+        "article_id": 85604440,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 109,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA210600",
+        "article_id": 35875272,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 110,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060A",
+        "article_id": 46846534,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 111,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060B",
+        "article_id": 55119603,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 112,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060C",
+        "article_id": 36188598,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 113,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060D",
+        "article_id": 42894729,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 114,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060E",
+        "article_id": 70242057,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 115,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060F",
+        "article_id": 64804285,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 116,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060G",
+        "article_id": 32863248,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 117,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060H",
+        "article_id": 99024920,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 118,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060I",
+        "article_id": 34283835,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 119,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060J",
+        "article_id": 94832032,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 120,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060K",
+        "article_id": 58032721,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 121,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060L",
+        "article_id": 47441858,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 122,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060M",
+        "article_id": 52331603,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 123,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060N",
+        "article_id": 53270683,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 124,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060O",
+        "article_id": 85452317,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 125,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060P",
+        "article_id": 87667265,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 126,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060Q",
+        "article_id": 6723159,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 127,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060R",
+        "article_id": 64340495,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 128,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060S",
+        "article_id": 37215080,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 129,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060T",
+        "article_id": 3005203,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 130,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060U",
+        "article_id": 43724266,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 131,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060V",
+        "article_id": 96116282,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 132,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060W",
+        "article_id": 34708583,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 133,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060X",
+        "article_id": 26422898,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 134,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060Y",
+        "article_id": 34455382,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 135,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA21060Z",
+        "article_id": 93448342,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 136,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106AY",
+        "article_id": 75179725,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 137,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106AZ",
+        "article_id": 72207496,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 138,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106BD",
+        "article_id": 37179586,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 139,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106BY",
+        "article_id": 84497554,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 140,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106EP",
+        "article_id": 51594934,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 141,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106GH",
+        "article_id": 49846331,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 142,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106HE",
+        "article_id": 17543268,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 143,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106JR",
+        "article_id": 22563889,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 144,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106KN",
+        "article_id": 56893477,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 145,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106KR",
+        "article_id": 70743624,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 146,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106KS",
+        "article_id": 38928838,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 147,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106LD",
+        "article_id": 77807493,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 148,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106MI",
+        "article_id": 57115951,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 149,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106MZ",
+        "article_id": 53592943,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 150,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106NS",
+        "article_id": 2213260,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 151,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106RH",
+        "article_id": 62141561,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 152,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106SS",
+        "article_id": 90770017,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 153,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106TC",
+        "article_id": 23357354,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 154,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106TE",
+        "article_id": 22561141,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 155,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106TO",
+        "article_id": 96671188,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 156,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106TR",
+        "article_id": 78994810,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 157,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA2106UR",
+        "article_id": 81507611,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 158,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211600",
+        "article_id": 38241344,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 159,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211601",
+        "article_id": 86229793,
+        "quantity": 210,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 160,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211602",
+        "article_id": 10024586,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 161,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211603",
+        "article_id": 14652780,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 162,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211604",
+        "article_id": 35984703,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 163,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211605",
+        "article_id": 6212746,
+        "quantity": 60,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 164,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211606",
+        "article_id": 98367596,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 165,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211607",
+        "article_id": 87295252,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 166,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211608",
+        "article_id": 50963368,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 167,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA211609",
+        "article_id": 7861089,
+        "quantity": 40,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 168,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212500",
+        "article_id": 92292186,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 169,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212501",
+        "article_id": 6228958,
+        "quantity": 300,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 170,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212502",
+        "article_id": 25337936,
+        "quantity": 300,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 171,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212503",
+        "article_id": 76335627,
+        "quantity": 250,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 172,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212504",
+        "article_id": 32826558,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 173,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212505",
+        "article_id": 4828830,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 174,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212506",
+        "article_id": 66443310,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 175,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212507",
+        "article_id": 54424269,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 176,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212508",
+        "article_id": 51265695,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 177,
+    "fields": {
+        "user": 1,
+        "shop": 6,
+        "item": "XA212509",
+        "article_id": 65120941,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 178,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040A",
+        "article_id": 92789740,
+        "quantity": 650,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 179,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040B",
+        "article_id": 50681036,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 180,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040C",
+        "article_id": 96407959,
+        "quantity": 125,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 181,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040D",
+        "article_id": 13808563,
+        "quantity": 225,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 182,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040E",
+        "article_id": 22383167,
+        "quantity": 650,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 183,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040F",
+        "article_id": 84599867,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 184,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040G",
+        "article_id": 92443765,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 185,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040H",
+        "article_id": 72579256,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 186,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040I",
+        "article_id": 18108960,
+        "quantity": 450,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 187,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040J",
+        "article_id": 59366270,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 188,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040K",
+        "article_id": 21121821,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 189,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040L",
+        "article_id": 38767764,
+        "quantity": 350,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 190,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040M",
+        "article_id": 21600396,
+        "quantity": 250,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 191,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040N",
+        "article_id": 3077119,
+        "quantity": 550,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 192,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040O",
+        "article_id": 29240238,
+        "quantity": 350,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 193,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040P",
+        "article_id": 19974648,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 194,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040Q",
+        "article_id": 54567076,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 195,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040R",
+        "article_id": 5204901,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 196,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040S",
+        "article_id": 21366472,
+        "quantity": 350,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 197,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040T",
+        "article_id": 89350499,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 198,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040U",
+        "article_id": 12532079,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 199,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040V",
+        "article_id": 48362297,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 200,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040W",
+        "article_id": 80130123,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 201,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040X",
+        "article_id": 85134386,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 202,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040Y",
+        "article_id": 90905649,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 203,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21040Z",
+        "article_id": 20630060,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 204,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060A",
+        "article_id": 46846534,
+        "quantity": 5000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 205,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060B",
+        "article_id": 55119603,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 206,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060C",
+        "article_id": 36188598,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 207,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060D",
+        "article_id": 42894729,
+        "quantity": 2500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 208,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060E",
+        "article_id": 70242057,
+        "quantity": 7500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 209,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060F",
+        "article_id": 64804285,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 210,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060G",
+        "article_id": 32863248,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 211,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060H",
+        "article_id": 99024920,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 212,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060I",
+        "article_id": 34283835,
+        "quantity": 4000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 213,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060J",
+        "article_id": 94832032,
+        "quantity": 850,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 214,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060K",
+        "article_id": 58032721,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 215,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060L",
+        "article_id": 47441858,
+        "quantity": 3000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 216,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060M",
+        "article_id": 52331603,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 217,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060N",
+        "article_id": 53270683,
+        "quantity": 5000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 218,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060O",
+        "article_id": 85452317,
+        "quantity": 3000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 219,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060P",
+        "article_id": 87667265,
+        "quantity": 1000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 220,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060Q",
+        "article_id": 6723159,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 221,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060R",
+        "article_id": 64340495,
+        "quantity": 4500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 222,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060S",
+        "article_id": 37215080,
+        "quantity": 3000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 223,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060T",
+        "article_id": 3005203,
+        "quantity": 3000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 224,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060U",
+        "article_id": 43724266,
+        "quantity": 2000,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 225,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060V",
+        "article_id": 96116282,
+        "quantity": 1500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 226,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060W",
+        "article_id": 34708583,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 227,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060X",
+        "article_id": 26422898,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 228,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060Y",
+        "article_id": 34455382,
+        "quantity": 750,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 229,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA21060Z",
+        "article_id": 93448342,
+        "quantity": 500,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 230,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106AY",
+        "article_id": 75179725,
+        "quantity": 750,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 231,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106AZ",
+        "article_id": 72207496,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 232,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106BD",
+        "article_id": 37179586,
+        "quantity": 250,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 233,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106EP",
+        "article_id": 51594934,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 234,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106GH",
+        "article_id": 49846331,
+        "quantity": 750,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 235,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106HE",
+        "article_id": 17543268,
+        "quantity": 500,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 236,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106JR",
+        "article_id": 22563889,
+        "quantity": 150,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 237,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106KN",
+        "article_id": 56893477,
+        "quantity": 500,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 238,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106KR",
+        "article_id": 70743624,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 239,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106KS",
+        "article_id": 38928838,
+        "quantity": 500,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 240,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106LD",
+        "article_id": 77807493,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 241,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106MI",
+        "article_id": 57115951,
+        "quantity": 200,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 242,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106MZ",
+        "article_id": 53592943,
+        "quantity": 300,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 243,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106NS",
+        "article_id": 2213260,
+        "quantity": 300,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 244,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106RH",
+        "article_id": 62141561,
+        "quantity": 150,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 245,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106SS",
+        "article_id": 90770017,
+        "quantity": 150,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 246,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106TC",
+        "article_id": 23357354,
+        "quantity": 750,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 247,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106TE",
+        "article_id": 22561141,
+        "quantity": 150,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 248,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106TO",
+        "article_id": 96671188,
+        "quantity": 200,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 249,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA2106TR",
+        "article_id": 78994810,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 250,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210900",
+        "article_id": 53275431,
+        "quantity": 575,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 251,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210901",
+        "article_id": 18858100,
+        "quantity": 1800,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 252,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210902",
+        "article_id": 7956905,
+        "quantity": 550,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 253,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210903",
+        "article_id": 92019584,
+        "quantity": 650,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 254,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210904",
+        "article_id": 72722985,
+        "quantity": 450,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 255,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210905",
+        "article_id": 34457088,
+        "quantity": 175,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 256,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210906",
+        "article_id": 82793794,
+        "quantity": 325,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 257,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210907",
+        "article_id": 5455658,
+        "quantity": 350,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 258,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210908",
+        "article_id": 81447813,
+        "quantity": 175,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 259,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA210909",
+        "article_id": 11644954,
+        "quantity": 350,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 260,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211600",
+        "article_id": 38241344,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 261,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211601",
+        "article_id": 86229793,
+        "quantity": 3500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 262,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211602",
+        "article_id": 10024586,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 263,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211603",
+        "article_id": 14652780,
+        "quantity": 500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 264,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211604",
+        "article_id": 35984703,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 265,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211605",
+        "article_id": 6212746,
+        "quantity": 300,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 266,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211606",
+        "article_id": 98367596,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 267,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211607",
+        "article_id": 87295252,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 268,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211608",
+        "article_id": 50963368,
+        "quantity": 500,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 269,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA211609",
+        "article_id": 7861089,
+        "quantity": 1000,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 270,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212500",
+        "article_id": 92292186,
+        "quantity": 1000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 271,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212501",
+        "article_id": 6228958,
+        "quantity": 3500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 272,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212502",
+        "article_id": 25337936,
+        "quantity": 2000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 273,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212503",
+        "article_id": 76335627,
+        "quantity": 1000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 274,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212504",
+        "article_id": 32826558,
+        "quantity": 750,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 275,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212505",
+        "article_id": 4828830,
+        "quantity": 350,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 276,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212506",
+        "article_id": 66443310,
+        "quantity": 1000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 277,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212507",
+        "article_id": 54424269,
+        "quantity": 1000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 278,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212508",
+        "article_id": 51265695,
+        "quantity": 1000,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 279,
+    "fields": {
+        "user": 1,
+        "shop": 5,
+        "item": "XA212509",
+        "article_id": 65120941,
+        "quantity": 1500,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 280,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040A",
+        "article_id": 92789740,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 281,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040B",
+        "article_id": 50681036,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 282,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040C",
+        "article_id": 96407959,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 283,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040D",
+        "article_id": 13808563,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 284,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040E",
+        "article_id": 22383167,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 285,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040F",
+        "article_id": 84599867,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 286,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040G",
+        "article_id": 92443765,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 287,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040H",
+        "article_id": 72579256,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 288,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040I",
+        "article_id": 18108960,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 289,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040J",
+        "article_id": 59366270,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 290,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040K",
+        "article_id": 21121821,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 291,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040L",
+        "article_id": 38767764,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 292,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040M",
+        "article_id": 21600396,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 293,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040N",
+        "article_id": 3077119,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 294,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040O",
+        "article_id": 29240238,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 295,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040P",
+        "article_id": 19974648,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 296,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040Q",
+        "article_id": 54567076,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 297,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040R",
+        "article_id": 5204901,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 298,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040S",
+        "article_id": 21366472,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 299,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040T",
+        "article_id": 89350499,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 300,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040U",
+        "article_id": 12532079,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 301,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040V",
+        "article_id": 48362297,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 302,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040W",
+        "article_id": 80130123,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 303,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040X",
+        "article_id": 85134386,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 304,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040Y",
+        "article_id": 90905649,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 305,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21040Z",
+        "article_id": 20630060,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 306,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060A",
+        "article_id": 46846534,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 307,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060B",
+        "article_id": 55119603,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 308,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060C",
+        "article_id": 36188598,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 309,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060D",
+        "article_id": 42894729,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 310,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060E",
+        "article_id": 70242057,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 311,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060F",
+        "article_id": 64804285,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 312,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060G",
+        "article_id": 32863248,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 313,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060H",
+        "article_id": 99024920,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 314,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060I",
+        "article_id": 34283835,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 315,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060J",
+        "article_id": 94832032,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 316,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060K",
+        "article_id": 58032721,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 317,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060L",
+        "article_id": 47441858,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 318,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060M",
+        "article_id": 52331603,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 319,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060N",
+        "article_id": 53270683,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 320,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060O",
+        "article_id": 85452317,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 321,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060P",
+        "article_id": 87667265,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 322,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060Q",
+        "article_id": 6723159,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 323,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060R",
+        "article_id": 64340495,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 324,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060S",
+        "article_id": 37215080,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 325,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060T",
+        "article_id": 3005203,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 326,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060U",
+        "article_id": 43724266,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 327,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060V",
+        "article_id": 96116282,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 328,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060W",
+        "article_id": 34708583,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 329,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060X",
+        "article_id": 26422898,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 330,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060Y",
+        "article_id": 34455382,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 331,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA21060Z",
+        "article_id": 93448342,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 332,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106AY",
+        "article_id": 75179725,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 333,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106AZ",
+        "article_id": 72207496,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 334,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106BD",
+        "article_id": 37179586,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 335,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106EP",
+        "article_id": 51594934,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 336,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106GH",
+        "article_id": 49846331,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 337,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106HE",
+        "article_id": 17543268,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 338,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106JR",
+        "article_id": 22563889,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 339,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106KN",
+        "article_id": 56893477,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 340,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106KR",
+        "article_id": 70743624,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 341,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106KS",
+        "article_id": 38928838,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 342,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106LD",
+        "article_id": 77807493,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 343,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106MI",
+        "article_id": 57115951,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 344,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106MZ",
+        "article_id": 53592943,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 345,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106NS",
+        "article_id": 2213260,
+        "quantity": 100,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 346,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106RH",
+        "article_id": 62141561,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 347,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106SS",
+        "article_id": 90770017,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 348,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106TC",
+        "article_id": 23357354,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 349,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106TE",
+        "article_id": 22561141,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 350,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106TO",
+        "article_id": 96671188,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 351,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA2106TR",
+        "article_id": 78994810,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 352,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210900",
+        "article_id": 53275431,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 353,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210901",
+        "article_id": 18858100,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 354,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210902",
+        "article_id": 7956905,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 355,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210903",
+        "article_id": 92019584,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 356,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210904",
+        "article_id": 72722985,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 357,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210905",
+        "article_id": 34457088,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 358,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210906",
+        "article_id": 82793794,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 359,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210907",
+        "article_id": 5455658,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 360,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210908",
+        "article_id": 81447813,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 361,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA210909",
+        "article_id": 11644954,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 362,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211600",
+        "article_id": 38241344,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 363,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211601",
+        "article_id": 86229793,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 364,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211602",
+        "article_id": 10024586,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 365,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211603",
+        "article_id": 14652780,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 366,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211604",
+        "article_id": 35984703,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 367,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211605",
+        "article_id": 6212746,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 368,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211606",
+        "article_id": 98367596,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 369,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211607",
+        "article_id": 87295252,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 370,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211608",
+        "article_id": 50963368,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 371,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA211609",
+        "article_id": 7861089,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 372,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212500",
+        "article_id": 92292186,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 373,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212501",
+        "article_id": 6228958,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 374,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212502",
+        "article_id": 25337936,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 375,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212503",
+        "article_id": 76335627,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 376,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212504",
+        "article_id": 32826558,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 377,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212505",
+        "article_id": 4828830,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 378,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212506",
+        "article_id": 66443310,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 379,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212507",
+        "article_id": 54424269,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 380,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212508",
+        "article_id": 51265695,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 381,
+    "fields": {
+        "user": 1,
+        "shop": 1,
+        "item": "XA212509",
+        "article_id": 65120941,
+        "quantity": 100,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 382,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040_",
+        "article_id": 83018943,
+        "quantity": 25,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 383,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210400",
+        "article_id": 1306435,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 384,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040A",
+        "article_id": 92789740,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 385,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040B",
+        "article_id": 50681036,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 386,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040C",
+        "article_id": 96407959,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 387,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040D",
+        "article_id": 13808563,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 388,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040E",
+        "article_id": 22383167,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 389,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040F",
+        "article_id": 84599867,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 390,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040G",
+        "article_id": 92443765,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 391,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040H",
+        "article_id": 72579256,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 392,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040I",
+        "article_id": 18108960,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 393,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040J",
+        "article_id": 59366270,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 394,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040K",
+        "article_id": 21121821,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 395,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040L",
+        "article_id": 38767764,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 396,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040M",
+        "article_id": 21600396,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 397,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040N",
+        "article_id": 3077119,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 398,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040O",
+        "article_id": 29240238,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 399,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040P",
+        "article_id": 19974648,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 400,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040Q",
+        "article_id": 54567076,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 401,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040R",
+        "article_id": 5204901,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 402,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040S",
+        "article_id": 21366472,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 403,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040T",
+        "article_id": 89350499,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 404,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040U",
+        "article_id": 12532079,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 405,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040V",
+        "article_id": 48362297,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 406,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040W",
+        "article_id": 80130123,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 407,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040X",
+        "article_id": 85134386,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 408,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040Y",
+        "article_id": 90905649,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 409,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21040Z",
+        "article_id": 20630060,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 410,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060_",
+        "article_id": 85604440,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 411,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210600",
+        "article_id": 35875272,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 412,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060A",
+        "article_id": 46846534,
+        "quantity": 250,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 413,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060B",
+        "article_id": 55119603,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 414,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060C",
+        "article_id": 36188598,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 415,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060D",
+        "article_id": 42894729,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 416,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060E",
+        "article_id": 70242057,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 417,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060F",
+        "article_id": 64804285,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 418,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060G",
+        "article_id": 32863248,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 419,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060H",
+        "article_id": 99024920,
+        "quantity": 150,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 420,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060I",
+        "article_id": 34283835,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 421,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060J",
+        "article_id": 94832032,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 422,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060K",
+        "article_id": 58032721,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 423,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060L",
+        "article_id": 47441858,
+        "quantity": 250,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 424,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060M",
+        "article_id": 52331603,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 425,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060N",
+        "article_id": 53270683,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 426,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060O",
+        "article_id": 85452317,
+        "quantity": 300,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 427,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060P",
+        "article_id": 87667265,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 428,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060Q",
+        "article_id": 6723159,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 429,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060R",
+        "article_id": 64340495,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 430,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060S",
+        "article_id": 37215080,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 431,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060T",
+        "article_id": 3005203,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 432,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060U",
+        "article_id": 43724266,
+        "quantity": 200,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 433,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060V",
+        "article_id": 96116282,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 434,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060W",
+        "article_id": 34708583,
+        "quantity": 100,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 435,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060X",
+        "article_id": 26422898,
+        "quantity": 50,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 436,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060Y",
+        "article_id": 34455382,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 437,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA21060Z",
+        "article_id": 93448342,
+        "quantity": 75,
+        "price": 0.1,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 438,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106AY",
+        "article_id": 75179725,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 439,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106BD",
+        "article_id": 37179586,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 440,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106GH",
+        "article_id": 49846331,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 441,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106HE",
+        "article_id": 17543268,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 442,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106KN",
+        "article_id": 56893477,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 443,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106KS",
+        "article_id": 38928838,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 444,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106MI",
+        "article_id": 57115951,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 445,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106MZ",
+        "article_id": 53592943,
+        "quantity": 25,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 446,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106NS",
+        "article_id": 2213260,
+        "quantity": 50,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 447,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106TC",
+        "article_id": 23357354,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 448,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA2106TO",
+        "article_id": 96671188,
+        "quantity": 75,
+        "price": 1.25,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 449,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210900",
+        "article_id": 53275431,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 450,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210901",
+        "article_id": 18858100,
+        "quantity": 150,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 451,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210902",
+        "article_id": 7956905,
+        "quantity": 125,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 452,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210903",
+        "article_id": 92019584,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 453,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210904",
+        "article_id": 72722985,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 454,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210905",
+        "article_id": 34457088,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 455,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210906",
+        "article_id": 82793794,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 456,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210907",
+        "article_id": 5455658,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 457,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210908",
+        "article_id": 81447813,
+        "quantity": 75,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 458,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA210909",
+        "article_id": 11644954,
+        "quantity": 100,
+        "price": 0.38,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 459,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211600",
+        "article_id": 38241344,
+        "quantity": 250,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 460,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211601",
+        "article_id": 86229793,
+        "quantity": 250,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 461,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211602",
+        "article_id": 10024586,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 462,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211603",
+        "article_id": 14652780,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 463,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211604",
+        "article_id": 35984703,
+        "quantity": 200,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 464,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211605",
+        "article_id": 6212746,
+        "quantity": 100,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 465,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211606",
+        "article_id": 98367596,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 466,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211607",
+        "article_id": 87295252,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 467,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211608",
+        "article_id": 50963368,
+        "quantity": 150,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 468,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA211609",
+        "article_id": 7861089,
+        "quantity": 250,
+        "price": 0.47,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 469,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212500",
+        "article_id": 92292186,
+        "quantity": 300,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 470,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212501",
+        "article_id": 6228958,
+        "quantity": 300,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 471,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212502",
+        "article_id": 25337936,
+        "quantity": 250,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 472,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212503",
+        "article_id": 76335627,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 473,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212504",
+        "article_id": 32826558,
+        "quantity": 250,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 474,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212505",
+        "article_id": 4828830,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 475,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212506",
+        "article_id": 66443310,
+        "quantity": 150,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 476,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212507",
+        "article_id": 54424269,
+        "quantity": 200,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 477,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212508",
+        "article_id": 51265695,
+        "quantity": 250,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 478,
+    "fields": {
+        "user": 1,
+        "shop": 3,
+        "item": "XA212509",
+        "article_id": 65120941,
+        "quantity": 300,
+        "price": 0.72,
+        "ordered": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 24,
+    "fields": {
+        "id_code": "2100654",
+        "date": "2021-03-30",
+        "delivery_date": "2021-04-30",
+        "user": 1,
+        "shop": 4,
+        "status": "requested",
+        "ordered": true,
+        "total": 13164.8,
+        "tax": 2284.7999999999997,
+        "comments": "Startorder, ingevoerd door Django (IBS)",
+        "items": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 25,
+    "fields": {
+        "id_code": "2100656",
+        "date": "2021-03-31",
+        "delivery_date": "2021-04-30",
+        "user": 1,
+        "shop": 6,
+        "status": "requested",
+        "ordered": true,
+        "total": 3519.89,
+        "tax": 610.89,
+        "comments": "Startorder, ingevoerd door Django (IBS)",
+        "items": [
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 26,
+    "fields": {
+        "id_code": "2100657",
+        "date": "2021-03-31",
+        "delivery_date": "2021-04-30",
+        "user": 1,
+        "shop": 5,
+        "status": "requested",
+        "ordered": true,
+        "total": 37019.95,
+        "tax": 6424.95,
+        "comments": "Startorder, ingevoerd door Django (IBS)",
+        "items": [
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 27,
+    "fields": {
+        "id_code": "2100661",
+        "date": "2021-03-31",
+        "delivery_date": "2021-04-30",
+        "user": 1,
+        "shop": 1,
+        "status": "requested",
+        "ordered": true,
+        "total": 4655.7775,
+        "tax": 808.0274999999999,
+        "comments": "Startorder, ingevoerd door Django (IBS)",
+        "items": [
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371,
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 28,
+    "fields": {
+        "id_code": "2100662",
+        "date": "2021-03-31",
+        "delivery_date": "2021-04-30",
+        "user": 1,
+        "shop": 3,
+        "status": "requested",
+        "ordered": true,
+        "total": 5271.365,
+        "tax": 914.865,
+        "comments": "Startorder, ingevoerd door Django (IBS)",
+        "items": [
+            382,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399,
+            400,
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435,
+            436,
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462,
+            463,
+            464,
+            465,
+            466,
+            467,
+            468,
+            469,
+            470,
+            471,
+            472,
+            473,
+            474,
+            475,
+            476,
+            477,
+            478
+        ]
+    }
+}
+]
