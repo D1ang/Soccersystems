@@ -1805,7 +1805,7 @@ msgstr "Log in!"
 
 #: .\templates\account\login.html:47
 msgid "Haven't applied for an account yet?"
-msgstr "Nog geen account aangevraagd?"
+msgstr "Nog geen account?"
 
 #: .\templates\account\login.html:50
 msgid "Send an inquiry"
