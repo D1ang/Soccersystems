@@ -9,9 +9,9 @@ class CheckoutForm(forms.Form):
     '''
     comments = forms.CharField(
         required=False,
-        max_length=250,
+        max_length=200,
         label=_('Comments'),
-        widget=forms.Textarea(attrs={'placeholder': _('max 250 characters')})
+        widget=forms.Textarea(attrs={'placeholder': _('max 200 characters')})
     )
     delivery_date = forms.DateField(
         required=True,
