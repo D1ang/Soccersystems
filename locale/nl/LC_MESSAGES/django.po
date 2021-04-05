@@ -209,8 +209,8 @@ msgid "Comments"
 msgstr "Opmerking"
 
 #: .\checkout\forms.py:14
-msgid "max 250 characters"
-msgstr "maximaal 250 tekens"
+msgid "max 200 characters"
+msgstr "maximaal 200 tekens"
 
 #: .\checkout\forms.py:18
 msgid "Delivery date"
