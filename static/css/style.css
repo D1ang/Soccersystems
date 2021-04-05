@@ -381,7 +381,7 @@ hr.dashboard {
 .badge-requested {
   position: relative;
   bottom: 2px;
-  width: 90px;
+  width: 100;
   line-height: 18px;
   font-weight: 300;
   color: rgb(255, 255, 255);
