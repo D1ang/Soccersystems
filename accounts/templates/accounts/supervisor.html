@@ -93,11 +93,6 @@
                   </td>
                   <td>
                     <a class="subtext" href="{% url 'accounts:orderdetails' order.id %}"><i class="far fa-eye mr-1"></i></a>
-                    {% if order.id_code %}
-                      <a class="subtext" href=""><i class="far fa-edit"></i></a>
-                    {% else %}
-                      <i class="far fa-edit"></i>
-                    {% endif %}
                     <a href="#" onclick="window.open('{% url 'accounts:orderdetails' order.id %}','print','width=650,height=800').print()">
                     <i class="fa fa-print"></i></a>
                   </td>
