@@ -6,6 +6,8 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import View
 from orders.models import Order
 from .forms import CheckoutForm
+from django.template.loader import get_template
+from django.core.mail import EmailMessage
 
 from fmrest import dataAPI
 from decimal import Decimal
@@ -119,6 +121,25 @@ class CheckoutView(LoginRequiredMixin, View):
                 order.tax = tax
                 order.id_code = serialID
 
+                # Create the email on the contact template
+                template = get_template('placed_order.html')
+                total_rounded = float("{:.2f}".format(total))
+                context = {
+                    'reference': fm_serializer(self)["fieldData"]["referentie"],
+                    'comments': comments,
+                    'delivery_date': delivery_date,
+                    'total': total_rounded,
+                }
+                content = template.render(context)
+
+                email = EmailMessage(
+                    "Soccersystems order",
+                    content,
+                    "info@ibsgraphics.nl" + '', ['info@ibsgraphics.nl'],
+                    headers={'Reply-To': 'info@ibsgraphics.nl'}
+                )
+
+                email.send()
                 order.save()
 
                 message = _('Your order was successful!')
