@@ -82,11 +82,11 @@ The navbar is available when needed and a footer is provided with contact-inform
 ### Skeleton
 By using Figma and LucidChart the following wireframes were created:
 
-[Silkscreenservice wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/wireframe.pdf)
+[Silkscreenservice wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/wireframe.pdf)
 
-[Responsive phone wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/wireframe-sm.pdf)
+[Responsive phone wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/wireframe-sm.pdf)
 
-[ERD wireframe](https://github.com/D1ang/Soccersystems/blob/master/mockups/model_diagram.png)
+[ERD wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/model.png)
 
 ### Surface
 The colours chosen are ...
