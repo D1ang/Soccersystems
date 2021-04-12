@@ -80,16 +80,14 @@ that should be easy to understand and gives the customer a straight away no-nons
 The navbar is available when needed and a footer is provided with contact-information below the page.
 
 ### Skeleton
-By using Figma and LucidChart the following wireframes were created:
+The design is based on earlier project.
+By using LucidChart the following model was created:
 
-[Silkscreenservice wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/wireframe.pdf)
-
-[Responsive phone wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/wireframe-sm.pdf)
-
-[ERD wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/model.png)
+![ERD wireframe](https://github.com/D1ang/Soccersystems/blob/main/mockups/model.png)
 
 ### Surface
-The colours chosen are ...
+The colours chosen are Estro red and white,
+as these are the most used colour for Ajax's style. 
 
 ## Technologies
  - Figma - *To create a wireframe*
@@ -118,25 +116,16 @@ The colours chosen are ...
 
 ## Features
 This system is an e-commerce-based website with a simplistic but easy to understand build-up.
-Providing the user with 2 call-to-action buttons and a "read more" button, a choice can be made in seconds.
+Providing the user with a call-to-action, a choice can be made in seconds.
 The navbar is sticky but reacts on the users scrolling behaviour. While scrolling down the bar disappears to keep a clean screen estate,
 but when scrolling up, the bar will re-appear.
-The frequently used services are created by the most clicked products for the cart in the backend.
-The 3 services with the most clicks will be sorted on popularity and shown here.
-The services page will show all the available services that can be ordered.
-To order a service the user needs to be logged in. To provide the user with some extra feedback a handy message bar will drop down from the navbar.
+The products page will show all the available products that can be ordered.
+To order a product the user needs to be logged in. To provide the user with some extra feedback a handy message bar will drop down from the navbar.
 This bar will scroll up again after a few seconds. 
 When an user will create an account or login, a dashboard will be available for a nice table-based overview of the placed services.
-An admin account is available for employees to, update service request and download the by customer uploaded artwork.
+An admin account is available for supervisors to, update service request and download the by customer uploaded artwork.
 Users can add or delete services to their cart which will be saved in the backend right away.
-As a user logs out the cart will be remembered in the system to be finished later. 
-When the customer checkout, a secured payment can be made with credit card and artwork can be uploaded, to be downloaded by the employees.
-
-### Features Left to Implement
-In later releases I would like to add models for a comments/grade system, so customers can add comments or grade the provided services.
-Visitors would be able to read those. I would also like to add a function for admin to remove a customer.
-As of European law this should be possible.
-This can be done through the standard django admin, but it would be nicer and easier if this function is available through the custom-made dashboard.
+As a user logs out the cart will be remembered in the system to be finished later.
 
 ## Testing
 This system was tested across multiple screen sizes on Chrome, Safari, and Internet Explorer.
@@ -181,8 +170,8 @@ This bug was fixed after making migrations and changed the max field characters 
 Seems that the admin entered email was 28 characters and when in an earlier build was set to 25, this error came up.
 
 ## Deployment
-The code of this system is hosted by using Heroku and Amazon S3, this code is deployed to GitHub directly from the master branch.
-The deployed site will update automatically upon new commits to the master branch.
+The code of this system is hosted by using Heroku and Amazon S3, this code is deployed to GitHub directly from the main branch.
+The deployed site will update automatically upon new commits to the main branch.
 This code can be run locally or deployed to a live environment. Directions are based on deployment locally and to Heroku.
 
 ### Deploy requirements
@@ -199,7 +188,7 @@ This code can be run locally or deployed to a live environment. Directions are b
     GitHub page and in the submenu select "Download ZIP". Extract the zip file to a folder of choice on your system. If Git is installed on your system, you can clone the repository 
     with the following command:
     ```bash
-    git clone https://github.com/D1ang/Silkscreenservice.git
+    git clone https://github.com/D1ang/Soccersystems.git
     ```
 
 1.  Open the unzipped folder in your preferred IDE (in this example we are using VScode)
@@ -231,13 +220,9 @@ This code can be run locally or deployed to a live environment. Directions are b
 
     os.environ.setdefault( 'DEVELOPMENT', 'True')
     os.environ.setdefault('SECRET_KEY', 'your_value')
-    os.environ.setdefault('STRIPE_PUBLIC_KEY', 'your_value')
-    os.environ.setdefault('STRIPE_SECRET_KEY', 'your_value')
     ```
 
     Replace <your_value> with the values from your own created accounts:
-    - [STRIPE_PUBLIC_KEY](https://dashboard.stripe.com/test/apikeys) *Required from the developer's API on*
-    - [STRIPE_SECRET_KEY](https://dashboard.stripe.com/test/apikeys) *Required from the Developer's API on*
     - [SECRET_KEY](https://djecrety.ir/) *Required from an online key generator*
 
 1.  Set up the databases by running the following management command in your terminal:
@@ -283,8 +268,6 @@ To run this application in a cloud-based environment, you can deploy the code to
     | AWS_SECRET_ACCESS_KEY   |  <your_value>  |
     | DATABASE_URL            |  <your_value>  |
     | SECRET_KEY              |  <your_value>  |
-    | STRIPE_PUBLIC_KEY       |  <your_value>  |
-    | STRIPE_SECRET_KEY       |  <your_value>  |
     | USE_AWS                 |  <your_value>  |
 
     Grab the DATABASE_URL link from Heroku's Config Vars as we gonna need it later to migrate
@@ -344,10 +327,6 @@ To run this application in a cloud-based environment, you can deploy the code to
 
 ### Content
 All text content for this system were written by me.
-The following site has been used as an inspiration for the overall design: [Illustrations.co](https://illlustrations.co/)
-
-### Media
-Illustrations: https://illlustrations.co/
 
 ### Acknowledgements
 - Django Framework 3.0 Crash Course Tutorials [link](https://www.youtube.com/watch?v=xv_bwpA_aEA&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO)
@@ -356,25 +335,3 @@ Illustrations: https://illlustrations.co/
 - Django 3.0 documentation [link](https://docs.djangoproject.com/en/3.0/)
 - Django Admin Cookbook [link](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/introduction.html)
 - SVG compressing [link](https://www.compresss.com/compress-svg.htm)
-
-
-
-
-
-
-
-
-PRODUCTS:
-OM en om style op tabellen (wit-grijs)
-Tabellen beter responsive maken
-Product groepen hover zoom effect
-Add buttons beter stylen naar zwart
-Paginator links
-
-
-SOCCERSYSTEMS:
-urls
-
-
-REQUIREMENTS
-Cleanup
