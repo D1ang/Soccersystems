@@ -378,7 +378,7 @@ hr.dashboard {
   border-radius: 0px;
 }
 
-.badge-requested {
+.badge-request {
   position: relative;
   bottom: 2px;
   width: 100;
@@ -388,7 +388,7 @@ hr.dashboard {
   background-color: rgb(0, 0, 0);
 }
 
-.badge-pending {
+.badge-production {
   position: relative;
   bottom: 2px;
   width: 118px;
@@ -398,7 +398,17 @@ hr.dashboard {
   background-color: rgb(178, 0, 0);
 }
 
-.badge-finished {
+.badge-backorder {
+  position: relative;
+  bottom: 2px;
+  width: 90px;
+  line-height: 18px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 196, 0);
+}
+
+.badge-sent {
   position: relative;
   bottom: 2px;
   width: 90px;

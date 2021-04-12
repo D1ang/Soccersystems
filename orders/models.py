@@ -35,9 +35,10 @@ class Order(models.Model):
     the order items in 1 order
     '''
     STATUS = (
-        ('requested', _('Requested')),
-        ('pending', _('Pending')),
-        ('finished', _('Finished'))
+        ('request', _('Request')),
+        ('production', _('Production')),
+        ('backorder', _('Backorder')),
+        ('sent', _('Sent'))
     )
 
     id_code = models.CharField(max_length=15)
@@ -45,7 +46,7 @@ class Order(models.Model):
     delivery_date = models.DateField(blank=True, null=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
-    status = models.CharField(choices=STATUS, default='requested', max_length=10)
+    status = models.CharField(choices=STATUS, default='request', max_length=10)
     items = models.ManyToManyField(OrderItem)
     ordered = models.BooleanField(default=False)
     total = models.FloatField(blank=True, null=True)

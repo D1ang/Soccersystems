@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-24 10:18+0100\n"
+"POT-Creation-Date: 2021-04-12 13:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,12 +52,12 @@ msgstr "Geplaatst"
 
 #: .\accounts\templates\accounts\dashboard.html:19
 #: .\accounts\templates\accounts\orderdetails.html:17
-#: .\accounts\templates\accounts\supervisor.html:17 .\orders\models.py:39
+#: .\accounts\templates\accounts\supervisor.html:17
 msgid "Pending"
 msgstr "In afwachting"
 
 #: .\accounts\templates\accounts\dashboard.html:23
-#: .\accounts\templates\accounts\supervisor.html:21 .\orders\models.py:40
+#: .\accounts\templates\accounts\supervisor.html:21
 msgid "Finished"
 msgstr "Gereed"
 
@@ -108,7 +108,7 @@ msgid "more details..."
 msgstr "meer details..."
 
 #: .\accounts\templates\accounts\dashboard.html:88
-#: .\accounts\templates\accounts\supervisor.html:117
+#: .\accounts\templates\accounts\supervisor.html:112
 #: .\products\templates\products\product_items.html:115
 #: .\products\templates\products\product_items.html:117
 #: .\products\templates\products\products.html:115
@@ -117,21 +117,21 @@ msgid "prev"
 msgstr "vorige"
 
 #: .\accounts\templates\accounts\dashboard.html:93
-#: .\accounts\templates\accounts\supervisor.html:122
+#: .\accounts\templates\accounts\supervisor.html:117
 #: .\products\templates\products\product_items.html:122
 #: .\products\templates\products\products.html:122
 msgid "page"
 msgstr "pagina"
 
 #: .\accounts\templates\accounts\dashboard.html:93
-#: .\accounts\templates\accounts\supervisor.html:122
+#: .\accounts\templates\accounts\supervisor.html:117
 #: .\products\templates\products\product_items.html:122
 #: .\products\templates\products\products.html:122
 msgid "of"
 msgstr "van"
 
 #: .\accounts\templates\accounts\dashboard.html:97
-#: .\accounts\templates\accounts\supervisor.html:126
+#: .\accounts\templates\accounts\supervisor.html:121
 #: .\products\templates\products\product_items.html:127
 #: .\products\templates\products\product_items.html:129
 #: .\products\templates\products\products.html:127
@@ -167,6 +167,11 @@ msgstr "order ID"
 #| msgid "more details..."
 msgid "order details:"
 msgstr "meer details..."
+
+#: .\accounts\templates\accounts\orderdetails.html:68
+#: .\orders\templates\orders\cart.html:16
+msgid "Amount"
+msgstr "Aantal"
 
 #: .\accounts\templates\accounts\supervisor.html:49
 #: .\products\templates\products\product_items.html:52
@@ -216,42 +221,32 @@ msgstr "maximaal 200 tekens"
 msgid "Delivery date"
 msgstr "Leverdatum"
 
-#: .\checkout\templates\checkout\details.html:17
-#: .\orders\templates\orders\cart.html:15
-msgid "Cart"
-msgstr "Bestelling"
-
-#: .\checkout\templates\checkout\details.html:18
-#: .\orders\templates\orders\cart.html:16
-msgid "Amount"
-msgstr "Aantal"
-
-#: .\checkout\templates\checkout\details.html:41
+#: .\checkout\templates\checkout\details.html:20
 msgid "Extra details"
 msgstr "Extra details"
 
-#: .\checkout\templates\checkout\details.html:61
+#: .\checkout\templates\checkout\details.html:40
 msgid "Return to checkout"
 msgstr "Bestelling aanpassen"
 
-#: .\checkout\templates\checkout\details.html:64
+#: .\checkout\templates\checkout\details.html:43
 msgid "Place order"
 msgstr "Bestelling afronden"
 
-#: .\checkout\views.py:30
+#: .\checkout\views.py:32
 msgid "Your cart is empty"
 msgstr "Uw bestelling is leeg"
 
-#: .\checkout\views.py:45 .\checkout\views.py:124 .\orders\views.py:27
+#: .\checkout\views.py:47 .\checkout\views.py:151 .\orders\views.py:27
 #: .\orders\views.py:39 .\orders\views.py:119
 msgid "There is no active order"
 msgstr "Er is geen actieve order"
 
-#: .\checkout\views.py:64
+#: .\checkout\views.py:66
 msgid "Could not connect to the FM database "
 msgstr "Er kon geen verbinding met de FM database worden gemaakt"
 
-#: .\checkout\views.py:118
+#: .\checkout\views.py:145
 msgid "Your order was successful!"
 msgstr "De bestelling is succesvol geplaatst"
 
@@ -261,16 +256,16 @@ msgstr "De bestelling is succesvol geplaatst"
 msgid "This field is required."
 msgstr ""
 
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:361
+#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:391
 msgid "i18n text"
 msgstr ""
 
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:361
+#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:393
 msgid "i18n legend"
 msgstr ""
 
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:129
-#: .\env\Lib\site-packages\django\core\validators.py:20
+#: .\env\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:134
+#: .\env\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
 msgstr ""
 
@@ -278,7 +273,7 @@ msgstr ""
 msgid "Messages"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\contrib\sitemaps\apps.py:7
+#: .\env\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
 msgstr ""
 
@@ -290,78 +285,84 @@ msgstr ""
 msgid "Syndication"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\paginator.py:48
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\env\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\env\Lib\site-packages\django\core\paginator.py:51
 msgid "That page number is not an integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\paginator.py:50
+#: .\env\Lib\site-packages\django\core\paginator.py:53
 msgid "That page number is less than 1"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\paginator.py:55
+#: .\env\Lib\site-packages\django\core\paginator.py:58
 msgid "That page contains no results"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:91
-#: .\env\Lib\site-packages\django\forms\fields.py:671
+#: .\env\Lib\site-packages\django\core\validators.py:93
+#: .\env\Lib\site-packages\django\forms\fields.py:664
 msgid "Enter a valid URL."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:145
+#: .\env\Lib\site-packages\django\core\validators.py:147
 msgid "Enter a valid integer."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:156
+#: .\env\Lib\site-packages\django\core\validators.py:158
 msgid "Enter a valid email address."
 msgstr ""
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
-#: .\env\Lib\site-packages\django\core\validators.py:230
+#: .\env\Lib\site-packages\django\core\validators.py:259
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:237
+#: .\env\Lib\site-packages\django\core\validators.py:266
 msgid ""
 "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:246
-#: .\env\Lib\site-packages\django\core\validators.py:266
+#: .\env\Lib\site-packages\django\core\validators.py:275
+#: .\env\Lib\site-packages\django\core\validators.py:295
 msgid "Enter a valid IPv4 address."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:251
-#: .\env\Lib\site-packages\django\core\validators.py:267
+#: .\env\Lib\site-packages\django\core\validators.py:280
+#: .\env\Lib\site-packages\django\core\validators.py:296
 msgid "Enter a valid IPv6 address."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:261
-#: .\env\Lib\site-packages\django\core\validators.py:265
+#: .\env\Lib\site-packages\django\core\validators.py:290
+#: .\env\Lib\site-packages\django\core\validators.py:294
 msgid "Enter a valid IPv4 or IPv6 address."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:295
+#: .\env\Lib\site-packages\django\core\validators.py:324
 msgid "Enter only digits separated by commas."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:301
+#: .\env\Lib\site-packages\django\core\validators.py:330
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:334
+#: .\env\Lib\site-packages\django\core\validators.py:363
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:343
+#: .\env\Lib\site-packages\django\core\validators.py:372
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:353
+#: .\env\Lib\site-packages\django\core\validators.py:382
 #, python-format
 msgid ""
 "Ensure this value has at least %(limit_value)d character (it has "
@@ -372,7 +373,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:368
+#: .\env\Lib\site-packages\django\core\validators.py:397
 #, python-format
 msgid ""
 "Ensure this value has at most %(limit_value)d character (it has "
@@ -383,27 +384,27 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:387
+#: .\env\Lib\site-packages\django\core\validators.py:416
 #: .\env\Lib\site-packages\django\forms\fields.py:292
 #: .\env\Lib\site-packages\django\forms\fields.py:327
 msgid "Enter a number."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:389
+#: .\env\Lib\site-packages\django\core\validators.py:418
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:394
+#: .\env\Lib\site-packages\django\core\validators.py:423
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:399
+#: .\env\Lib\site-packages\django\core\validators.py:428
 #, python-format
 msgid ""
 "Ensure that there are no more than %(max)s digit before the decimal point."
@@ -412,23 +413,23 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:461
+#: .\env\Lib\site-packages\django\core\validators.py:490
 #, python-format
 msgid ""
 "File extension “%(extension)s” is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\core\validators.py:513
+#: .\env\Lib\site-packages\django\core\validators.py:543
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\base.py:1190
-#: .\env\Lib\site-packages\django\forms\models.py:760
+#: .\env\Lib\site-packages\django\db\models\base.py:1197
+#: .\env\Lib\site-packages\django\forms\models.py:768
 msgid "and"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\base.py:1192
+#: .\env\Lib\site-packages\django\db\models\base.py:1199
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -464,199 +465,199 @@ msgstr ""
 msgid "Field of type: %(field_type)s"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:939
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:958
 #, python-format
 msgid "“%(value)s” value must be either True or False."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:940
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:959
 #, python-format
 msgid "“%(value)s” value must be either True, False, or None."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:942
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:961
 msgid "Boolean (Either True or False)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:983
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1002
 #, python-format
 msgid "String (up to %(max_length)s)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1047
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1096
 msgid "Comma-separated integers"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1096
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1145
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1098
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1241
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1101
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1150
 msgid "Date (without time)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1239
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1288
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
 "uuuuuu]][TZ] format."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1243
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1292
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
 "[TZ]) but it is an invalid date/time."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1247
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1296
 msgid "Date (with time)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1395
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1444
 #, python-format
 msgid "“%(value)s” value must be a decimal number."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1397
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1446
 msgid "Decimal number"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1536
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1585
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
 "uuuuuu] format."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1539
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1588
 msgid "Duration"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1589
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1638
 msgid "Email address"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1612
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1661
 msgid "File path"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1678
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1727
 #, python-format
 msgid "“%(value)s” value must be a float."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1680
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1729
 msgid "Floating point number"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1718
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1767
 #, python-format
 msgid "“%(value)s” value must be an integer."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1720
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1769
 msgid "Integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1803
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1852
 msgid "Big (8 byte) integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1819
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1867
+msgid "Small integer"
+msgstr ""
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1875
 msgid "IPv4 address"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1850
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1906
 msgid "IP address"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1930
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1931
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1986
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1987
 #, python-format
 msgid "“%(value)s” value must be either None, True or False."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1933
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1989
 msgid "Boolean (Either True, False or None)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1976
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2043
 msgid "Positive big integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1989
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2056
 msgid "Positive integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2002
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2069
 msgid "Positive small integer"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2016
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2083
 #, python-format
 msgid "Slug (up to %(max_length)s)"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2048
-msgid "Small integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2055
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2115
 msgid "Text"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2083
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2181
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2085
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2183
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2088
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2186
 msgid "Time"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2214
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2312
 msgid "URL"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2236
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2334
 msgid "Raw binary data"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2301
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2399
 #, python-format
 msgid "“%(value)s” is not a valid UUID."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2303
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2401
 msgid "Universally unique identifier"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\files.py:231
+#: .\env\Lib\site-packages\django\db\models\fields\files.py:225
 msgid "File"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\db\models\fields\files.py:379
+#: .\env\Lib\site-packages\django\db\models\fields\files.py:373
 msgid "Image"
 msgstr ""
 
@@ -705,42 +706,42 @@ msgstr ""
 msgid "Enter a whole number."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:398
-#: .\env\Lib\site-packages\django\forms\fields.py:1139
+#: .\env\Lib\site-packages\django\forms\fields.py:391
+#: .\env\Lib\site-packages\django\forms\fields.py:1132
 msgid "Enter a valid date."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:422
-#: .\env\Lib\site-packages\django\forms\fields.py:1140
+#: .\env\Lib\site-packages\django\forms\fields.py:415
+#: .\env\Lib\site-packages\django\forms\fields.py:1133
 msgid "Enter a valid time."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:450
+#: .\env\Lib\site-packages\django\forms\fields.py:443
 msgid "Enter a valid date/time."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:484
+#: .\env\Lib\site-packages\django\forms\fields.py:477
 msgid "Enter a valid duration."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:485
+#: .\env\Lib\site-packages\django\forms\fields.py:478
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:545
+#: .\env\Lib\site-packages\django\forms\fields.py:538
 msgid "No file was submitted. Check the encoding type on the form."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:546
+#: .\env\Lib\site-packages\django\forms\fields.py:539
 msgid "No file was submitted."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:547
+#: .\env\Lib\site-packages\django\forms\fields.py:540
 msgid "The submitted file is empty."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:549
+#: .\env\Lib\site-packages\django\forms\fields.py:542
 #, python-format
 msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
@@ -748,202 +749,205 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:552
+#: .\env\Lib\site-packages\django\forms\fields.py:545
 msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:613
+#: .\env\Lib\site-packages\django\forms\fields.py:606
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:775
-#: .\env\Lib\site-packages\django\forms\fields.py:865
-#: .\env\Lib\site-packages\django\forms\models.py:1296
+#: .\env\Lib\site-packages\django\forms\fields.py:768
+#: .\env\Lib\site-packages\django\forms\fields.py:858
+#: .\env\Lib\site-packages\django\forms\models.py:1309
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:866
-#: .\env\Lib\site-packages\django\forms\fields.py:981
-#: .\env\Lib\site-packages\django\forms\models.py:1295
+#: .\env\Lib\site-packages\django\forms\fields.py:859
+#: .\env\Lib\site-packages\django\forms\fields.py:974
+#: .\env\Lib\site-packages\django\forms\models.py:1308
 msgid "Enter a list of values."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:982
+#: .\env\Lib\site-packages\django\forms\fields.py:975
 msgid "Enter a complete value."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:1198
+#: .\env\Lib\site-packages\django\forms\fields.py:1191
 msgid "Enter a valid UUID."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\fields.py:1228
+#: .\env\Lib\site-packages\django\forms\fields.py:1221
 msgid "Enter a valid JSON."
 msgstr ""
 
 #. Translators: This is the default suffix added to form field labels
-#: .\env\Lib\site-packages\django\forms\forms.py:78
+#: .\env\Lib\site-packages\django\forms\forms.py:76
 msgid ":"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\forms.py:205
+#: .\env\Lib\site-packages\django\forms\forms.py:203
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\formsets.py:93
-msgid "ManagementForm data is missing or has been tampered with"
+#: .\env\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\formsets.py:345
+#: .\env\Lib\site-packages\django\forms\formsets.py:370
 #, python-format
-msgid "Please submit %d or fewer forms."
-msgid_plural "Please submit %d or fewer forms."
+msgid "Please submit at most %d form."
+msgid_plural "Please submit at most %d forms."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\forms\formsets.py:352
+#: .\env\Lib\site-packages\django\forms\formsets.py:377
 #, python-format
-msgid "Please submit %d or more forms."
-msgid_plural "Please submit %d or more forms."
+msgid "Please submit at least %d form."
+msgid_plural "Please submit at least %d forms."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\forms\formsets.py:379
-#: .\env\Lib\site-packages\django\forms\formsets.py:386
+#: .\env\Lib\site-packages\django\forms\formsets.py:405
+#: .\env\Lib\site-packages\django\forms\formsets.py:412
 msgid "Order"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\formsets.py:391
+#: .\env\Lib\site-packages\django\forms\formsets.py:417
 msgid "Delete"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:755
+#: .\env\Lib\site-packages\django\forms\models.py:763
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:759
+#: .\env\Lib\site-packages\django\forms\models.py:767
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:765
+#: .\env\Lib\site-packages\django\forms\models.py:773
 #, python-format
 msgid ""
 "Please correct the duplicate data for %(field_name)s which must be unique "
 "for the %(lookup)s in %(date_field)s."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:774
+#: .\env\Lib\site-packages\django\forms\models.py:782
 msgid "Please correct the duplicate values below."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:1096
+#: .\env\Lib\site-packages\django\forms\models.py:1109
 msgid "The inline value did not match the parent instance."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:1180
+#: .\env\Lib\site-packages\django\forms\models.py:1193
 msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\models.py:1298
+#: .\env\Lib\site-packages\django\forms\models.py:1311
 #, python-format
 msgid "“%(pk)s” is not a valid value."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\utils.py:167
+#: .\env\Lib\site-packages\django\forms\utils.py:172
 #, python-format
 msgid ""
 "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:398
+#: .\env\Lib\site-packages\django\forms\widgets.py:403
 msgid "Clear"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:399
+#: .\env\Lib\site-packages\django\forms\widgets.py:404
 msgid "Currently"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:400
+#: .\env\Lib\site-packages\django\forms\widgets.py:405
 msgid "Change"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:709
+#: .\env\Lib\site-packages\django\forms\widgets.py:714
 msgid "Unknown"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:710
+#: .\env\Lib\site-packages\django\forms\widgets.py:715
 msgid "Yes"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\forms\widgets.py:711
+#: .\env\Lib\site-packages\django\forms\widgets.py:716
 msgid "No"
 msgstr ""
 
 #. Translators: Please do not add spaces around commas.
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:790
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:805
 msgid "yes,no,maybe"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:819
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:836
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:834
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:851
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:838
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:853
 #, python-format
 msgid "%s KB"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:840
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:855
 #, python-format
 msgid "%s MB"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:842
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:857
 #, python-format
 msgid "%s GB"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:844
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:859
 #, python-format
 msgid "%s TB"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:846
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:861
 #, python-format
 msgid "%s PB"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:65
+#: .\env\Lib\site-packages\django\utils\dateformat.py:66
 msgid "p.m."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:66
+#: .\env\Lib\site-packages\django\utils\dateformat.py:67
 msgid "a.m."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:71
+#: .\env\Lib\site-packages\django\utils\dateformat.py:72
 msgid "PM"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:72
+#: .\env\Lib\site-packages\django\utils\dateformat.py:73
 msgid "AM"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:149
+#: .\env\Lib\site-packages\django\utils\dateformat.py:146
 msgid "midnight"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\utils\dateformat.py:151
+#: .\env\Lib\site-packages\django\utils\dateformat.py:148
 msgid "noon"
 msgstr ""
 
@@ -1235,7 +1239,7 @@ msgstr ""
 
 #. Translators: This string is used as a separator between list elements
 #: .\env\Lib\site-packages\django\utils\text.py:255
-#: .\env\Lib\site-packages\django\utils\timesince.py:83
+#: .\env\Lib\site-packages\django\utils\timesince.py:94
 msgid ", "
 msgstr ""
 
@@ -1358,14 +1362,14 @@ msgstr ""
 msgid "No %(verbose_name_plural)s available"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\generic\dates.py:589
+#: .\env\Lib\site-packages\django\views\generic\dates.py:594
 #, python-format
 msgid ""
 "Future %(verbose_name_plural)s not available because %(class_name)s."
 "allow_future is False."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\generic\dates.py:623
+#: .\env\Lib\site-packages\django\views\generic\dates.py:628
 #, python-format
 msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
 msgstr ""
@@ -1404,21 +1408,18 @@ msgid "Index of %(directory)s"
 msgstr ""
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:7
-msgid "Django: the Web framework for perfectionists with deadlines."
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:346
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:207
 #, python-format
 msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:368
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:369
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:222
 #, python-format
 msgid ""
 "You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
@@ -1427,27 +1428,27 @@ msgid ""
 "URLs."
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:384
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:230
 msgid "Django Documentation"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:385
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:231
 msgid "Topics, references, &amp; how-to’s"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:396
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:239
 msgid "Tutorial: A Polling App"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:397
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:240
 msgid "Get started with Django"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:408
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:248
 msgid "Django Community"
 msgstr ""
 
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:409
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
 
@@ -1723,8 +1724,24 @@ msgid "Message has been sent successfully!"
 msgstr "Bericht is succesvol verstuurd!"
 
 #: .\orders\models.py:38
-msgid "Requested"
-msgstr "Aangevraagd"
+msgid "Request"
+msgstr "Aanvraag"
+
+#: .\orders\models.py:39
+msgid "Production"
+msgstr "Productie"
+
+#: .\orders\models.py:40
+msgid "Backorder"
+msgstr "Backorder"
+
+#: .\orders\models.py:41
+msgid "Sent"
+msgstr "Verzonden"
+
+#: .\orders\templates\orders\cart.html:15
+msgid "Cart"
+msgstr "Bestelling"
 
 #: .\orders\templates\orders\cart.html:17
 msgid "Edit"
