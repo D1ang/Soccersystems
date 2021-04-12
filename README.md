@@ -17,7 +17,7 @@ In short:
 ## Demo
 A live demo version can be found **[here](https://soccersystems.herokuapp.com/)**
 
-![Design](https://github.com/D1ang/Soccersystems/blob/master/mockups/presentation.png)
+![Design](https://github.com/D1ang/Soccersystems/blob/main/mockups/presentation.png)
 
 ## Table of Contents
   * [UX](#ux)
