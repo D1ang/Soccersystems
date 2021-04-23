@@ -12,7 +12,37 @@ from .filters import OrderFilter
 
 
 @login_required
-@allowed_users(allowed_roles=['supervisor', 'admin'])
+@allowed_users(allowed_roles=['admin'])
+def admin(request):
+    '''
+    A view that displays the dashboard
+    for the admin & paginate the order list.
+    '''
+    order_list = Order.objects.all().order_by('-date')
+    total_orders = order_list.count()
+    requests = order_list.filter(status='request').count()
+    sent_orders = order_list.filter(status='sent').count()
+
+    orderFilter = OrderFilter(request.GET, queryset=order_list)
+    order_list = orderFilter.qs
+
+    # Paginate the orders to max 10 results per page
+    paginator = Paginator(order_list, 10)
+    page_number = request.GET.get('page')
+    page_object = paginator.get_page(page_number)
+
+    context = {
+        'page_object': page_object,
+        'total_orders': total_orders,
+        'requests': requests,
+        'sent_orders': sent_orders,
+        'orderFilter': orderFilter,
+    }
+    return render(request, 'accounts/admin.html', context)
+
+
+@login_required
+@allowed_users(allowed_roles=['supervisor'])
 def supervisor(request):
     '''
     A view that displays the dashboard
