@@ -135,12 +135,6 @@ The system has been field-tested by customers and employees.
 Some basic unit testing has been done with Travis and own written testcodes on the home and accounts app.
 Unit testing does not go as deep as the field tests, but does show that the bare basic functions are working correctly. 
 
-For testing the admin interface an admin test account has been created on the deployed version to Heroku.
-The logins are:
-
- - Username: Admin
- - Password: Admin_1234
-
 The following tests have been used to ensure proper site functionality:
 
 - [GTmetrix](https://gtmetrix.com/): To test on website loading times.
