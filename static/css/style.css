@@ -357,10 +357,10 @@ header .overlay {
 /*----------------------Dashboard styling----------------------*/
 
 #dashboard {
-  background-image: url(/static/svg/dashboard-rocket.svg);
+  background-image: url(/static/svg/balls.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 30%;
   background-color: rgb(248, 249, 252);
   min-height: 100%;
   padding-top: 60px;
