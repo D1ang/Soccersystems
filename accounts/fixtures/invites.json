@@ -1,0 +1,62 @@
+[
+    {
+        "model": "invitations.invitation",
+        "pk": 4,
+        "fields": {
+            "accepted": true,
+            "key": "o4wzc5glcfbcfn4qmuvxvspnpml4ljzw1jvfjszv902mqmt6euxrjyxsihk2szng",
+            "sent": "2021-04-09T07:44:57.714Z",
+            "inviter": 7,
+            "email": "n.stam@ajax.nl",
+            "created": "2021-04-09T07:44:56.812Z"
+        }
+    },
+    {
+        "model": "invitations.invitation",
+        "pk": 6,
+        "fields": {
+            "accepted": true,
+            "key": "iqplwqfsh6n8jgewivbvhsmna3i7bawf9t64zin7i3rt3k0xuiewjqmnqmtzyvl9",
+            "sent": "2021-04-29T11:32:05.041Z",
+            "inviter": 7,
+            "email": "m.visser@ajax.nl",
+            "created": "2021-04-29T11:32:03.467Z"
+        }
+    },
+    {
+        "model": "invitations.invitation",
+        "pk": 7,
+        "fields": {
+            "accepted": true,
+            "key": "dglfhvsxyvwiklcns11cv5s0tn8dgr0jprppc78zseh1xtgjdkniy0ptxd5mnpfq",
+            "sent": "2021-04-29T11:32:32.489Z",
+            "inviter": 7,
+            "email": "j.van.altena@ajax.nl",
+            "created": "2021-04-29T11:32:31.384Z"
+        }
+    },
+    {
+        "model": "invitations.invitation",
+        "pk": 9,
+        "fields": {
+            "accepted": true,
+            "key": "ndrjirrcfyslemgmzaqejvkwmnxs0z2npvg6bx1qwmfhiuychfto2jnrkd8xny4t",
+            "sent": "2021-05-27T09:26:17.473Z",
+            "inviter": 1,
+            "email": "p.baas@ajax.nl",
+            "created": "2021-05-27T09:26:16.391Z"
+        }
+    },
+    {
+        "model": "invitations.invitation",
+        "pk": 10,
+        "fields": {
+            "accepted": false,
+            "key": "dsinxchjieyc2zv8ioppm3fxbmdgphxeb9glnfwdynn2srckbriu24wzwrnn4dzz",
+            "sent": "2021-06-09T07:04:23.448Z",
+            "inviter": 1,
+            "email": "r.kisoor@ajax.nl",
+            "created": "2021-06-09T07:04:22.485Z"
+        }
+    }
+]

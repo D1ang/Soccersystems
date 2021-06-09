@@ -70,11 +70,11 @@
         "pk": 3,
         "fields": {
             "user": 1,
-            "first_name": "Djang",
+            "first_name": "Django",
             "last_name": "Heimgartner",
-            "email": "info@ibsgraphics.nl",
-            "phone": "+31297286884",
-            "mobile": null,
+            "email": "django.heimgartner@gmail.com",
+            "phone": "+31634048175",
+            "mobile": "+31634048175",
             "shop": 2
         }
     },
@@ -86,9 +86,61 @@
             "first_name": "Petra",
             "last_name": "Baas",
             "email": "p.baas@ajax.nl",
+            "phone": "+31206777291",
+            "mobile": "+31613351734",
+            "shop": 2
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 12,
+        "fields": {
+            "user": 10,
+            "first_name": "Nick",
+            "last_name": "Stam",
+            "email": "n.stam@ajax.nl",
             "phone": null,
             "mobile": null,
-            "shop": 2
+            "shop": 4
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 13,
+        "fields": {
+            "user": 11,
+            "first_name": "Mark",
+            "last_name": "Visser",
+            "email": "m.visser@ajax.nl",
+            "phone": null,
+            "mobile": null,
+            "shop": 3
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 14,
+        "fields": {
+            "user": 12,
+            "first_name": "Jeffrey",
+            "last_name": "van Altena",
+            "email": "j.van.altena@ajax.nl",
+            "phone": null,
+            "mobile": null,
+            "shop": 1
+        }
+    },
+    {
+        "model": "accounts.employee",
+        "pk": 15,
+        "fields": {
+            "user": 13,
+            "first_name": "Webshop",
+            "last_name": "Webshop",
+            "email": "p.baas@ajax.nl",
+            "phone": null,
+            "mobile": null,
+            "shop": 5
         }
     }
 ]
