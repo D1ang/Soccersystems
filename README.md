@@ -1,7 +1,7 @@
 # Soccersystems
 **sports ordersystem**
 
-[![Build Status](https://travis-ci.org/D1ang/Soccersystems.svg?branch=main)](https://travis-ci.org/D1ang/Soccersystems)
+[![Build Status](https://travis-ci.com/D1ang/Soccersystems.svg?token=9EFGh3uBzbz9Qc7znqmB&branch=main)](https://travis-ci.com/D1ang/Soccersystems)
 
 
 For Amsterdams biggest soccerteam (Ajax) a need for an order system has been requested.
@@ -15,7 +15,7 @@ In short:
  - A way to see the holding stocks of the producer and shops.
 
 ## Demo
-A live demo version can be found **[here](https://soccersystems.herokuapp.com/)**
+A live version can be found **[here](https://soccersystems.herokuapp.com/)**
 
 ![Design](https://github.com/D1ang/Soccersystems/blob/main/mockups/presentation.png)
 
