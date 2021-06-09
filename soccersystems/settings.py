@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'active_link',
     'storages',
+    'captcha',
 ]
 
 MIDDLEWARE = [

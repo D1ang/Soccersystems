@@ -1,4 +1,5 @@
 from django import forms
+from captcha.fields import CaptchaField
 from django.utils.translation import gettext as _
 
 
@@ -17,3 +18,4 @@ class ContactForm(forms.Form):
         max_length=250,
         widget=forms.Textarea(attrs={'rows': 4})
     )
+    captcha = CaptchaField()

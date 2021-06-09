@@ -20,6 +20,7 @@ def index(request):
         form = form(data=request.POST)
 
         if form.is_valid():
+            human = True
             contact_name = request.POST.get('contact_name', '')
             contact_email = request.POST.get('contact_email', '')
             form_content = request.POST.get('content', '')

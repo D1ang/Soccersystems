@@ -271,6 +271,9 @@
           <div class="form-group">
             {{ form.content|add_class:"form-control bg-transparent rounded-0 text-white"|as_crispy_field }}
           </div>
+          <div class="form-group">
+            {{ form.captcha|add_class:"form-control bg-transparent rounded-0 text-white"|as_crispy_field }}
+          </div>
           <div class="text-center py-4">
             <button type="submit" class="btn btn-lg btn-custom-red">{% trans "send a message" %}</button>
           </div>

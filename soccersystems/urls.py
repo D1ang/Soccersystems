@@ -46,6 +46,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('accounts/', include('accounts.urls')),
+    path('captcha/', include('captcha.urls')),
     path('invitations/', include('invitations.urls')),
 
     path('api-auth/', include('rest_framework.urls')),
