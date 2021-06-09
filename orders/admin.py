@@ -7,8 +7,10 @@ class OrderItemAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'article_id',
-        'item',
+        'description',
         'quantity',
+        'price',
+        'user',
         'shop',
         'ordered'
     )

@@ -12,21 +12,22 @@ class OrderItem(models.Model):
     '''
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
-    item = models.ForeignKey(ProductItem, on_delete=models.CASCADE)
-    article_id = models.IntegerField()
+    article_id = models.CharField(max_length=8, null=True)
+    description = models.CharField(max_length=50, null=True)
+    fileMaker_id = models.IntegerField()
     quantity = models.IntegerField(default=25)
-    price = models.FloatField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     ordered = models.BooleanField(default=False)
 
     @property
     def total_cost(self):
-        return self.quantity * self.item.price
+        return self.quantity * self.price
 
     def get_total_item_price(self):
-        return self.item.price
+        return self.price
 
     def __str__(self):
-        return '%s - %s' % (self.shop, self.item.name)
+        return '%s - %s' % (self.shop, self.article_id)
 
 
 class Order(models.Model):

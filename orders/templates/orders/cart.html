@@ -20,10 +20,10 @@
         <tbody>
           {% for order_item in object.items.all %}
             <tr>
-              <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
+              <td>{{ forloop.counter }}. {{ order_item.description }}</td>
               <td class="cart-align-right">{{ order_item.quantity }}</td>
               <td class="cart-align-right">
-                <a href="{% url 'orders:remove_from_cart' order_item.item.slug %}" class="btn-delete-cart"><i class="fas fa-trash"></i></a>
+                <a href="{% url 'orders:remove_from_cart' order_item.article_id %}" class="btn-delete-cart"><i class="fas fa-trash"></i></a>
               </td>
             </tr>
           {% endfor %}

@@ -71,7 +71,7 @@
             <tbody>
               {% for order_item in order.items.all %}
                 <tr>
-                  <td>{{ forloop.counter }}. {{ order_item.item.name }}</td>
+                  <td>{{ forloop.counter }}. {{ order_item.description }}</td>
                   <td class="cart-align-right">{{ order_item.quantity }}</td>
                 </tr>
               {% endfor %}
