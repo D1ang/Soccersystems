@@ -6,7 +6,6 @@ from django.contrib import messages
 from django.utils.translation import gettext_lazy as _
 from django.core.paginator import Paginator
 from orders.models import Order
-from decimal import Decimal
 from .forms import EmployeeForm
 from .filters import OrderFilter
 
@@ -139,7 +138,7 @@ def orderdetails(request, pk_order):
 
     if admin.is_active and admin.is_superuser:
         order = Order.objects.get(id=pk_order)
-        tax = order.get_total() * Decimal(21 / 100)
+        tax = order.get_total() / 100 * 21
         total = order.get_total() + tax
 
         context = {
@@ -152,7 +151,7 @@ def orderdetails(request, pk_order):
     else:
         try:
             order = Order.objects.get(id=pk_order, user=request.user)
-            tax = order.get_total() * Decimal(21 / 100)
+            tax = order.get_total() / 100 * 21
             total = order.get_total() + tax
 
             context = {

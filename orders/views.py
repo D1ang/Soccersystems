@@ -7,7 +7,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import View
 from .models import OrderItem, Order
 from products.models import ProductItem as Item
-from decimal import Decimal
 from django.utils.translation import gettext_lazy as _
 
 
@@ -20,7 +19,7 @@ class OrderSummaryView(LoginRequiredMixin, View):
     def get(self, *args, **kwargs):
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
-            tax = order.get_total() * Decimal(21 / 100)
+            tax = order.get_total() / 100 * 21
             total = order.get_total() + tax
 
             if total < 1:
@@ -55,12 +54,13 @@ def add_to_cart(request, slug):
         item = get_object_or_404(Item, slug=slug)
 
         order_item, created = OrderItem.objects.get_or_create(
-            item=item,
-            price=item.price,
-            article_id=item.article_id,
             user=request.user,
             shop=shop,
+            article_id=item.slug,
+            fileMaker_id=item.article_id,
+            description=item,
             quantity=request.GET.get('qty'),
+            price=item.price,
             ordered=False,
         )
         order_querySet = Order.objects.filter(user=request.user, ordered=False)
@@ -68,7 +68,7 @@ def add_to_cart(request, slug):
             order = order_querySet[0]
 
             # check if the order item is in the order
-            if order.items.filter(item__slug=item.slug).exists():
+            if order.items.filter(article_id=item.slug).exists():
                 message = _('Item is already added')
                 messages.error(request, message=message)
                 return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -98,9 +98,9 @@ def remove_from_cart(request, slug):
         order = order_querySet[0]
 
         # check if the item is in the order
-        if order.items.filter(item__slug=item.slug).exists():
+        if order.items.filter(article_id=item.slug).exists():
             order_item = OrderItem.objects.filter(
-                item=item,
+                article_id=item.slug,
                 user=request.user,
                 ordered=False
             )[0]

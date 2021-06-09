@@ -10,7 +10,6 @@ from django.template.loader import get_template
 from django.core.mail import EmailMessage
 
 from fmrest import dataAPI
-from decimal import Decimal
 import uuid
 
 fm = dataAPI.DataAPIv1('fm.ibs-mijdrecht.nl')
@@ -25,7 +24,7 @@ class CheckoutView(LoginRequiredMixin, View):
     def get(self, *args, **kwargs):
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
-            tax = order.get_total() * Decimal(21 / 100)
+            tax = order.get_total() / 100 * 21
             total = order.get_total() + tax
 
             if total <= 0:
@@ -56,7 +55,7 @@ class CheckoutView(LoginRequiredMixin, View):
         form = CheckoutForm(self.request.POST, self.request.FILES or None)
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
-            tax = order.get_total() * Decimal(21 / 100)
+            tax = order.get_total() / 100 * 21
             total = order.get_total() + tax
 
             if form.is_valid():
@@ -69,13 +68,13 @@ class CheckoutView(LoginRequiredMixin, View):
                 def fm_serializer(self):
                     shop = str(self.request.user.employee.shop)
                     order = Order.objects.get(user=self.request.user, ordered=False)
-                    order_items = list(order.items.all().values('article_id', 'quantity'))
+                    order_items = list(order.items.all().values('fileMaker_id', 'quantity'))
 
                     order.id_code = uuid.uuid1().int
 
                     for item in order_items:
                         item["Opdrachten::kf_web_order_id"] = order.id_code
-                        item["Opdrachten::kf_artikelen_id"] = item.pop("article_id")
+                        item["Opdrachten::kf_artikelen_id"] = item.pop("fileMaker_id")
                         item["Opdrachten::order_soort"] = "Order"
                         item["Opdrachten::omschrijving"] = " "
                         item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
