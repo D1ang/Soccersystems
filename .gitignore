@@ -12,3 +12,6 @@ env
 # Testing
 htmlcov
 .coverage
+
+# Fixtures
+fixtures
