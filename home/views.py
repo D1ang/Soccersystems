@@ -47,5 +47,5 @@ def index(request):
             return HttpResponseRedirect('/')
 
     return render(request, 'home/index.html', {
-        # 'form': form,
+        'form': form,
     })
