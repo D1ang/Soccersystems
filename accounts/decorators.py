@@ -1,12 +1,17 @@
 from django.shortcuts import redirect
 
 
-def allowed_users(allowed_roles=[]):
+def allowed_users(allowed_roles=None):
     '''
     Looks for the user group & checks
     if an employee has admin rights to view the admin dashboard.
     If not, the employee will be redirected.
     '''
+
+    # Python Mutable Defaults fix
+    if allowed_roles is None:
+        allowed_roles = []
+    
     def decorator(view_func):
         def wrapper_func(request, *args, **kwargs):
 
