@@ -13,7 +13,7 @@ class OrderItem(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     shop = models.ForeignKey(Shop, on_delete=models.CASCADE)
     article_id = models.CharField(max_length=8, null=True)
-    description = models.CharField(max_length=80, null=True)
+    description = models.CharField(max_length=85, null=True)
     fileMaker_id = models.IntegerField()
     quantity = models.IntegerField(default=25)
     price = models.DecimalField(max_digits=6, decimal_places=2)
