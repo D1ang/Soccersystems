@@ -1,6 +1,12 @@
+import os
+import requests
+from requests.exceptions import HTTPError
+from datetime import date
+
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
+from django.http import request
 from django.shortcuts import render, redirect
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import View
@@ -9,18 +15,13 @@ from .forms import CheckoutForm
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
 
-from fmrest import dataAPI
-import uuid
-
-fm = dataAPI.DataAPIv1('fm.ibs-mijdrecht.nl')
-
 
 class CheckoutView(LoginRequiredMixin, View):
-    '''
+    """
     Load the checkout view for the order
     including the form. On POST save the
-    order to the Postgres backend & FileMaker.
-    '''
+    order to the backend & Adfas.
+    """
     def get(self, *args, **kwargs):
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
@@ -48,66 +49,60 @@ class CheckoutView(LoginRequiredMixin, View):
             return redirect('products:products')
 
     def post(self, *args, **kwargs):
-        '''
-        On POST, payment will be created in the database
-        & processed to the FileMaker data API.
-        '''
+        """
+        POST, order will be created in the database
+        & processed to Adfas trough the Adfas-WS API.
+        """
         form = CheckoutForm(self.request.POST, self.request.FILES or None)
+
         try:
             order = Order.objects.get(user=self.request.user, ordered=False)
-            tax = order.get_total() / 100 * 21
-            total = order.get_total() + tax
 
             if form.is_valid():
-                # FileMaker data API - create a token to authenticate database
-                fm.authenticate('Digitrans', 'cwp', 'cwp123')
-                if fm.errorCode != 0:
-                    message = _('Could not connect to the FM database ')
-                    messages.warning(self.request, message=message)
 
-                def fm_serializer(self):
-                    shop = str(self.request.user.employee.shop)
+                # Grab form fields & order data for serialisation.
+                comments = form.cleaned_data.get('comments')
+                delivery_date = form.cleaned_data.get('delivery_date')
+
+                def order_serializer(self):
                     order = Order.objects.get(user=self.request.user, ordered=False)
-                    order_items = list(order.items.all().values('fileMaker_id', 'quantity'))
-
-                    order.id_code = uuid.uuid1().int
+                    order_items = list(order.items.all().values('article_id', 'description', 'quantity'))
 
                     for item in order_items:
-                        item["Opdrachten::kf_web_order_id"] = order.id_code
-                        item["Opdrachten::kf_artikelen_id"] = item.pop("fileMaker_id")
-                        item["Opdrachten::order_soort"] = "Order"
-                        item["Opdrachten::omschrijving"] = " "
-                        item["Opdrachten::aantal_gereserveerd"] = item.pop("quantity")
-                        item["Opdrachten::werkbon_status"] = 1
+                        item["artnr"] = item.pop("article_id")
+                        item["omsch"] = item.pop("description")
+                        item["aantl"] = item.pop("quantity")
+                        item["lvdat"] = str(delivery_date)
 
                     data = {
-                        "fieldData": {
-                            "kp_orderbeheer_id": order.id_code,
-                            "kf_relatiebeheer_id": 92887518,
-                            "order_soort": "Order",
-                            "order_status": "Bevestigd",
-                            "omschrijving": shop + " order",
-                            "referentie": shop,
-                        },
-                        "portalData": {
-                            "portal": order_items
+                        "workorder": {
+                            "nawnr": "016311",
+                            "datum": str(date.today()),
+                            "lvdat": str(delivery_date),
+                            "uwref": str(order.shop),
+                            "exref": comments,
+                            "dirjn": "false",         # Direct delivery
+                            "bvwnr": "0001",          # Terms of payment
+                            "kstvv": 0,               # Transport costs
+                            "orderlines": order_items
                         }
                     }
                     return data
 
-                # Create record on FM database
-                create_record = fm.create_record('web_find_asset_detail', fm_serializer(self))
-                recordId = create_record['response']['recordId']
+                try:
+                    # Adfas-WS connection
+                    url = os.environ.get('ADFAS_WS')
+                    set_order = requests.post(url, json=order_serializer(self))
+                    set_order.raise_for_status()
+                    response = set_order.json()
 
-                # Return the invoice serial to the backend & close FM connection.
-                find_record = fm.get_record('web_find_asset_detail', recordId)
-                serialID = find_record['response']['data'][0]['fieldData']['invoice_serial']
-                fm.logout()
+                except HTTPError as http_err:
+                    print(f'HTTP error occurred: {http_err}')
 
-                # Save order to the backend
-                comments = form.cleaned_data.get('comments')
-                delivery_date = form.cleaned_data.get('delivery_date')
+                except Exception as err:
+                    print(f'Other error occurred: {err}')
 
+                # Set all order items to be ordered.
                 order_items = order.items.all()
                 order_items.update(ordered=True)
                 for item in order_items:
@@ -116,18 +111,14 @@ class CheckoutView(LoginRequiredMixin, View):
                 order.comments = comments
                 order.delivery_date = delivery_date
                 order.ordered = True
-                order.total = total
-                order.tax = tax
-                order.id_code = serialID
+                order.id_code = response['ordnr']
 
-                # Create the email on the contact template
+                # Create the email on the contact template & send.
                 template = get_template('placed_order.html')
-                total_rounded = float("{:.2f}".format(total))
                 context = {
-                    'reference': fm_serializer(self)["fieldData"]["referentie"],
+                    'reference': order_serializer(self)["workorder"]["uwref"],
                     'comments': comments,
                     'delivery_date': delivery_date,
-                    'total': total_rounded,
                 }
                 content = template.render(context)
 
