@@ -55,6 +55,22 @@ a.subtext:active {
   visibility: hidden;
 }
 
+.captcha-terms {
+  margin-top: -15px;
+  align-items: center;
+}
+
+.captcha-terms a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.captcha-terms a:hover {
+  font-weight: bold;
+  color: rgb(190, 19, 53);
+}
+
 /*---------------------------Colors----------------------------*/
 
 .bg-color-blue {
