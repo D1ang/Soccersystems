@@ -14,9 +14,6 @@ In short:
  - An easy to understand system on B2B basis to remove some workload from the employees on both sides.
  - A way to see the holding stocks of the producer and shops.
 
-## Demo
-A live version can be found **[here](https://soccersystems.herokuapp.com/)**
-
 ![Design](https://github.com/D1ang/Soccersystems/blob/main/mockups/presentation.png)
 
 ## Table of Contents
