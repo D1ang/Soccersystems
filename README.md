@@ -34,7 +34,6 @@ In short:
   * [Deployment](#deployment)
     + [Deploy requirements](#deploy-requirements)
     + [Local deployment](#local-deployment)
-    + [Heroku deployment](#heroku-deployment)
   * [Credits](#credits)
     + [Content](#content)
     + [Media](#media)
@@ -241,75 +240,6 @@ This code can be run locally or deployed to a live environment. Directions are b
 1.  Open the URL provided by the terminal including (/admin/accounts/customer/1/change/)
     Connect the customer to an user (it's the first inputfield)
     Provide the company information for all the required fields and press the "SAVE" button on the bottom right.
-
-### Heroku deployment
-To run this application in a cloud-based environment, you can deploy the code to Heroku. This section assumes you have succeeded at running the application in your local environment first, as described above.
-
-1.  Login to Heroku and set up a new app with an unique name (NOTE: silkscreenservice is already taken)
-1.  On the Resources tab, in the Add-ons field type Heroku Postgres select the Hobby Dev then click the Provision button.
-1.  After setting the Postgress database go back to the Settings tab and click Reveal Config Vars. Copy the values from your env.py file into Heroku. Make sure you load the 
-    following:
-    
-    |           Key           |      Value     |
-    |:-----------------------:|:--------------:|
-    | AWS_ACCESS_KEY_ID       |  <your_value>  |
-    | AWS_SECRET_ACCESS_KEY   |  <your_value>  |
-    | DATABASE_URL            |  <your_value>  |
-    | SECRET_KEY              |  <your_value>  |
-    | USE_AWS                 |  <your_value>  |
-
-    Grab the DATABASE_URL link from Heroku's Config Vars as we gonna need it later to migrate
-    to the Heroku Postgres database.
-
-1.  Now that the database on Heroku is created the following rule needs to be added to the env.py file
-    ```bash
-    os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku>')
-    ```
-    >Be assured to not share this URL with anybody.
-
-1.  Because this is a new database connection, the migrate command must be executed with the following command in your terminal:
-    ```bash
-    python manage.py migrate
-    ```
-    >Do not forget to reactivate your virtual environment if the system or IDE is rebooted.
-
-1.  Create the superuser for the postgres database so you can have access to the django admin.
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-1.  Now we need to add the required data into the database in the following order:
-    ```
-    python manage.py loaddata groups.json
-    python manage.py loaddata customers.json
-    python manage.py loaddata itemtags.json
-    python manage.py loaddata items.json
-    ```
-
-1.  With everything set push the code to a GitHub account of yourself:
-    ```bash
-    git init
-    git commit -m 'getting ready to deploy to Heroku'
-    git push -u origin
-    ``` 
-
-1.  From the Heroku dashboard of your newly created application, click on the "Deploy" tab, then scroll down to the "Deployment method" section and select GitHub.
-
-1.  Use the GitHub link and type in the name of the repository and click the search button. Then connect the Heroku app to the desired GitHub repository.
-
-1.  On the Deployment Tab, scroll a bit further down to the "Manual Deploy" section, select the master branch then click "Deploy Branch".
-
-1.  Once your application is running, you may want to update the Deployment method from Manual to Automatic.
-
-1.  From the Heroku dashboard select the Open app button on the top right.
-    Add the following part to the end of the URL in the address bar (/admin/accounts/customer/1/change/) and login with the created superuser credentials.
-    Connect the customer to an user (it is the first input field)
-    Provide the company information for all the required fields and press the "SAVE" button on the bottom right.
-
-1.  Go to the main admin page and click the Users option under the AUTHENTICATION AND AUTHORIZATION tab.
-    Under the Permissions tab at Groups select the admin in the left box and push the arrow to switch it to the right box.
-    Press SAVE on the bottom right corner of the page.
-    The deployed project is now ready to be used.
 
 ## Credits
 
